@@ -4,7 +4,7 @@
 [![gds](../../actions/workflows/gds.yaml/badge.svg)](../../actions/workflows/gds.yaml)
 [![precheck](../../actions/workflows/precheck.yaml/badge.svg)](../../actions/workflows/precheck.yaml)
 
-# Tiny Tapeout 8
+# Tiny Tapeout 9
 
 - Visit https://tinytapeout.com for more information on the project and how to get involved.
 
