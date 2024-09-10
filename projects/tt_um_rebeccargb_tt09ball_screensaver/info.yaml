@@ -1,11 +1,11 @@
 # Tiny Tapeout project information
 project:
-  title:        "TT09Ball VGA Screensaver"                                                                    # Project title
-  author:       "Rebecca G. Bettencourt; Uri Shaked"                                                          # Your name
-  discord:      "YoukaiRempeka"                                                                               # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Tiny Tapeout Logo and THE STRONGEST bouncing around the screen (640x480, TinyVGA Pmod)"      # One line description of what your project does
-  language:     "Verilog"                                                                                     # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     0                                                                                             # Clock frequency in Hz (or 0 if not applicable)
+  title:        "TT09Ball VGA Screensaver"                                          # Project title
+  author:       "Rebecca G. Bettencourt; Uri Shaked"                                # Your name
+  discord:      "YoukaiRempeka"                                                     # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "THE STRONGEST DVD style screen saver (640x480, TinyVGA Pmod)"      # One line description of what your project does
+  language:     "Verilog"                                                           # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0                                                                   # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
