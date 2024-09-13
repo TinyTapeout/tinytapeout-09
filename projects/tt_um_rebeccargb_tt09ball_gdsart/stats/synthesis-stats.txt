@@ -1,0 +1,36 @@
+62. Printing statistics.
+
+=== tt_um_rebeccargb_tt09ball_gdsart ===
+
+   Number of wires:                 25
+   Number of wire bits:             60
+   Number of public wires:          11
+   Number of public wire bits:      46
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 42
+     sky130_fd_sc_hd__a21bo_2        1
+     sky130_fd_sc_hd__a21boi_2       1
+     sky130_fd_sc_hd__a21o_2         1
+     sky130_fd_sc_hd__and2b_2        1
+     sky130_fd_sc_hd__and3_2         1
+     sky130_fd_sc_hd__buf_2         15
+     sky130_fd_sc_hd__dfxtp_2        3
+     sky130_fd_sc_hd__inv_2          2
+     sky130_fd_sc_hd__mux2_1         3
+     sky130_fd_sc_hd__nand2_2        1
+     sky130_fd_sc_hd__nand2b_2       1
+     sky130_fd_sc_hd__nand3_2        1
+     sky130_fd_sc_hd__nor2_2         3
+     sky130_fd_sc_hd__o211ai_2       1
+     sky130_fd_sc_hd__o21a_2         1
+     sky130_fd_sc_hd__o21ai_2        3
+     sky130_fd_sc_hd__o22ai_2        1
+     sky130_fd_sc_hd__or2_2          1
+     tt09ball4_logo                  1
+
+   Area for cell type \tt09ball4_logo is unknown!
+
+   Chip area for module '\tt_um_rebeccargb_tt09ball_gdsart': 336.572800
+
