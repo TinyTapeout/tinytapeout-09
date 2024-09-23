@@ -1,0 +1,58 @@
+# Tiny Tapeout project information
+project:
+  title:        "Color Bars"                                # Project title
+  author:       "Rebecca G. Bettencourt"                    # Your name
+  discord:      "YoukaiRempeka"                             # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "VGA demo resembling NTSC color bars"       # One line description of what your project does
+  language:     "Verilog"                                   # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0                                           # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_rebeccargb_colorbars"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
+    - "palette.v"
+    - "id_rom.v"
+    - "hvsync_generator.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "show_id"
+  ui[1]: "custom_id"
+  ui[2]: "scroll_id"
+  ui[3]: "scroll_bars"
+  ui[4]: "D3 (custom id)"
+  ui[5]: "D2 (custom id)"
+  ui[6]: "D1 (custom id)"
+  ui[7]: "D0 (custom id)"
+
+  # Outputs
+  uo[0]: "R1"
+  uo[1]: "G1"
+  uo[2]: "B1"
+  uo[3]: "VSync"
+  uo[4]: "R0"
+  uo[5]: "G0"
+  uo[6]: "B0"
+  uo[7]: "HSync"
+
+  # Bidirectional pins
+  uio[0]: "A0 (custom id)"
+  uio[1]: "A1 (custom id)"
+  uio[2]: "A2 (custom id)"
+  uio[3]: "A3 (custom id)"
+  uio[4]: "A4 (custom id)"
+  uio[5]: "A5 (custom id)"
+  uio[6]: "A6 (custom id)"
+  uio[7]: "A7 (custom id)"
+
+# Do not change!
+yaml_version: 6
