@@ -27,6 +27,13 @@ jobs:
         with:
           submodules: recursive
 
+      - name: setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r tt-multiplexer/py/requirements.txt -r tt/requirements.txt
+
       - name: Load OpenLane environment variables
         run: cat .github/config/openlane.txt | tee -a $GITHUB_ENV
 
@@ -41,13 +48,6 @@ jobs:
         working-directory: openlane2
         run:
           git apply --allow-empty ../patches/openlane2.patch
-
-      - name: setup python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-          cache: 'pip'
-      - run: pip install -r tt-multiplexer/py/requirements.txt -r tt/requirements.txt
 
       - name: Update caravel configuration
         run: python ./tt/configure.py --update-shuttle

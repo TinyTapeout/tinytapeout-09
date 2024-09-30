@@ -26,12 +26,6 @@ jobs:
         with:
           submodules: recursive
 
-      - name: Install sky130A PDK
-        uses: TinyTapeOut/volare-action@v2
-        with:
-          pdk_version: ${{ env.SKY130_PDK_VERSION }}
-          pdk_root: ${{ env.PDK_ROOT }}
-
       # Set Python up
       - name: setup python
         uses: actions/setup-python@v5
@@ -39,6 +33,12 @@ jobs:
           python-version: '3.11'
           cache: 'pip'
       - run: pip install -r tt/requirements.txt -r tt-multiplexer/py/requirements.txt -r verilog/dv/mux/requirements.txt
+
+      - name: Install sky130A PDK
+        uses: TinyTapeOut/volare-action@v2
+        with:
+          pdk_version: ${{ env.SKY130_PDK_VERSION }}
+          pdk_root: ${{ env.PDK_ROOT }}
 
       - name: install iverilog
         run: sudo apt-get update && sudo apt-get install -y iverilog
