@@ -9,7 +9,7 @@ jobs:
       EFABLESS_REPO: ${{ vars.EFABLESS_REPO }}
       GIT_SSH_COMMAND: 'ssh -i ~/.id_ed25519 -o IdentitiesOnly=yes -o StrictHostKeyChecking=no'
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Download artifact

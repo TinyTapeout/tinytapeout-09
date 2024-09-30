@@ -13,7 +13,7 @@ jobs:
       PDK_ROOT: /home/runner/pdk
 
     # ubuntu
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       # need the repo checked out
       - name: checkout repo
