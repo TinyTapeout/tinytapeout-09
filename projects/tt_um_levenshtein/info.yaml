@@ -20,7 +20,7 @@ project:
     - tt_um_levenshtein.v
     - levenshtein_controller.sv
     - spi_controller.sv
-    - uart_wishbone_bridge.sv
+    - spi_wishbone_bridge.sv
     - wb_arbiter.sv
     - wb_interconnect.sv
 
@@ -30,10 +30,10 @@ pinout:
   ui[0]: ""
   ui[1]: ""
   ui[2]: ""
-  ui[3]: "UART RxD"
-  ui[4]: ""
-  ui[5]: ""
-  ui[6]: ""
+  ui[3]: ""
+  ui[4]: "SPI SS#"
+  ui[5]: "SPI SCK"
+  ui[6]: "SPI MOSI"
   ui[7]: ""
 
   # Outputs
@@ -41,16 +41,16 @@ pinout:
   uo[1]: ""
   uo[2]: ""
   uo[3]: ""
-  uo[4]: "UART TxD"
+  uo[4]: ""
   uo[5]: ""
   uo[6]: ""
-  uo[7]: ""
+  uo[7]: "SPI MISO"
 
   # Bidirectional pins
-  uio[0]: "PMOD SPI SS#"
-  uio[1]: "PMOD SPI MOSI"
-  uio[2]: "PMOD SPI MISO"
-  uio[3]: "PMOD SPI SCK"
+  uio[0]: "SRAM SPI SS#"
+  uio[1]: "SRAM SPI MOSI"
+  uio[2]: "SRAM SPI MISO"
+  uio[3]: "SRAM SPI SCK"
   uio[4]: ""
   uio[5]: ""
   uio[6]: ""
