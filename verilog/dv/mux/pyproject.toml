@@ -3,7 +3,7 @@ name = "tt-mux"
 requires-python = ">=3.11"
 dynamic = ["version"]
 dependencies = [
-    "cocotb",
+    "cocotb==1.9.1",
 ]
 
 [tool.setuptools]
