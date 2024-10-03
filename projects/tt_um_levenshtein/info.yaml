@@ -4,7 +4,7 @@ project:
   author:       "Peter Nørlund"      # Your name
   discord:      "pchri03."      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "A levenshtein based fuzzy search engine"      # One line description of what your project does
-  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  language:     "SystemVerilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     50000000 # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
@@ -47,14 +47,14 @@ pinout:
   uo[7]: "SPI MISO"
 
   # Bidirectional pins
-  uio[0]: "SRAM SPI SS#"
-  uio[1]: "SRAM SPI MOSI"
-  uio[2]: "SRAM SPI MISO"
-  uio[3]: "SRAM SPI SCK"
-  uio[4]: ""
-  uio[5]: ""
-  uio[6]: ""
-  uio[7]: ""
+  uio[0]: "SRAM QSPI CS"
+  uio[1]: "SRAM QSPI SIO0/MOSI"
+  uio[2]: "SRAM QSPI SIO1/MISO"
+  uio[3]: "SRAM QSPI SCK"
+  uio[4]: "SRAM QSPI SIO2"
+  uio[5]: "SRAM QSPI SIO3"
+  uio[6]: "SRAM QSPI CS2"
+  uio[7]: "SRAM QSPI CS3"
 
 # Do not change!
 yaml_version: 6
