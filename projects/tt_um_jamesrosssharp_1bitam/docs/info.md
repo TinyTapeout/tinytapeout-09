@@ -17,7 +17,7 @@ around 6 bits of precision. It is based on this [Hackaday Project](https://hacka
 
 You need to connect an external comparator and RC network.
 
-TODO: Add circuit diagram
+![Alt text](schematic.png "the schematic for the external circuitry")
 
 ## External hardware
 
