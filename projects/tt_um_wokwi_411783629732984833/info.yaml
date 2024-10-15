@@ -1,0 +1,48 @@
+# Tiny Tapeout project information (Wokwi project)
+project:        
+  wokwi_id:     411783629732984833       # Set this to the ID of your Wokwi project (the number from the project's URL)
+  title:        "BINCounterAndGates"      # Project title
+  author:       "conrad franke"      
+  discord:      "n/a"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Binary counter with io gates"      # One line description of what your project does
+  language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     1       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "IN0"
+  ui[1]: "IN1"
+  ui[2]: "IN2"
+  ui[3]: "IN3"
+  ui[4]: "IN4"
+  ui[5]: "IN5"
+  ui[6]: "IN6"
+  ui[7]: "IN7"
+
+  # Outputs
+  uo[0]: "OUT0"
+  uo[1]: "OUT1"
+  uo[2]: "OUT2"
+  uo[3]: "OUT3"
+  uo[4]: "OUT4"
+  uo[5]: "OUT5"
+  uo[6]: "OUT6"
+  uo[7]: "OUT7"
+
+  # Bidirectional pins
+  uio[0]: "D0"
+  uio[1]: "D1"
+  uio[2]: "D2"
+  uio[3]: "D3"
+  uio[4]: "D4"
+  uio[5]: "D5"
+  uio[6]: "D6"
+  uio[7]: "D7"
+
+# Do not change!
+yaml_version: 6
