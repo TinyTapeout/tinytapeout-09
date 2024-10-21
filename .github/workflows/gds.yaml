@@ -139,3 +139,13 @@ jobs:
           make clean test_mux_gl
           # make will return success even if the test fails, so check for failure in the results.xml
           ! grep failure results.xml
+
+      - name: upload GL test results
+        if: success() || failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gl_test_vcd
+          path: |
+            verilog/dv/mux/results.xml
+            verilog/dv/mux/test_mux.vcd
+            verilog/dv/mux/test_mux.gtkw
