@@ -1,0 +1,57 @@
+# Tiny Tapeout project information
+project:
+  title:        "8b10b decoder and multiplier"      # Project title
+  author:       "Mike Bell"      # Your name
+  discord:      "rebelmike"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Test for high speed cell library - 8b10b decoder and multiplier"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_MichaelBell_hs_mul"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
+    - "shift_reg.v"
+    - "decoder.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "A 8b10b in"
+  ui[1]: "B 8b10b in"
+  ui[2]: "Decoder status"
+  ui[3]: "Multiply result"
+  ui[4]: "Multiply result (update gated)"
+  ui[5]: "Decoded values (registered)"
+  ui[6]: "Decoded values (unregistered)"
+  ui[7]: "Bidir output enable"
+
+  # Outputs
+  uo[0]: "Out 0"
+  uo[1]: "Out 1"
+  uo[2]: "Out 2"
+  uo[3]: "Out 3"
+  uo[4]: "Out 4"
+  uo[5]: "Out 5"
+  uo[6]: "Out 6"
+  uo[7]: "Out 7"
+
+  # Bidirectional pins
+  uio[0]: "Out 8"
+  uio[1]: "Out 9"
+  uio[2]: "Out 10"
+  uio[3]: "Out 11"
+  uio[4]: "Out 12"
+  uio[5]: "Out 13"
+  uio[6]: "Out 14"
+  uio[7]: "Out 15"
+
+# Do not change!
+yaml_version: 6
