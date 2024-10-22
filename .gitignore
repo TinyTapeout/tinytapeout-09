@@ -15,6 +15,7 @@ efabless/verilog/gl/user_project_wrapper.v
 efabless/verilog/gl/openframe_project_wrapper.v
 efabless/verilog/rtl/user_defines.v
 efabless/README.md
+ihp/
 
 # pip-compile
 *.egg-info
