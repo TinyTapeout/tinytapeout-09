@@ -24,8 +24,12 @@ wire [3:0] analog_to_digital_in;
 
 //digital
 adc_digital_control adc_digital_control(
+    .clk(clk),
+    .reset_n(rst_n),
+    .btn(ui_in[0]),
     .analog_to_digital_in(analog_to_digital_in),
     .encoded_out(uo_out[1:0]),
+    .control(uo_out[4:2]),
     .VPWR(VDPWR),
     .VGND(VGND)
     );
@@ -45,9 +49,9 @@ opamp_ladder opamp_ladder(
     // ties for the output enables
     // assign uo_out[0] = VGND;
     // assign uo_out[1] = VGND;
-    assign uo_out[2] = VGND;
-    assign uo_out[3] = VGND;
-    assign uo_out[4] = VGND;
+    // assign uo_out[2] = VGND;
+    // assign uo_out[3] = VGND;
+    // assign uo_out[4] = VGND;
     assign uo_out[5] = VGND;
     assign uo_out[6] = VGND;
     assign uo_out[7] = VGND;
