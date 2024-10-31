@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt09 b176ed7c",
+  "repo": "https://github.com/JesusMinguillon/tt09-verilog-freqSweep",
+  "commit": "9656f665dd4aee45c6f4a7cca9d15d0f7029a9fa",
+  "workflow_url": "https://github.com/JesusMinguillon/tt09-verilog-freqSweep/actions/runs/11610091931",
+  "sort_id": 1730370290259,
+  "openlane_version": "OpenLane2 2.1.9",
+  "pdk_version": "open_pdks bdc9412b3e468c102d01b7cf6337be06ec6e9c9a"
+}
