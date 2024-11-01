@@ -1,7 +1,7 @@
 # Tiny Tapeout project information (Wokwi project)
 project:
   wokwi_id:     412635532198550529       # Set this to the ID of your Wokwi project (the number from the project's URL)
-  title:        "tt09-8bit-accum"      # Project title
+  title:        "tt09-pettit-8bit-accum"      # Project title
   author:       "Ken Pettit"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "An 8-bit add/sub accumulator"      # One line description of what your project does
@@ -38,7 +38,7 @@ pinout:
   uio[0]: "add/sub"
   uio[1]: "clear/operate"
   uio[2]: "accum"
-  uio[3]: "na"
+  uio[3]: "carry_out"
   uio[4]: "na"
   uio[5]: "na"
   uio[6]: "na"
