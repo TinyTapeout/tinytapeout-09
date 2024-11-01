@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt09 b176ed7c",
+  "repo": "https://github.com/parallellogic-/TinyTapeoutLogic2024A",
+  "commit": "7fec87652b0b4596d875f70d8bc1886177566786",
+  "workflow_url": "https://github.com/parallellogic-/TinyTapeoutLogic2024A/actions/runs/11637678760",
+  "sort_id": 1730503332763,
+  "openlane_version": "OpenLane2 2.1.9",
+  "pdk_version": "open_pdks bdc9412b3e468c102d01b7cf6337be06ec6e9c9a"
+}
