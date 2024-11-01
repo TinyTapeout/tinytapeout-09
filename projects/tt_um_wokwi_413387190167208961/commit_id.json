@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt09 b176ed7c",
+  "repo": "https://github.com/dsamarin1/tt09-will_it_nand",
+  "commit": "8b4f28a58a9636ce1eeb6e5e274529db47e24679",
+  "workflow_url": "https://github.com/dsamarin1/tt09-will_it_nand/actions/runs/11637338544",
+  "sort_id": 1730503084699,
+  "openlane_version": "OpenLane2 2.1.9",
+  "pdk_version": "open_pdks bdc9412b3e468c102d01b7cf6337be06ec6e9c9a"
+}
