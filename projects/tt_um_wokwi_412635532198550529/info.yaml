@@ -1,0 +1,48 @@
+# Tiny Tapeout project information (Wokwi project)
+project:
+  wokwi_id:     412635532198550529       # Set this to the ID of your Wokwi project (the number from the project's URL)
+  title:        "tt09-8bit-accum"      # Project title
+  author:       "Ken Pettit"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "An 8-bit add/sub accumulator"      # One line description of what your project does
+  language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "a[0]"
+  ui[1]: "a[1]"
+  ui[2]: "a[2]"
+  ui[3]: "a[3]"
+  ui[4]: "a[4]"
+  ui[5]: "a[5]"
+  ui[6]: "a[6]"
+  ui[7]: "a[7]"
+
+  # Outputs
+  uo[0]: "s[0]"
+  uo[1]: "s[1]"
+  uo[2]: "s[2]"
+  uo[3]: "s[3]"
+  uo[4]: "s[0]"
+  uo[5]: "s[1]"
+  uo[6]: "s[2]"
+  uo[7]: "s[3]"
+
+  # Bidirectional pins
+  uio[0]: "add/sub"
+  uio[1]: "clear/operate"
+  uio[2]: "accum"
+  uio[3]: "na"
+  uio[4]: "na"
+  uio[5]: "na"
+  uio[6]: "na"
+  uio[7]: "na"
+
+# Do not change!
+yaml_version: 6
