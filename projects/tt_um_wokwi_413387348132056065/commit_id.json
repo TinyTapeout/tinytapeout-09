@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt09 b176ed7c",
+  "repo": "https://github.com/albertchae/tt09-supercon8-workshop",
+  "commit": "632c4697438921faaffc1e99529c11e7464d7407",
+  "workflow_url": "https://github.com/albertchae/tt09-supercon8-workshop/actions/runs/11637188745",
+  "sort_id": 1730502680224,
+  "openlane_version": "OpenLane2 2.1.9",
+  "pdk_version": "open_pdks bdc9412b3e468c102d01b7cf6337be06ec6e9c9a"
+}
