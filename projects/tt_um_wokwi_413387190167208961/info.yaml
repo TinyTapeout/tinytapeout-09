@@ -1,0 +1,48 @@
+# Tiny Tapeout project information (Wokwi project)
+project:
+  wokwi_id:     413387190167208961       # Set this to the ID of your Wokwi project (the number from the project's URL)
+  title:        "Will It NAND?"      # Project title
+  author:       "Daniel Samarin"      # Your name
+  discord:      "tense_future"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "A bunch of nand gates to test the tool chain... for now."      # One line description of what your project does
+  language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "NAND1a"
+  ui[1]: "NAND1b"
+  ui[2]: "NAND2a"
+  ui[3]: "NAND2b"
+  ui[4]: "NAND3a"
+  ui[5]: "NAND3b"
+  ui[6]: "NAND4a"
+  ui[7]: "NAND4b"
+
+  # Outputs
+  uo[0]: "NAND1out"
+  uo[1]: "NAND2out"
+  uo[2]: "NAND3out"
+  uo[3]: "NAND4out"
+  uo[4]: ""
+  uo[5]: ""
+  uo[6]: ""
+  uo[7]: ""
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
