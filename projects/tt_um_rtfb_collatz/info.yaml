@@ -1,0 +1,55 @@
+# Tiny Tapeout project information
+project:
+  title:        "Collatz conjecture brute-forcer"
+  author:       "Vytautas Šaltenis"
+  discord:      "vytas.rtfb"
+  description:  "Runs a Collatz sequence calculation for a given number"
+  language:     "Verilog"
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_rtfb_collatz"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "input0"
+  ui[1]: "input1"
+  ui[2]: "input2"
+  ui[3]: "input3"
+  ui[4]: "input4"
+  ui[5]: "input5"
+  ui[6]: "input6"
+  ui[7]: "input7"
+
+  # Outputs
+  uo[0]: "output0"
+  uo[1]: "output1"
+  uo[2]: "output2"
+  uo[3]: "output3"
+  uo[4]: "output4"
+  uo[5]: "output5"
+  uo[6]: "output6"
+  uo[7]: "output7"
+
+  # Bidirectional pins
+  uio[0]: "address0"
+  uio[1]: "address1"
+  uio[2]: "address2"
+  uio[3]: "address3"
+  uio[4]: "address4"
+  uio[5]: "orbit/max select"
+  uio[6]: "start compute"
+  uio[7]: "write enable or compute busy indicator"
+
+# Do not change!
+yaml_version: 6
