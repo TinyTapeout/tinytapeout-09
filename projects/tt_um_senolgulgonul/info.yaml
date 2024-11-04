@@ -39,7 +39,7 @@ pinout:
   uo[4]: "e"
   uo[5]: "f"
   uo[6]: "g"
-  uo[7]: ""
+  uo[7]: "dp"
 
   # Bidirectional pins
   uio[0]: ""
