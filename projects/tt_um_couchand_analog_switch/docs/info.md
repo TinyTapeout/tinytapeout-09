@@ -13,4 +13,6 @@ This is a basic analog switch.  When the control input is high, the X and Y anal
 
 ## How to test
 
-Connect X to digital high.  Connect a pull-down resistor from Y to ground.  Change the value of the control input, and verify that the voltage at Y matches.
+Connect X to digital high.  Connect a pull-down resistor from Y to ground.
+
+Change the value of the control input.  Verify that the inverse of the control input is correct.  Verify that the voltage at Y matches.
