@@ -55,22 +55,13 @@ jobs:
             -e INPUT_DIRECTORY="$INPUT_DIRECTORY" -e PDK_PATH="$PDK_PATH" -e PDK_ROOT="$PDK_ROOT" \
             -u $(id -u "$USER"):$(id -g "$USER") \
             -w /opt/mpw_precheck \
-            efabless/mpw_precheck:latest ./run_precheck.sh $CHECKS
+            efabless/mpw_precheck:latest ./run_precheck.sh --private --skip_checks $SKIP_CHECKS
         env:
-          CHECKS: |
-            default
-            consistency
-            gpio_defines
-            xor
-            klayout_feol
-            klayout_beol
-            klayout_offgrid
-            klayout_met_min_ca_density
-            klayout_pin_label_purposes_overlapping_drawing
-            klayout_zeroarea
-            oeb
-            illegal_cellname_check
-          # Skipped checks: magic_drc (it's very slow)
+          # magic_drc - it's slow and we're already running it in the gds job
+          # lvs - slow, currently failing (GL netlist doesn't include user modules), and we're already doing LVS in the gds job
+          SKIP_CHECKS: |
+            magic_drc 
+            lvs
           PDK_PATH: ${{ env.PDK_ROOT }}/sky130A
           INPUT_DIRECTORY: ${{ github.workspace }}/tinytapeout-submission
 
