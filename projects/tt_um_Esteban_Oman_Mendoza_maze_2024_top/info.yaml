@@ -1,0 +1,49 @@
+# Tiny Tapeout project information
+project:
+  title:        "Space Detective Maze Explorer"      # Project title
+  author:       "Esteban Oman Mendoza"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "A maze explorer game, output uses qty5 7segment displays or LED equivalent"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     50000       # Clock frequency in Hz (or 0 if not applicable)
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_Esteban_Oman_Mendoza_maze_2024_top"
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "tt_um_Esteban_Oman_Mendoza_maze_2024_top.v"
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: " user_input[0] Move forward (move one step in selected direction"
+  ui[1]: " user_input[1] (considered least significant bit used in selection direction) Used to select facing direction where 2'b00 = N, 2'b01= East, 2'b10 = South, and 2'b11 = West"
+  ui[2]: " user_input[2] (considered least most significant bit used in selection direction) Used to select facing direction where 2'b00 = N, 2'b01= East, 2'b10 = South, and 2'b11 = West"
+  ui[3]: "not used"
+  ui[4]: "not used"
+  ui[5]: "not used"
+  ui[6]: "not used"
+  ui[7]: "not used"
+  # Outputs
+  uo[0]: "       a        segments[0] = a "
+  uo[1]: "      ---       segments[1] = b "
+  uo[2]: "  f  | g |  b   segments[2] = c "      
+  uo[3]: "     |   |      segments[3] = d "
+  uo[4]: "      ---       segments[4] = e "
+  uo[5]: "     |   |      segments[5] = f "
+  uo[6]: "  e  | d |  c   segments[6] = g "
+  uo[7]: "     |   |      segments[7] = dp"
+#               --- dp
+  # Bidirectional pins
+  uio[0]: "state LSB"
+  uio[1]: "state MSB"
+  uio[2]: "Direction LSB"
+  uio[3]: "Direction MSB"
+  uio[4]: "Top half of segment used to display the walls of the room as seen from above (birds eye view). The top most segment(a) represents the wall directly in front of you in the chosen direction N,E,S, or West."
+  uio[5]: "not used"
+  uio[6]: "not used"
+  uio[7]: "not used"
+# Do not change!
+yaml_version: 6
