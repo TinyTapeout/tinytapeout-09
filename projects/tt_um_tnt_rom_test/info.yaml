@@ -1,0 +1,66 @@
+# Tiny Tapeout project information
+project:
+  title:        "TT09 SKY130 ROM Test"
+  author:       "Sylvain Munaut"
+  discord:      "246tnt"
+  description:  "Test of some prototype ROM macros"
+  language:     "Analog"
+  clock_hz:     0
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x2"
+
+  # How many analog pins does your project use?
+  analog_pins: 0
+  uses_3v3: false
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_tnt_rom_test"
+
+  # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
+  source_files:        
+    - "project.v"
+    - "control.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "addr_in[0]"
+  ui[1]: "addr_in[1]"
+  ui[2]: "addr_in[2]"
+  ui[3]: "addr_in[3]"
+  ui[4]: "addr_in[4]"
+  ui[5]: "addr_in[5]"
+  ui[6]: "addr_in[6]"
+  ui[7]: "clk of addr_ld[13:7] register"
+
+  # Outputs
+  uo[0]: "data[0]"
+  uo[1]: "data[1]"
+  uo[2]: "data[2]"
+  uo[3]: "data[3]"
+  uo[4]: "data[4]"
+  uo[5]: ""
+  uo[6]: ""
+  uo[7]: ""
+
+  # Bidirectional pins
+  uio[0]: "data[5]"
+  uio[1]: "data[6]"
+  uio[2]: "data[7]"
+  uio[3]: "data[8]"
+  uio[4]: "data[9]"
+  uio[5]: "clk of data register"
+  uio[6]: "clk of addr register"
+  uio[7]: "clk of addr_ld[6:0] register"
+
+  # Analog pins
+  ua[0]: ""
+  ua[1]: ""
+  ua[2]: ""
+  ua[3]: ""
+  ua[4]: ""
+  ua[5]: ""
+
+# Do not change!
+yaml_version: 6
