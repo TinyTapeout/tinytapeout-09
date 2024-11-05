@@ -1,0 +1,27 @@
+61. Printing statistics.
+
+=== tt_um_prefix8 ===
+
+   Number of wires:                 43
+   Number of wire bits:             78
+   Number of public wires:          16
+   Number of public wire bits:      51
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 59
+     sky130_fd_sc_hd__a21bo_2        3
+     sky130_fd_sc_hd__a21o_2         1
+     sky130_fd_sc_hd__a31o_2         2
+     sky130_fd_sc_hd__and2_2         5
+     sky130_fd_sc_hd__buf_2          8
+     sky130_fd_sc_hd__conb_1        16
+     sky130_fd_sc_hd__nand2_2        6
+     sky130_fd_sc_hd__nor2_2         4
+     sky130_fd_sc_hd__o21bai_2       1
+     sky130_fd_sc_hd__or2_2          4
+     sky130_fd_sc_hd__xnor2_2        5
+     sky130_fd_sc_hd__xor2_2         4
+
+   Chip area for module '\tt_um_prefix8': 439.171200
+
