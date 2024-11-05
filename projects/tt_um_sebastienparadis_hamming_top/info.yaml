@@ -1,0 +1,57 @@
+# Tiny Tapeout project information
+project:
+  title:        "Hamming Code (7,4)"      # Project title
+  author:       "Sebastien Paradis"      # Your name
+  discord:      "seb_astien"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "(7,4) Hamming Encoder/Decoder"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_sebastienparadis_hamming_top"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "hamming_controller.v"
+    - "hamming_decoder.v"
+    - "hamming_encoder.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "LSB/Bit 0 for 4-bit Encoder Input OR LSB/Bit 0 for 7-bit Decoder Input"
+  ui[1]: "Bit 1 for 4-bit Encoder Input OR Bit 1 for 7-bit Decoder Input"
+  ui[2]: "Bit 2 for 4-bit Encoder Input OR Bit 2 for 7-bit Decoder Input"
+  ui[3]: "MSB/Bit 3 for 4-bit Encoder Input OR Bit 3 for 7-bit Decoder Input"
+  ui[4]: "Bit 4 for 7-bit Decoder Input"
+  ui[5]: "Bit 5 for 7-bit Decoder Input"
+  ui[6]: "MSB/Bit 6 for 7-bit Decoder Input"
+  ui[7]: "Mode Selector (0 => Encode, uses ui[3:0]; 1 => Decode, uses ui[6:0])"
+
+  # Outputs
+  uo[0]: "LSB/Bit 0 for 7-bit Encoder OR Decoder Output"
+  uo[1]: "Bit 1 for 7-bit Encoder OR Decoder Output"
+  uo[2]: "Bit 2 for 7-bit Encoder OR Decoder Output"
+  uo[3]: "Bit 3 for 7-bit Encoder OR Decoder Output"
+  uo[4]: "Bit 4 for 7-bit Encoder OR Decoder Output"
+  uo[5]: "Bit 5 for 7-bit Encoder OR Decoder Output"
+  uo[6]: "MSB/Bit 6 for 7-bit Encoder OR Decoder Output"
+  uo[7]: "Mode Selector (0 => Encode; 1 => Decode)"
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
