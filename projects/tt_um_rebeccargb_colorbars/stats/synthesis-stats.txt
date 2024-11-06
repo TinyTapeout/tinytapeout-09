@@ -33,7 +33,8 @@
      sky130_fd_sc_hd__and4_2         2
      sky130_fd_sc_hd__and4b_2        1
      sky130_fd_sc_hd__and4bb_2       3
-     sky130_fd_sc_hd__buf_2         10
+     sky130_fd_sc_hd__buf_2          2
+     sky130_fd_sc_hd__conb_1         8
      sky130_fd_sc_hd__dfxtp_2       32
      sky130_fd_sc_hd__inv_2         31
      sky130_fd_sc_hd__mux2_1        23
@@ -69,5 +70,5 @@
      sky130_fd_sc_hd__xnor2_2       25
      sky130_fd_sc_hd__xor2_2        10
 
-   Chip area for module '\tt_um_rebeccargb_colorbars': 5930.688000
+   Chip area for module '\tt_um_rebeccargb_colorbars': 5920.678400
 
