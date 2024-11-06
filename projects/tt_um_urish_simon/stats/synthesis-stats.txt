@@ -35,7 +35,8 @@
      sky130_fd_sc_hd__and4_2        13
      sky130_fd_sc_hd__and4b_2        3
      sky130_fd_sc_hd__and4bb_2       3
-     sky130_fd_sc_hd__buf_2         11
+     sky130_fd_sc_hd__buf_2          1
+     sky130_fd_sc_hd__conb_1        10
      sky130_fd_sc_hd__dfxtp_2      195
      sky130_fd_sc_hd__inv_2         28
      sky130_fd_sc_hd__mux2_1        75
@@ -72,5 +73,5 @@
      sky130_fd_sc_hd__xnor2_2       21
      sky130_fd_sc_hd__xor2_2        23
 
-   Chip area for module '\tt_um_urish_simon': 12177.929600
+   Chip area for module '\tt_um_urish_simon': 12165.417600
 
