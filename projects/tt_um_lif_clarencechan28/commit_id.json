@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt09 a48b1c74",
+  "repo": "https://github.com/clarencechan28/tt09-perceptron",
+  "commit": "67e5386c39b5e0b5b9da0dc19b12c7297f78dd75",
+  "workflow_url": "https://github.com/clarencechan28/tt09-perceptron/actions/runs/11695574210",
+  "sort_id": 1730857689358,
+  "openlane_version": "OpenLane2 2.1.9",
+  "pdk_version": "open_pdks bdc9412b3e468c102d01b7cf6337be06ec6e9c9a"
+}
