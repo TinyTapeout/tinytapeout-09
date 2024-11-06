@@ -2,59 +2,64 @@
 
 === tt_um_asheldon44_dsm_decimation_filter ===
 
-   Number of wires:                930
-   Number of wire bits:            965
-   Number of public wires:         210
-   Number of public wire bits:     245
+   Number of wires:                957
+   Number of wire bits:            992
+   Number of public wires:         213
+   Number of public wire bits:     248
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                946
+   Number of cells:                973
      sky130_fd_sc_hd__a2111oi_2      1
+     sky130_fd_sc_hd__a211o_2        2
      sky130_fd_sc_hd__a21bo_2       11
-     sky130_fd_sc_hd__a21boi_2       2
-     sky130_fd_sc_hd__a21o_2        27
-     sky130_fd_sc_hd__a21oi_2       24
-     sky130_fd_sc_hd__a221o_2       19
-     sky130_fd_sc_hd__a22o_2        21
-     sky130_fd_sc_hd__a311o_2        2
-     sky130_fd_sc_hd__a31o_2        13
-     sky130_fd_sc_hd__a31oi_2        2
+     sky130_fd_sc_hd__a21boi_2       3
+     sky130_fd_sc_hd__a21o_2        20
+     sky130_fd_sc_hd__a21oi_2       27
+     sky130_fd_sc_hd__a221o_2       27
+     sky130_fd_sc_hd__a22o_2        10
+     sky130_fd_sc_hd__a22oi_2        1
+     sky130_fd_sc_hd__a311o_2        1
+     sky130_fd_sc_hd__a31o_2        11
+     sky130_fd_sc_hd__a31oi_2        1
      sky130_fd_sc_hd__a32o_2         3
-     sky130_fd_sc_hd__and2_2        45
-     sky130_fd_sc_hd__and2b_2       17
+     sky130_fd_sc_hd__and2_2        56
+     sky130_fd_sc_hd__and2b_2       14
      sky130_fd_sc_hd__and3_2        12
-     sky130_fd_sc_hd__and3b_2        1
-     sky130_fd_sc_hd__and4_2         3
-     sky130_fd_sc_hd__conb_1        16
-     sky130_fd_sc_hd__dfrtp_2      178
+     sky130_fd_sc_hd__and3b_2        3
+     sky130_fd_sc_hd__and4_2         5
+     sky130_fd_sc_hd__buf_2          2
+     sky130_fd_sc_hd__conb_1        14
+     sky130_fd_sc_hd__dfrtp_2      181
      sky130_fd_sc_hd__dfxtp_2       24
-     sky130_fd_sc_hd__inv_2         14
-     sky130_fd_sc_hd__mux2_1       108
-     sky130_fd_sc_hd__nand2_2       72
-     sky130_fd_sc_hd__nand2b_2      17
-     sky130_fd_sc_hd__nand3_2        1
-     sky130_fd_sc_hd__nand3b_2       1
-     sky130_fd_sc_hd__nor2_2        69
-     sky130_fd_sc_hd__nor4_2         2
-     sky130_fd_sc_hd__nor4b_2        1
-     sky130_fd_sc_hd__o2111ai_2      1
-     sky130_fd_sc_hd__o211a_2        2
-     sky130_fd_sc_hd__o21a_2        20
-     sky130_fd_sc_hd__o21ai_2       11
+     sky130_fd_sc_hd__inv_2         20
+     sky130_fd_sc_hd__mux2_1       104
+     sky130_fd_sc_hd__nand2_2       68
+     sky130_fd_sc_hd__nand2b_2      11
+     sky130_fd_sc_hd__nand3_2        4
+     sky130_fd_sc_hd__nand3b_2       2
+     sky130_fd_sc_hd__nor2_2        75
+     sky130_fd_sc_hd__nor3_2         2
+     sky130_fd_sc_hd__nor4_2         3
+     sky130_fd_sc_hd__o211a_2        4
+     sky130_fd_sc_hd__o211ai_2       1
+     sky130_fd_sc_hd__o21a_2        19
+     sky130_fd_sc_hd__o21ai_2        8
+     sky130_fd_sc_hd__o21ba_2        3
      sky130_fd_sc_hd__o221a_2       13
-     sky130_fd_sc_hd__o22a_2        18
-     sky130_fd_sc_hd__o311a_2        1
-     sky130_fd_sc_hd__o311ai_2       2
-     sky130_fd_sc_hd__o31a_2        11
+     sky130_fd_sc_hd__o22a_2        21
+     sky130_fd_sc_hd__o22ai_2        1
+     sky130_fd_sc_hd__o2bb2a_2       1
+     sky130_fd_sc_hd__o311a_2        4
+     sky130_fd_sc_hd__o31a_2        14
      sky130_fd_sc_hd__o31ai_2        2
      sky130_fd_sc_hd__or2_2         47
-     sky130_fd_sc_hd__or3_2          4
-     sky130_fd_sc_hd__or3b_2         3
-     sky130_fd_sc_hd__or4_2         10
-     sky130_fd_sc_hd__or4b_2         1
-     sky130_fd_sc_hd__xnor2_2       58
-     sky130_fd_sc_hd__xor2_2        36
+     sky130_fd_sc_hd__or3_2          7
+     sky130_fd_sc_hd__or3b_2         2
+     sky130_fd_sc_hd__or4_2         11
+     sky130_fd_sc_hd__or4b_2         3
+     sky130_fd_sc_hd__xnor2_2       57
+     sky130_fd_sc_hd__xor2_2        37
 
-   Chip area for module '\tt_um_asheldon44_dsm_decimation_filter': 12227.977600
+   Chip area for module '\tt_um_asheldon44_dsm_decimation_filter': 12489.478400
 

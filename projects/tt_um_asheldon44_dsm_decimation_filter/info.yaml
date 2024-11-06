@@ -32,8 +32,8 @@ project:
 pinout:
   # Inputs
   ui[0]: "dec_in"
-  ui[1]: "select[0]"
-  ui[2]: "select[1]"
+  ui[1]: ""
+  ui[2]: ""
   ui[3]: ""
   ui[4]: ""
   ui[5]: ""
@@ -51,9 +51,9 @@ pinout:
   uo[7]: "mux_out[7]"
 
   # Bidirectional pins
-  uio[0]: ""
+  uio[0]: "div_clk8x"
   uio[1]: ""
-  uio[2]: ""
+  uio[2]: "div_clk"
   uio[3]: ""
   uio[4]: ""
   uio[5]: ""
