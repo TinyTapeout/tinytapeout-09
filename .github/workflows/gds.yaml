@@ -67,6 +67,14 @@ jobs:
           pdk_version: ${{ env.SKY130_PDK_VERSION }}
           pdk_root: ${{ env.PDK_ROOT }}
 
+      # Patch Wokwi designs to work around the poly density issue
+      - name: Patch Wokwi designs
+        working-directory: projects
+        run: |
+          for project in tt_um_wokwi_*; do
+            python ../sky130_density_fix/replace_decap.py --design $project --user-gds $project/$project.gds --replacement-gds ../sky130_density_fix/sky130_ef_sc_hd__newfill_12.gds
+          done
+
       # run OpenLane to build the GDS
       - name: Harden Chip ROM
         run: nix-shell $GITHUB_WORKSPACE/openlane2/shell.nix --run "python -m openlane tt/rom/config.json"

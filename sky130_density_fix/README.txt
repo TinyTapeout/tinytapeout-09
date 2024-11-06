@@ -1,0 +1,1 @@
+sky130_ef_sc_hd__newfill_12.gds retrieved from https://github.com/RTimothyEdwards/open_pdks/blob/320597ea84b2816eb2fcc4fbe10c3874f19c92fc/sky130/custom/sky130_fd_sc_hd/gds/sky130_ef_sc_hd__newfill_12.gds
