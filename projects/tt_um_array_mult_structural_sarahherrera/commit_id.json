@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt09 b176ed7c",
+  "repo": "https://github.com/sarahherrera/tt09-sec1-group2-array-multiplier",
+  "commit": "9fa206a7a06e4b6bbdf5dc5f83f91008e0b6556a",
+  "workflow_url": "https://github.com/sarahherrera/tt09-sec1-group2-array-multiplier/actions/runs/11648265821",
+  "sort_id": 1730931112376,
+  "openlane_version": "OpenLane2 2.1.9",
+  "pdk_version": "open_pdks bdc9412b3e468c102d01b7cf6337be06ec6e9c9a"
+}
