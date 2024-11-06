@@ -206,7 +206,6 @@ MACRO tt_um_rebeccargb_tt09ball_screensaver
   PIN uio_oe[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 49.990 110.520 50.290 111.520 ;
@@ -215,7 +214,6 @@ MACRO tt_um_rebeccargb_tt09ball_screensaver
   PIN uio_oe[1]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 47.230 110.520 47.530 111.520 ;
@@ -224,7 +222,6 @@ MACRO tt_um_rebeccargb_tt09ball_screensaver
   PIN uio_oe[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 44.470 110.520 44.770 111.520 ;
@@ -233,7 +230,6 @@ MACRO tt_um_rebeccargb_tt09ball_screensaver
   PIN uio_oe[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 41.710 110.520 42.010 111.520 ;
@@ -242,7 +238,6 @@ MACRO tt_um_rebeccargb_tt09ball_screensaver
   PIN uio_oe[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 38.950 110.520 39.250 111.520 ;
@@ -251,7 +246,6 @@ MACRO tt_um_rebeccargb_tt09ball_screensaver
   PIN uio_oe[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 36.190 110.520 36.490 111.520 ;
@@ -260,7 +254,6 @@ MACRO tt_um_rebeccargb_tt09ball_screensaver
   PIN uio_oe[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 33.430 110.520 33.730 111.520 ;
@@ -269,7 +262,6 @@ MACRO tt_um_rebeccargb_tt09ball_screensaver
   PIN uio_oe[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 30.670 110.520 30.970 111.520 ;
@@ -278,7 +270,6 @@ MACRO tt_um_rebeccargb_tt09ball_screensaver
   PIN uio_out[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 72.070 110.520 72.370 111.520 ;
@@ -287,7 +278,6 @@ MACRO tt_um_rebeccargb_tt09ball_screensaver
   PIN uio_out[1]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 69.310 110.520 69.610 111.520 ;
@@ -296,7 +286,6 @@ MACRO tt_um_rebeccargb_tt09ball_screensaver
   PIN uio_out[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 66.550 110.520 66.850 111.520 ;
@@ -305,7 +294,6 @@ MACRO tt_um_rebeccargb_tt09ball_screensaver
   PIN uio_out[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 63.790 110.520 64.090 111.520 ;
@@ -314,7 +302,6 @@ MACRO tt_um_rebeccargb_tt09ball_screensaver
   PIN uio_out[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 61.030 110.520 61.330 111.520 ;
@@ -323,7 +310,6 @@ MACRO tt_um_rebeccargb_tt09ball_screensaver
   PIN uio_out[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 58.270 110.520 58.570 111.520 ;
@@ -332,7 +318,6 @@ MACRO tt_um_rebeccargb_tt09ball_screensaver
   PIN uio_out[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 55.510 110.520 55.810 111.520 ;
@@ -341,7 +326,6 @@ MACRO tt_um_rebeccargb_tt09ball_screensaver
   PIN uio_out[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 52.750 110.520 53.050 111.520 ;
@@ -422,36 +406,16 @@ MACRO tt_um_rebeccargb_tt09ball_screensaver
   END uo_out[7]
   OBS
       LAYER nwell ;
-        RECT 2.570 107.385 158.430 108.990 ;
-        RECT 2.570 101.945 158.430 104.775 ;
-        RECT 2.570 96.505 158.430 99.335 ;
-        RECT 2.570 91.065 158.430 93.895 ;
-        RECT 2.570 85.625 158.430 88.455 ;
-        RECT 2.570 80.185 158.430 83.015 ;
-        RECT 2.570 74.745 158.430 77.575 ;
-        RECT 2.570 69.305 158.430 72.135 ;
-        RECT 2.570 63.865 158.430 66.695 ;
-        RECT 2.570 58.425 158.430 61.255 ;
-        RECT 2.570 52.985 158.430 55.815 ;
-        RECT 2.570 47.545 158.430 50.375 ;
-        RECT 2.570 42.105 158.430 44.935 ;
-        RECT 2.570 36.665 158.430 39.495 ;
-        RECT 2.570 31.225 158.430 34.055 ;
-        RECT 2.570 25.785 158.430 28.615 ;
-        RECT 2.570 20.345 158.430 23.175 ;
-        RECT 2.570 14.905 158.430 17.735 ;
-        RECT 2.570 9.465 158.430 12.295 ;
-        RECT 2.570 4.025 158.430 6.855 ;
+        RECT 2.570 2.635 158.430 108.990 ;
       LAYER li1 ;
         RECT 2.760 2.635 158.240 108.885 ;
       LAYER met1 ;
-        RECT 2.760 2.480 158.240 110.460 ;
+        RECT 2.760 2.480 158.540 109.440 ;
       LAYER met2 ;
-        RECT 6.540 2.535 155.840 110.490 ;
+        RECT 5.160 0.835 156.760 110.005 ;
       LAYER met3 ;
-        RECT 8.345 2.555 155.415 109.985 ;
+        RECT 18.290 0.855 154.035 109.985 ;
       LAYER met4 ;
-        RECT 20.535 110.120 30.270 110.520 ;
         RECT 31.370 110.120 33.030 110.520 ;
         RECT 34.130 110.120 35.790 110.520 ;
         RECT 36.890 110.120 38.550 110.520 ;
@@ -494,15 +458,16 @@ MACRO tt_um_rebeccargb_tt09ball_screensaver
         RECT 139.010 110.120 140.670 110.520 ;
         RECT 141.770 110.120 143.430 110.520 ;
         RECT 144.530 110.120 146.190 110.520 ;
-        RECT 20.535 109.440 146.905 110.120 ;
-        RECT 20.535 3.575 21.180 109.440 ;
-        RECT 23.580 3.575 56.750 109.440 ;
-        RECT 59.150 3.575 60.050 109.440 ;
-        RECT 62.450 3.575 95.620 109.440 ;
-        RECT 98.020 3.575 98.920 109.440 ;
-        RECT 101.320 3.575 134.490 109.440 ;
-        RECT 136.890 3.575 137.790 109.440 ;
-        RECT 140.190 3.575 146.905 109.440 ;
+        RECT 147.290 110.120 151.505 110.520 ;
+        RECT 30.655 109.440 151.505 110.120 ;
+        RECT 30.655 2.080 56.750 109.440 ;
+        RECT 59.150 2.080 60.050 109.440 ;
+        RECT 62.450 2.080 95.620 109.440 ;
+        RECT 98.020 2.080 98.920 109.440 ;
+        RECT 101.320 2.080 134.490 109.440 ;
+        RECT 136.890 2.080 137.790 109.440 ;
+        RECT 140.190 2.080 151.505 109.440 ;
+        RECT 30.655 0.855 151.505 2.080 ;
   END
 END tt_um_rebeccargb_tt09ball_screensaver
 END LIBRARY
