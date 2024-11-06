@@ -9,11 +9,11 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-To make OUT0 = 1, just set IN0=1 and IN1=1, otherwise OUT0 will be 0.
+Just connect power. In theory, the two ring oscillators will start to oscillate. The random output will be sampled at the D flip flop at every clock (10K Hz). Out1 and Out2 will be the complementary outputs of the random generator.
 
 ## How to test
 
-To make OUT0 = 1, just set IN0=1 and IN1=1, otherwise OUT0 will be 0.
+Just connect power. In theory, the two ring oscillators will start to oscillate. The random output will be sampled at the D flip flop at every clock (10K Hz). Out1 and Out2 will be the complementary outputs of the random generator.
 
 ## External hardware
 
