@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Press btn to display letters of your name on 7-Seg
+Displays letters of my name "SEnOLGULGONUL" on 7-Seg display
 
 ## How to test
 
-press button to display letters of your name on 7-Seg
+Connect a clock or button to clk input and watch letters on 7-seg
 
 ## External hardware
 
-pins a,b,c,d,e,f,g are connected to a 7-Seg display
+pins a,b,c,d,e,f,g,dp are connected to a 7-Seg display
