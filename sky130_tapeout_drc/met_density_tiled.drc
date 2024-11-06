@@ -1,0 +1,249 @@
+# the sizing function below in the case statement is added to replicate Skywater's new metal oxide density check.  
+# It is in DBU where 600=0.6um actual.  Skywater uses 0.6um for M1 and M2, 1.15um for M3, M4, and M5.  I have 
+# decided to use M1= 425, M2=375, M3=600, and M4=550 after empiracally testing shuttle 2406.  This set of 
+# numbers give some positive margin to the Skywater results.  These sizing numbers could be adjust back to
+# Skywater values if a die were to fail in the future by a slim margin.  DLindley, July 31, 2024
+#
+# Added M5 check.  Per Nick Jones of Skywater, sizing is the same as M3/M4
+# Removed M5 check.  It is only required when viatop layer is present, which it is not in sky130.  DL 9-12-24
+
+errs = 0
+log("met_tiled_density.drc:: sourcing design file=#{$gds_input} topcell=#{$top_cell} ...")
+src = source($gds_input, $top_cell)
+layout = src.layout
+log("done.")
+
+report("Tiled Metal Density Checks", $report_file)
+
+verbose(false)
+
+log("flattening chip boundary...")
+$chip_boundary = input(235,4).flatten
+log("done.")
+
+$bbox = $chip_boundary.bbox
+
+window_size = 700
+
+if $step
+    step_size = $step.to_f
+else
+    step_size = 70
+end
+log("step size = #{step_size}")
+
+llx, lly, urx, ury = $bbox.left, $bbox.bottom, $bbox.right, $bbox.top
+log("llx=#{llx} lly=#{lly} urx=#{urx} ury=#{ury}")
+if urx-llx <= 0 || ury-lly <= 0
+   STDERR.puts "ERROR: met_tiled_density.drc: fatal error, chip_boundary bbox empty or malformed"
+   errs += 1
+end
+
+cnt = 0
+x_cnt = ((urx-step_size-llx) / step_size).ceil()
+y_cnt = ((ury-step_size-lly) / step_size ).ceil()
+tot = x_cnt * y_cnt
+#$met_tiled_area_map = array = Array.new(x_cnt+1) { Array.new(y_cnt+1) { 0.0 } }
+#$tile_area_map = array = Array.new(x_cnt+1) { Array.new(y_cnt+1) { 0.0 } }
+$met_tiled_area_map = { 'm1' => Array.new(x_cnt+1) { Array.new(y_cnt+1) { 0.0 } },
+                        'm2' => Array.new(x_cnt+1) { Array.new(y_cnt+1) { 0.0 } },
+                        'm3' => Array.new(x_cnt+1) { Array.new(y_cnt+1) { 0.0 } },
+                        'm4' => Array.new(x_cnt+1) { Array.new(y_cnt+1) { 0.0 } } }
+$tile_area_map = { 'm1' => Array.new(x_cnt+1) { Array.new(y_cnt+1) { 0.0 } },
+                   'm2' => Array.new(x_cnt+1) { Array.new(y_cnt+1) { 0.0 } },
+                   'm3' => Array.new(x_cnt+1) { Array.new(y_cnt+1) { 0.0 } },
+                   'm4' => Array.new(x_cnt+1) { Array.new(y_cnt+1) { 0.0 } } }
+
+log("x_cnt = #{x_cnt}")
+log("y_cnt = #{y_cnt}")
+
+if x_cnt < 1 || y_cnt < 1
+  STDERR.puts "ERROR: met_tiled_density.drc: fatal error, x-count or y-count < 1: #{x_cnt} #{y_cnt}"
+  errs += 1
+end
+
+# any errors till now?: abort.
+if errs > 0
+  exit 1
+end
+
+class Met1Area < RBA::TileOutputReceiver
+  def put(ix, iy, tile, obj, dbu, clip)
+    if tile
+        met_tiled_area_scaled = obj.to_f * dbu * dbu
+        tile_area_scaled = (tile & ($bbox * (1.0 / dbu))).area * dbu * dbu
+        $met_tiled_area_map['m1'][ix][iy] += met_tiled_area_scaled
+        $tile_area_map['m1'][ix][iy] = tile_area_scaled
+    else
+        puts "empty tile m1: #{ix+1},#{iy+1}"
+    end
+  end
+  def finish(success)
+    puts "finish received: success = #{success}"
+  end
+
+end
+
+
+class Met2Area < RBA::TileOutputReceiver
+  def put(ix, iy, tile, obj, dbu, clip)
+    if tile
+        met_tiled_area_scaled = obj.to_f * dbu * dbu
+        tile_area_scaled = (tile & ($bbox * (1.0 / dbu))).area * dbu * dbu
+        $met_tiled_area_map['m2'][ix][iy] += met_tiled_area_scaled
+        $tile_area_map['m2'][ix][iy] = tile_area_scaled
+    else
+        puts "empty tile m2: #{ix+1},#{iy+1}"
+    end
+  end
+  def finish(success)
+    puts "finish received: success = #{success}"
+  end
+
+end
+
+
+class Met3Area < RBA::TileOutputReceiver
+  def put(ix, iy, tile, obj, dbu, clip)
+    if tile
+        met_tiled_area_scaled = obj.to_f * dbu * dbu
+        tile_area_scaled = (tile & ($bbox * (1.0 / dbu))).area * dbu * dbu
+        $met_tiled_area_map['m3'][ix][iy] += met_tiled_area_scaled
+        $tile_area_map['m3'][ix][iy] = tile_area_scaled
+    else
+        puts "empty tile m3: #{ix+1},#{iy+1}"
+    end
+  end
+  def finish(success)
+    puts "finish received: success = #{success}"
+  end
+
+end
+
+
+class Met4Area < RBA::TileOutputReceiver
+  def put(ix, iy, tile, obj, dbu, clip)
+    if tile
+        met_tiled_area_scaled = obj.to_f * dbu * dbu
+        tile_area_scaled = (tile & ($bbox * (1.0 / dbu))).area * dbu * dbu
+        $met_tiled_area_map['m4'][ix][iy] += met_tiled_area_scaled
+        $tile_area_map['m4'][ix][iy] = tile_area_scaled
+    else
+        puts "empty tile m4: #{ix+1},#{iy+1}"
+    end
+  end
+  def finish(success)
+    puts "finish received: success = #{success}"
+  end
+
+end
+
+tp = { 'm1' => RBA::TilingProcessor::new,
+       'm2' => RBA::TilingProcessor::new,
+       'm3' => RBA::TilingProcessor::new,
+       'm4' => RBA::TilingProcessor::new }
+
+# register the custom receiver
+tp['m1'].output("my_receiver", Met1Area::new)
+tp['m2'].output("my_receiver", Met2Area::new)
+tp['m3'].output("my_receiver", Met3Area::new)
+tp['m4'].output("my_receiver", Met4Area::new)
+
+tp.keys.each do |t|
+    tp[t].frame=$bbox
+    tp[t].tile_size(step_size, step_size)  # 70x70 um tile size
+    tp[t].dbu = layout.dbu
+    tp[t].threads = $thr.to_i
+end
+
+log("dbu = #{layout.dbu}")
+log("bbox_area = #{$bbox.area}")
+
+log("calculating subtile areas (= #{tot})...")
+
+cnt = 0
+big_x_cnt = ((urx-window_size-llx) / step_size).ceil()
+big_y_cnt = ((ury-window_size-lly) / step_size).ceil()
+big_tot = big_x_cnt * big_y_cnt
+tiles_per_step = (window_size / step_size).ceil()
+log("tiles per step = #{tiles_per_step}")
+log("calculating window step densities (= #{big_tot})...")
+markers_min = polygon_layer
+markers_max = polygon_layer
+
+
+checks = ['m1','m2','m3','m4']
+
+min_err = { 'm1' => 0, 'm2' => 0, 'm3' => 0, 'm4' => 0 }
+max_err = { 'm1' => 0, 'm2' => 0, 'm3' => 0, 'm4' => 0 }
+min_density = { 'm1' => 1.0, 'm2' => 1.0, 'm3' => 1.0, 'm4' => 1.0 }
+max_density = { 'm1' => 0.0, 'm2' => 0.0, 'm3' => 0.0, 'm4' => 0.0 }
+
+checks.each do |m|
+    case m
+    when 'm1'
+        #$met_tiled_area_map.map { |a| a.map {0} }
+        #$tile_area_map.map { |a| a.map {0} }
+        tp[m].input("m1", layout.top_cell().begin_shapes_rec(layout.layer(68,20) ) )
+        tp[m].input("m1fill", layout.top_cell().begin_shapes_rec(layout.layer(36,28) ) )
+        tp[m].queue("_output(my_receiver, _tile && ((m1.sized(425) | m1fill.sized(425)) & _tile).area)")
+        tp[m].execute("Job description")
+    when 'm2'
+        #$met_tiled_area_map.map { |a| a.map {0} }
+        #$tile_area_map.map { |a| a.map {0} }
+        tp[m].input("m2", layout.top_cell().begin_shapes_rec(layout.layer(69,20) ) )
+        tp[m].input("m2fill", layout.top_cell().begin_shapes_rec(layout.layer(41,28) ) )
+        tp[m].queue("_output(my_receiver, _tile && ((m2.sized(375) | m2fill.sized(375)) & _tile).area)")
+        tp[m].execute("Job description")
+    when 'm3'
+        #$met_tiled_area_map.map { |a| a.map {0} }
+        #$tile_area_map.map { |a| a.map {0} }
+        tp[m].input("m3", layout.top_cell().begin_shapes_rec(layout.layer(70,20) ) )
+        tp[m].input("m3fill", layout.top_cell().begin_shapes_rec(layout.layer(34,28) ) )
+        tp[m].queue("_output(my_receiver, _tile && ((m3.sized(600) | m3fill.sized(600)) & _tile).area)")
+        tp[m].execute("Job description")
+    when 'm4'
+        #$met_tiled_area_map.map { |a| a.map {0} }
+        #$tile_area_map.map { |a| a.map {0} }
+        tp[m].input("m4", layout.top_cell().begin_shapes_rec(layout.layer(71,20) ) )
+        tp[m].input("m4fill", layout.top_cell().begin_shapes_rec(layout.layer(51,28) ) )
+        tp[m].queue("_output(my_receiver, _tile && ((m4.sized(550) | m4fill.sized(550)) & _tile).area)")
+        tp[m].execute("Job description")
+    end
+    for x in (0 ... big_x_cnt)
+        #log("{{ CHECK }} #{cnt}/#{big_tot.round}")
+        for y in (0 ... big_y_cnt)
+            met_tiled_area = 0
+            tile_area = 0
+            met_tiled_density = 0
+            $met_tiled_area_map[m].slice(x, tiles_per_step).each { |a| a.slice(y, tiles_per_step).each { |b| met_tiled_area+=b } }
+            $tile_area_map[m].slice(x, tiles_per_step).each { |a| a.slice(y, tiles_per_step).each { |b| tile_area+=b } }
+            marker_box = box(x * step_size, y* step_size, (x+tiles_per_step)*step_size, (y+tiles_per_step)*step_size)
+            if tile_area > 0
+                met_tiled_density = met_tiled_area / tile_area
+                if met_tiled_density < min_density[m]
+                    min_density[m] = met_tiled_density
+                end
+                if met_tiled_density > max_density[m]
+                    max_density[m] = met_tiled_density
+                end
+                if met_tiled_density < 0.80
+                    max_err[m] += 1
+                    markers_max.insert(marker_box)
+                    log("#{m} met_tiled density greater than 0.80 : #{cnt}/#{big_tot.round} is #{"%.4f" % met_tiled_density} for tile (#{marker_box.to_s}), area = #{tile_area.round}")
+                end
+            end
+            cnt += 1
+        end
+    end
+
+    log("#{m} minimum met_tiled density  = #{"%.4f" % min_density[m]}")
+    log("#{m} maximum met_tiled density  = #{"%.4f" % max_density[m]}")
+
+    if max_err[m] > 0
+        log("#{m} met_tiled.pd violations = #{max_err}")
+        markers_max.output("#{m}.met_tiled.pd", "0.80 max met_tiled pattern density")
+    end
+
+end
+

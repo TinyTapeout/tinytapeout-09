@@ -3,7 +3,7 @@ name: mpw_precheck
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["gds"]
+    workflows: ['gds']
     types: [completed]
 
 jobs:
@@ -71,3 +71,110 @@ jobs:
         with:
           name: precheck_results
           path: tinytapeout-submission/precheck_results
+
+  mpw_tapeout_checks:
+    env:
+      USER_ID: 5454
+      PROJECT: caravel_openframe
+      KLAYOUT_VERSION: 0.29.2
+      MAGIC_VERSION: 8.3.471
+      PDK_ROOT: ${{ github.workspace }}/pdk
+      SKY130_PDK_VERSION: 0fe599b2afb6708d281543108caf8310912f54af
+      CARAVEL_ROOT: ${{ github.workspace }}/caravel
+      DRC_ROOT: ${{ github.workspace }}/sky130_tapeout_drc
+
+    runs-on: ubuntu-22.04
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Checkout Caravel
+        uses: actions/checkout@v4
+        with:
+          repository: efabless/caravel
+          path: ${{ env.CARAVEL_ROOT }}
+
+      - name: Install KLayout
+        run: |
+          wget https://www.klayout.org/downloads/Ubuntu-22/klayout_${KLAYOUT_VERSION}-1_amd64.deb
+          sudo apt-get install -y ./klayout_${KLAYOUT_VERSION}-1_amd64.deb
+          pip install klayout==${KLAYOUT_VERSION}
+
+      - name: Install magic VLSI
+        run: |
+          sudo apt-get install -y m4 python3 libx11-dev tcl-dev tk-dev libcairo2-dev mesa-common-dev libglu1-mesa-dev
+          git clone -b ${MAGIC_VERSION} https://github.com/RTimothyEdwards/magic magic
+          cd magic
+          ./configure
+          make -j4 
+          sudo make install
+
+      - name: Install xpath
+        run: sudo apt-get install -y libxml-xpath-perl
+
+      - name: Install Sky130 PDK
+        uses: TinyTapeout/volare-action@v1
+        with:
+          pdk_name: sky130
+          pdk_version: ${{ env.SKY130_PDK_VERSION }}
+          pdk_root: ${{ env.PDK_ROOT }}
+
+      - name: Download artifact (run id = ${{ github.event.workflow_run.id }})
+        uses: dawidd6/action-download-artifact@v3
+        id: download_artifact
+        with:
+          workflow: gds.yaml
+          run_id: ${{ github.event.workflow_run.id }}
+          workflow_conclusion: success
+          name: efabless_submission
+          path: tinytapeout-submission
+
+      - name: Create final .oas file
+        working-directory: ${{ env.CARAVEL_ROOT }}
+        run: |
+          sed -i 's/@cp -r /#@cp -r /' Makefile
+          cp ../tinytapeout-submission/gds/openframe_project_wrapper.gds gds
+          make openframe
+          make generate_fill
+          make final
+          strm2oas gds/caravel_$USER_ID.gds caravel_$USER_ID.oas
+
+      - name: FOM Density DRC
+        working-directory: ${{ env.CARAVEL_ROOT }}
+        env:
+          REPORT_FILE: ${{ env.DRC_ROOT }}/klayout_fom_density_report.xml
+        run: |
+          klayout -b -r $DRC_ROOT/fom_density.drc -rd gds_input=gds/caravel_$USER_ID.gds -rd top_cell=caravel_$USER_ID -rd report_file=$REPORT_FILE
+          python $DRC_ROOT/check_drc_report.py $REPORT_FILE
+
+      - name: Poly Density DRC
+        working-directory: ${{ env.CARAVEL_ROOT }}
+        env:
+          REPORT_FILE: ${{ env.DRC_ROOT }}/klayout_poly_density_report.xml
+        run: |
+          klayout -b -r $DRC_ROOT/poly_density.drc -rd gds_input=gds/caravel_$USER_ID.gds -rd top_cell=caravel_$USER_ID -rd report_file=$REPORT_FILE
+          python $DRC_ROOT/check_drc_report.py $REPORT_FILE
+      
+      - name: Tiled Metal Density DRC
+        working-directory: ${{ env.CARAVEL_ROOT }}
+        env:
+          REPORT_FILE: ${{ env.DRC_ROOT }}/klayout_tiled_met_density_report.xml
+        run: |
+          klayout -b -r $DRC_ROOT/met_density_tiled.drc -rd gds_input=gds/caravel_$USER_ID.gds -rd top_cell=caravel_$USER_ID -rd report_file=$REPORT_FILE
+          python $DRC_ROOT/check_drc_report.py $REPORT_FILE
+
+      - name: Publish final .oas file
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: final_oas
+          path: caravel/caravel_*.oas
+
+      - name: Publish DRC reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: drc_reports
+          path: ${{ env.DRC_ROOT }}/klayout_*_report.xml
