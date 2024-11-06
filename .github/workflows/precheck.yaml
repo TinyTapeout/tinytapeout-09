@@ -157,6 +157,14 @@ jobs:
           klayout -b -r $DRC_ROOT/poly_density.drc -rd gds_input=gds/caravel_$USER_ID.gds -rd top_cell=caravel_$USER_ID -rd report_file=$REPORT_FILE
           python $DRC_ROOT/check_drc_report.py $REPORT_FILE
       
+      - name: Metal Density DRC
+        working-directory: ${{ env.CARAVEL_ROOT }}
+        env:
+          REPORT_FILE: ${{ env.DRC_ROOT }}/klayout_met_density_report.xml
+        run: |
+          klayout -b -r $DRC_ROOT/met_density.lydrc -rd gds_input=gds/caravel_$USER_ID.gds -rd top_cell=caravel_$USER_ID -rd report_file=$REPORT_FILE
+          python $DRC_ROOT/check_drc_report.py $REPORT_FILE
+
       - name: Tiled Metal Density DRC
         working-directory: ${{ env.CARAVEL_ROOT }}
         env:
