@@ -1,0 +1,27 @@
+67. Printing statistics.
+
+=== tt_um_juarez_jimenez ===
+
+   Number of wires:                 39
+   Number of wire bits:             74
+   Number of public wires:          21
+   Number of public wire bits:      56
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 55
+     sky130_fd_sc_hd__a21o_2         1
+     sky130_fd_sc_hd__and2_2         3
+     sky130_fd_sc_hd__and2b_2        1
+     sky130_fd_sc_hd__and3b_2        1
+     sky130_fd_sc_hd__buf_2          8
+     sky130_fd_sc_hd__conb_1        16
+     sky130_fd_sc_hd__dfxtp_2       13
+     sky130_fd_sc_hd__mux2_1         8
+     sky130_fd_sc_hd__nor2_2         1
+     sky130_fd_sc_hd__o21ba_2        1
+     sky130_fd_sc_hd__xnor2_2        1
+     sky130_fd_sc_hd__xor2_2         1
+
+   Chip area for module '\tt_um_juarez_jimenez': 565.542400
+
