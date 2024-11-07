@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt09 a48b1c74",
+  "repo": "https://github.com/GJAA1GJAA/GJAADesign",
+  "commit": "e83963798a30d6c6033239232b3878bb6d4dd55f",
+  "workflow_url": "https://github.com/GJAA1GJAA/GJAADesign/actions/runs/11730269274",
+  "sort_id": 1731013085133,
+  "openlane_version": "OpenLane2 2.1.9",
+  "pdk_version": "open_pdks bdc9412b3e468c102d01b7cf6337be06ec6e9c9a"
+}
