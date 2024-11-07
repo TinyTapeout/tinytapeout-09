@@ -72,6 +72,9 @@ jobs:
         working-directory: projects
         run: |
           for project in tt_um_wokwi_* $DENSITY_REPLACEMENT_PROJECTS; do
+            if [ -f $project/$project.gds.br ]; then
+              brotli -jd $project/$project.gds.br
+            fi
             python ../sky130_density_fix/replace_decap.py --design $project --user-gds $project/$project.gds --replacement-gds ../sky130_density_fix/sky130_ef_sc_hd__newfill_12.gds
           done
         env:
@@ -85,6 +88,7 @@ jobs:
             tt_um_array_mult_structural_sarahherrera
             tt_um_arry_mult_structural
             tt_um_secA_group5_array_multiplier
+            tt_um_snn_with_delays_paolaunisa
 
       # run OpenLane to build the GDS
       - name: Harden Chip ROM
