@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Displays letters of my name "SEnOLGULGONUL" on 7-Seg display
+Displays letters of  SEnOLGULGONUL on 7-Seg display by using internal three gate oscillator
 
 ## How to test
 
-Connect a clock or button to clk input and watch letters on 7-seg
+Connect external R1, R2 and C for three gate oscillator and clk input and watch letters on 7-seg
 
 ## External hardware
 
-pins a,b,c,d,e,f,g,dp are connected to a 7-Seg display
+output pins a,b,c,d,e,f,g,dp are connected to a 7-Seg display, two inout and two bioutput for oscillator
