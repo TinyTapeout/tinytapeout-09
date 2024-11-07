@@ -3,7 +3,7 @@ project:
   title:        "Senol Gulgonul tt09"      # Project title
   author:       "Senol Gulgonul"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Display my name letters on 7-Seg at each button click"      # One line description of what your project does
+  description:  "Display the letters of SEnOLGULGONUL on 7-Seg using internal oscillator"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -22,8 +22,8 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
+  ui[0]: "inv3_in"
+  ui[1]: "inv1_in"
   ui[2]: ""
   ui[3]: ""
   ui[4]: ""
@@ -42,8 +42,8 @@ pinout:
   uo[7]: "dp"
 
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
+  uio[0]: "inv3_out"
+  uio[1]: "inv2_out"
   uio[2]: ""
   uio[3]: ""
   uio[4]: ""
