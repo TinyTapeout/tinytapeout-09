@@ -1,0 +1,48 @@
+# Tiny Tapeout project information (Wokwi project)
+project:
+  wokwi_id:     413920489444856833       # Set this to the ID of your Wokwi project (the number from the project's URL)
+  title:        "Samson's Tiny Tapout Project"      # Project title
+  author:       "Samson"      # Your name
+  discord:      "bwfn"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "A game to get the number to show up as 0"      # One line description of what your project does
+  language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "Connected to an AND statement with 1 to activate top and top right LEDs"
+  ui[1]: "Connected to an AND statement with 0 to activate top and top right LEDs"
+  ui[2]: "Goes to input w/ the same number"
+  ui[3]: "Goes to input w/ the same number"
+  ui[4]: "Goes to input w/ the same number"
+  ui[5]: "Goes to input w/ the same number"
+  ui[6]: "Connected to an XOR statement with 7 to activate top and top right LEDs"
+  ui[7]: "Connected to an XOR statement with 6 to activate top and top right LEDs"
+
+  # Outputs
+  uo[0]: "Connected to an AND statement with 1 to activate top and top right LEDs"
+  uo[1]: "Connected to an AND statement with 1 to activate top and top right LEDs"
+  uo[2]: "Goes to input w/ the same number"
+  uo[3]: "Goes to input w/ the same number"
+  uo[4]: "Goes to input w/ the same number"
+  uo[5]: "Goes to input w/ the same number"
+  uo[6]: "Connected to an XOR statement with 7 to activate top and top right LEDs"
+  uo[7]: "Connected to an XOR statement with 6 to activate top and top right LEDs"
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
