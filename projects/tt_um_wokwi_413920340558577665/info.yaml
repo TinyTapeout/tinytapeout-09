@@ -1,0 +1,48 @@
+# Tiny Tapeout project information (Wokwi project)
+project:
+  wokwi_id:     "413920340558577665"         # Set this to the ID of your Wokwi project (the number from the project's URL)
+  title:        "Light"      # Project title
+  author:       "Natnael Atnafu"      # Your name
+  discord:      "atneezy"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Enables the light when the correct combination of switches are on"      # One line description of what your project does
+  language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "goes to output w same number"
+  ui[1]: "goes to output w same number"
+  ui[2]: "goes to output w same number"
+  ui[3]: "goes to or gate, goes to output 3 and 4"
+  ui[4]: "goes to or gate, goes to output 3 and 4"
+  ui[5]: "goes to output w same number"
+  ui[6]: "goes to not gate w same number"
+  ui[7]: ""
+
+  # Outputs
+  uo[0]: "comes from input w same number"
+  uo[1]: "comes from input w same number"
+  uo[2]: "comes from input w same number"
+  uo[3]: "comes from or gate, from 3 or 4"
+  uo[4]: "comes from or gate, from 3 or 4"
+  uo[5]: "comes from input w same number"
+  uo[6]: "comes from not gate w same number"
+  uo[7]: ""
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
