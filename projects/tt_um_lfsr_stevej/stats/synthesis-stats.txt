@@ -1,0 +1,23 @@
+62. Printing statistics.
+
+=== tt_um_lfsr_stevej ===
+
+   Number of wires:                 29
+   Number of wire bits:             64
+   Number of public wires:           9
+   Number of public wire bits:      44
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 45
+     sky130_fd_sc_hd__conb_1        16
+     sky130_fd_sc_hd__dfxtp_2        9
+     sky130_fd_sc_hd__inv_2          1
+     sky130_fd_sc_hd__mux2_1         8
+     sky130_fd_sc_hd__nand2b_2       1
+     sky130_fd_sc_hd__o211a_2        1
+     sky130_fd_sc_hd__or2_2          8
+     sky130_fd_sc_hd__xor2_2         1
+
+   Chip area for module '\tt_um_lfsr_stevej': 430.412800
+
