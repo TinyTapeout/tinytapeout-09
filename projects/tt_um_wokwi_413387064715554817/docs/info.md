@@ -8,21 +8,12 @@ You can also include images in this folder and reference them in the markdown. E
 -->
 
 ## How it works
-
-clock input is anded with in0 to drive out0
-in1 and in2 NAND to out1 and out2
-out3=in3
-out4=in4
-out5=inv in5
-out6=inv in6
-out7=inv in7
+clock input goes into string of d flip flops making the led segments illuminate in a circle.  may want to hit reset to clear the d flip flops if more than 1 segment is illuminated.
 
 ## How to test
-
-flip the dip switches to see if it works
+turn on clock switch or press step button.
 
 ## External hardware
-
-clock (slow)
-dip switch
+clock
+button
 7seg led
