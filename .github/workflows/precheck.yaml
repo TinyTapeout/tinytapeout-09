@@ -111,9 +111,6 @@ jobs:
           make -j4 
           sudo make install
 
-      - name: Install xpath
-        run: sudo apt-get install -y libxml-xpath-perl
-
       - name: Install Sky130 PDK
         uses: TinyTapeout/volare-action@v1
         with:
@@ -146,7 +143,9 @@ jobs:
         env:
           REPORT_FILE: ${{ env.DRC_ROOT }}/klayout_fom_density_report.xml
         run: |
-          klayout -b -r $DRC_ROOT/fom_density.drc -rd gds_input=gds/caravel_$USER_ID.gds -rd top_cell=caravel_$USER_ID -rd report_file=$REPORT_FILE
+          echo "## FOM Density DRC" >> $GITHUB_STEP_SUMMARY
+          klayout -b -r $DRC_ROOT/fom_density.drc -rd gds_input=gds/caravel_$USER_ID.gds -rd top_cell=caravel_$USER_ID -rd report_file=$REPORT_FILE | tee fom_density.log
+          grep -v "{{ CHECK }}" fom_density.log >> $GITHUB_STEP_SUMMARY
           python $DRC_ROOT/check_drc_report.py $REPORT_FILE
 
       - name: Poly Density DRC
@@ -154,7 +153,9 @@ jobs:
         env:
           REPORT_FILE: ${{ env.DRC_ROOT }}/klayout_poly_density_report.xml
         run: |
-          klayout -b -r $DRC_ROOT/poly_density.drc -rd gds_input=gds/caravel_$USER_ID.gds -rd top_cell=caravel_$USER_ID -rd report_file=$REPORT_FILE
+          echo "## Poly Density DRC" >> $GITHUB_STEP_SUMMARY
+          klayout -b -r $DRC_ROOT/poly_density.drc -rd gds_input=gds/caravel_$USER_ID.gds -rd top_cell=caravel_$USER_ID -rd report_file=$REPORT_FILE | tee poly_density.log
+          grep -v "{{ CHECK }}" poly_density.log >> $GITHUB_STEP_SUMMARY
           python $DRC_ROOT/check_drc_report.py $REPORT_FILE
       
       - name: Metal Density DRC
@@ -162,7 +163,8 @@ jobs:
         env:
           REPORT_FILE: ${{ env.DRC_ROOT }}/klayout_met_density_report.xml
         run: |
-          klayout -b -r $DRC_ROOT/met_density.lydrc -rd gds_input=gds/caravel_$USER_ID.gds -rd top_cell=caravel_$USER_ID -rd report_file=$REPORT_FILE
+          echo "## Metal Density DRC" >> $GITHUB_STEP_SUMMARY
+          klayout -b -r $DRC_ROOT/met_density.lydrc -rd gds_input=gds/caravel_$USER_ID.gds -rd top_cell=caravel_$USER_ID -rd report_file=$REPORT_FILE | tee -a $GITHUB_STEP_SUMMARY
           python $DRC_ROOT/check_drc_report.py $REPORT_FILE
 
       - name: Tiled Metal Density DRC
@@ -170,7 +172,8 @@ jobs:
         env:
           REPORT_FILE: ${{ env.DRC_ROOT }}/klayout_tiled_met_density_report.xml
         run: |
-          klayout -b -r $DRC_ROOT/met_density_tiled.drc -rd gds_input=gds/caravel_$USER_ID.gds -rd top_cell=caravel_$USER_ID -rd report_file=$REPORT_FILE
+          echo "## Tiled Metal Density DRC" >> $GITHUB_STEP_SUMMARY
+          klayout -b -r $DRC_ROOT/met_density_tiled.drc -rd gds_input=gds/caravel_$USER_ID.gds -rd top_cell=caravel_$USER_ID -rd report_file=$REPORT_FILE | tee -a $GITHUB_STEP_SUMMARY
           python $DRC_ROOT/check_drc_report.py $REPORT_FILE
 
       - name: Publish final .oas file
