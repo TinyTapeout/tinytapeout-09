@@ -1,0 +1,73 @@
+# Tiny Tapeout project information
+project:
+  title:        "ChatGPT-generated Spiking Neural Network with Delays"      # Project title
+  author:       "Paola Vitolo"      # Your name
+  discord:      "paolaunisa"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "ChatGPT-generated Spiking Neural Network with Delays"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     50000000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "8x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_snn_with_delays_paolaunisa"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
+    - "clock_divider.v"
+    - "debug_module.v"
+    - "InputCurrentCalculator.v"
+    - "LeakyIntegrateFireNeuron_debug.v"
+    - "LIF_Neuron_debug.v"
+    - "memory.v"
+    - "neuron_delay.v"
+    - "NeuronLayerWithDelays_debug.v"
+    - "NeuronWithDelays_debug.v"
+    - "programmable_delay.v"
+    - "SNNwithDelays_top.v"
+    - "spi_control_unit.v"
+    - "spi_interface.v"
+    - "spi_slave.v"
+    - "spiking_network_top.v"
+    - "synchronizer.v"
+    - "TwoLayerNetwork_debug.v"
+    - "reset_manager.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "input_spike[0]"
+  ui[1]: "input_spike[1]"
+  ui[2]: "input_spike[2]"
+  ui[3]: "input_spike[3]"
+  ui[4]: "input_spike[4]"
+  ui[5]: "input_spike[5]"
+  ui[6]: "input_spike[6]"
+  ui[7]: "input_spike[7]"
+
+  # Outputs
+  uo[0]: "debug_output_0"
+  uo[1]: "debug_output_1"
+  uo[2]: "debug_output_2"
+  uo[3]: "debug_output_3"
+  uo[4]: "debug_output_4"
+  uo[5]: "debug_output_5"
+  uo[6]: "debug_output_6"
+  uo[7]: "debug_output_7"
+
+  # Bidirectional pins
+  uio[0]: "CS"
+  uio[1]: "MOSI"
+  uio[2]: "MISO"
+  uio[3]: "SCLK"
+  uio[4]: "input_ready"
+  uio[5]: "output_ready"
+  uio[6]: "SNN_en"
+  uio[7]: "spi_instruction_done"
+
+# Do not change!
+yaml_version: 6
