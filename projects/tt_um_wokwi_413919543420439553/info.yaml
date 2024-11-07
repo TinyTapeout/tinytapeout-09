@@ -1,0 +1,48 @@
+# Tiny Tapeout project information (Wokwi project)
+project:
+  wokwi_id:     413919543420439553       # Set this to the ID of your Wokwi project (the number from the project's URL)
+  title:        "Big J's Big Circuit"      # Project title
+  author:       "Jonathan Miller"      # Your name
+  discord:      "bigkahuna0781"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "0 and 1: xor, or. 2 and 3: nand, and"      # One line description of what your project does
+  language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "in0"
+  ui[1]: "in1"
+  ui[2]: "in2"
+  ui[3]: "in3"
+  ui[4]: "in4"
+  ui[5]: "in5"
+  ui[6]: "in6"
+  ui[7]: "in7"
+
+  # Outputs
+  uo[0]: "xor(in0, in1)"
+  uo[1]: "or(in0, in1)"
+  uo[2]: "Nand(in2,in3)"
+  uo[3]: "And(in2,in3)"
+  uo[4]: "in4"
+  uo[5]: "in5"
+  uo[6]: "in6"
+  uo[7]: "in7"
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
