@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt09 a48b1c74",
+  "repo": "https://github.com/PaolaUniSa/tt09_chatGPT_SNN_LD",
+  "commit": "ba444dd2e92726c535a9b3478bf5a31eff411d9d",
+  "workflow_url": "https://github.com/PaolaUniSa/tt09_chatGPT_SNN_LD/actions/runs/11723193940",
+  "sort_id": 1730988218526,
+  "openlane_version": "OpenLane2 2.1.9",
+  "pdk_version": "open_pdks bdc9412b3e468c102d01b7cf6337be06ec6e9c9a"
+}
