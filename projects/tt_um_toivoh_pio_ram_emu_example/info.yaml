@@ -27,14 +27,14 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
-  ui[4]: ""
-  ui[5]: ""
+  ui[0]: "button_up"
+  ui[1]: "button_down"
+  ui[2]: "button_right"
+  ui[3]: "button_left"
+  ui[4]: "button_incstep"
+  ui[5]: "button_decstep"
   ui[6]: ""
-  ui[7]: ""
+  ui[7]: "use_both_button_dirs"
 
   # Outputs
   uo[0]: "R1"
