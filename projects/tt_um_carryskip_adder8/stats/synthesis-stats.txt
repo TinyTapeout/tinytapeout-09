@@ -1,0 +1,30 @@
+61. Printing statistics.
+
+=== tt_um_carryskip_adder8 ===
+
+   Number of wires:                 50
+   Number of wire bits:             85
+   Number of public wires:          16
+   Number of public wire bits:      51
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 66
+     sky130_fd_sc_hd__a21oi_2        1
+     sky130_fd_sc_hd__a22o_2         1
+     sky130_fd_sc_hd__a22oi_2        1
+     sky130_fd_sc_hd__a311o_2        2
+     sky130_fd_sc_hd__a31o_2         3
+     sky130_fd_sc_hd__and2_2         7
+     sky130_fd_sc_hd__and3_2         1
+     sky130_fd_sc_hd__and4_2         1
+     sky130_fd_sc_hd__conb_1        16
+     sky130_fd_sc_hd__dfrtp_2        8
+     sky130_fd_sc_hd__nand2_2        8
+     sky130_fd_sc_hd__nor2_2         3
+     sky130_fd_sc_hd__o21bai_2       1
+     sky130_fd_sc_hd__or2_2          7
+     sky130_fd_sc_hd__xnor2_2        6
+
+   Chip area for module '\tt_um_carryskip_adder8': 641.865600
+
