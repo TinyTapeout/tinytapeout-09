@@ -1,0 +1,55 @@
+# Tiny Tapeout project information
+project:
+  title:        "7-Segment Byte Display"
+  author:       "Mike Goelzer"
+  discord:      "owngoal"
+  description:  "Drives a single hex digit 7-segment display based on the value of a 1-byte input"
+  language:     "SystemVerilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_mikegoelzer_7segmentbyte"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
+    - "7seg.sv"
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "Byte to display on 7-segment display (rightmost / low order bit)"
+  ui[1]: "Byte to display on 7-segment display (next bit)"
+  ui[2]: "Byte to display on 7-segment display (next bit)"
+  ui[3]: "Byte to display on 7-segment display (next bit)"
+  ui[4]: "Byte to display on 7-segment display (next bit)"
+  ui[5]: "Byte to display on 7-segment display (next bit)"
+  ui[6]: "Byte to display on 7-segment display (next bit)"
+  ui[7]: "Byte to display on 7-segment display (leftmost / high order bit)"
+
+  # Outputs
+  uo[0]: "7-segment display a"
+  uo[1]: "7-segment display b"
+  uo[2]: "7-segment display c"
+  uo[3]: "7-segment display d"
+  uo[4]: "7-segment display e"
+  uo[5]: "7-segment display f"
+  uo[6]: "7-segment display g"
+  uo[7]: "(unused)"
+
+  # Bidirectional pins
+  uio[0]: "write enable (1=latch byte value on ui[7:0] and display it, 0=ignore ui[7:0] and keep displaying the current value)"
+  uio[1]: "(unused)"
+  uio[2]: "(unused)"
+  uio[3]: "(unused)"
+  uio[4]: "(unused)"
+  uio[5]: "(unused)"
+  uio[6]: "(unused)"
+  uio[7]: "(unused)"
+
+# Do not change!
+yaml_version: 6
