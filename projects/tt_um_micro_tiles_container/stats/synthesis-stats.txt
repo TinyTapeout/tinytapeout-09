@@ -1,0 +1,32 @@
+65. Printing statistics.
+
+=== tt_um_micro_tiles_container ===
+
+   Number of wires:                 80
+   Number of wire bits:            115
+   Number of public wires:          40
+   Number of public wire bits:      75
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 68
+     sky130_fd_sc_hd__a22o_2         5
+     sky130_fd_sc_hd__conb_1        42
+     sky130_fd_sc_hd__mux4_2         3
+     sky130_fd_sc_hd__nand2b_2       1
+     sky130_fd_sc_hd__nor2_2         1
+     sky130_fd_sc_hd__o221a_2        5
+     sky130_fd_sc_hd__or2_2          6
+     sky130_fd_sc_hd__xor2_2         1
+     tt_um_roy1707018_ro             1
+     tt_um_roy1707018_ro2            1
+     tt_um_roy1707018_sensor         1
+     tt_um_roy1707018_tdc            1
+
+   Area for cell type \tt_um_roy1707018_sensor is unknown!
+   Area for cell type \tt_um_roy1707018_tdc is unknown!
+   Area for cell type \tt_um_roy1707018_ro is unknown!
+   Area for cell type \tt_um_roy1707018_ro2 is unknown!
+
+   Chip area for module '\tt_um_micro_tiles_container': 400.384000
+
