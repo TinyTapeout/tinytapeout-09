@@ -2,7 +2,7 @@
 project:
   title:        "Analog Switch"      # Project title
   author:       "Andrew Dona-Couch"      # Your name
-  discord:      "couchand"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  discord:      "couchand_75981"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "A simple analog switch."      # One line description of what your project does
   language:     "Analog" # other examples include Verilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
