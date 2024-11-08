@@ -1,0 +1,55 @@
+# Tiny Tapeout project information
+project:
+  title:        "Test Design 1" # Project title
+  author:       "Evan Armoogan" # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Test design, not sure what it does yet"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_program_counter_top_level"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "in_0"
+  ui[1]: "in_1"
+  ui[2]: "in_2"
+  ui[3]: "in_3"
+  ui[4]: "in_4"
+  ui[5]: "in_5"
+  ui[6]: "in_6"
+  ui[7]: "in_7"
+
+  # Outputs
+  uo[0]: "out_0"
+  uo[1]: "out_1"
+  uo[2]: "out_2"
+  uo[3]: "out_3"
+  uo[4]: "out_4"
+  uo[5]: "out_5"
+  uo[6]: "out_6"
+  uo[7]: "out_7"
+
+  # Bidirectional pins
+  uio[0]: "bidir_0"
+  uio[1]: "bidir_1"
+  uio[2]: "bidir_2"
+  uio[3]: "bidir_3"
+  uio[4]: "bidir_4"
+  uio[5]: "bidir_5"
+  uio[6]: "bidir_6"
+  uio[7]: "bidir_7"
+
+# Do not change!
+yaml_version: 6
