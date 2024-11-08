@@ -1,0 +1,65 @@
+# Tiny Tapeout project information
+project:
+  title:        "tt_um_tim2305_adc_dac"      # Project title
+  author:       "Timonas Juonys"      # Your name
+  discord:      "bestTim"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "8bit dac and  4bit flash adc"      # One line description of what your project does
+  language:     "Analog" # other examples include Verilog, Amaranth, VHDL, etc
+  clock_hz:     50000000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x2"          # Valid values for analog projects: 1x2, 2x2
+
+  # How many analog pins does your project use?
+  analog_pins: 1        # Valid values: 0 to 6
+  uses_3v3: false       # Set to true if your project uses 3.3V (VAPWR) in addition to 1.8V (VDPWR)
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_tim2305_adc_dac"
+
+  # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
+  source_files:        
+    - "project.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "dac0"
+  ui[1]: "dac1"
+  ui[2]: "dac2"
+  ui[3]: "dac3"
+  ui[4]: "dac4"
+  ui[5]: "dac5"
+  ui[6]: "dac6"
+  ui[7]: "dac7"
+
+  # Outputs
+  uo[0]: "bus0[0]"
+  uo[1]: "bus0[1]"
+  uo[2]: "bus0[2]"
+  uo[3]: "bus0[3]"
+  uo[4]: "bus1[0]"
+  uo[5]: "bus1[1]"
+  uo[6]: "bus1[2]"
+  uo[7]: "bus1[3]"
+
+  # Bidirectional pins
+  uio[0]: "bus2[0]"
+  uio[1]: "bus2[1]"
+  uio[2]: "bus2[2]"
+  uio[3]: "bus2[3]"
+  uio[4]: "dac_conn"
+  uio[5]: "adc_cal_conn"
+  uio[6]: "sti_conn"
+  uio[7]: "sti_dac_conn"
+
+  # Analog pins - make sure to also set "analog_pins" above, else the pins won't be connected
+  ua[0]: "a"
+  ua[1]: ""
+  ua[2]: ""
+  ua[3]: ""
+  ua[4]: ""
+  ua[5]: ""
+
+# Do not change!
+yaml_version: 6
