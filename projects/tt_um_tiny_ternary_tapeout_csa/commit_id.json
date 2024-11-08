@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt09 a48b1c74",
+  "repo": "https://github.com/arnavsacheti/tt09-tiny-ternary-tapeout-csa",
+  "commit": "cc45697da12008de8ca684bab1dac0936a0f64c2",
+  "workflow_url": "https://github.com/arnavsacheti/tt09-tiny-ternary-tapeout-csa/actions/runs/11750351268",
+  "sort_id": 1731105670482,
+  "openlane_version": "OpenLane2 2.1.9",
+  "pdk_version": "open_pdks bdc9412b3e468c102d01b7cf6337be06ec6e9c9a"
+}
