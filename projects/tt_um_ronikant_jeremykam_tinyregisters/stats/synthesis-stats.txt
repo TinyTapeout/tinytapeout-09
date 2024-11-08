@@ -1,0 +1,30 @@
+64. Printing statistics.
+
+=== tt_um_ronikant_jeremykam_tinyregisters ===
+
+   Number of wires:                116
+   Number of wire bits:            151
+   Number of public wires:          44
+   Number of public wire bits:      79
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                136
+     sky130_fd_sc_hd__a211o_2        8
+     sky130_fd_sc_hd__a22o_2         4
+     sky130_fd_sc_hd__and2b_2        2
+     sky130_fd_sc_hd__and3b_2       16
+     sky130_fd_sc_hd__buf_2         12
+     sky130_fd_sc_hd__dfxtp_2       28
+     sky130_fd_sc_hd__ebufn_2       12
+     sky130_fd_sc_hd__inv_2          9
+     sky130_fd_sc_hd__mux2_1        20
+     sky130_fd_sc_hd__nor2_2         1
+     sky130_fd_sc_hd__nor3b_2        1
+     sky130_fd_sc_hd__o211a_2        8
+     sky130_fd_sc_hd__or3_2          1
+     sky130_fd_sc_hd__or3b_2         6
+     sky130_fd_sc_hd__or4b_2         8
+
+   Chip area for module '\tt_um_ronikant_jeremykam_tinyregisters': 1586.521600
+
