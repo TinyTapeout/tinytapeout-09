@@ -1,9 +1,9 @@
 # Tiny Tapeout project information
 project:
-  title:        "underserved"
-  author:       "Olof Kindgren"
-  discord:      "awardwinningolof_67894"
-  description:  "The award-winning SERV, the world's smallest RISC-V CPU. Now on Tiny Tapeout!"
+  title:        "ITS-RISCV"
+  author:       "Bambang T. Wibowo"
+  discord:      ""
+  description:  "ITS RISC V based on the underserved TinyTapeout 07."
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     20000000
 
