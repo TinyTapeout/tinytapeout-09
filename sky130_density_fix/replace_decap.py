@@ -80,8 +80,11 @@ for inst in top_cell.each_inst():
         inst.cell = replacement_cell
         replacements += 1
 
-print(f"Replaced {replacements} cells out of {matches} matches.")
-print(f"Writing to {output_gds}...")
+if replacements > 0:
+    print(f"Replaced {replacements} cells out of {matches} matches.")
+    print(f"Writing to {output_gds}...")
+    user_layout.write(output_gds)
+    print("Done.")
+else:
+    print(f"No cells replaced.")
 
-user_layout.write(output_gds)
-print("Done.")
