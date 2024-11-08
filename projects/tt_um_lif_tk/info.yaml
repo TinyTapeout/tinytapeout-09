@@ -1,9 +1,9 @@
 # Tiny Tapeout project information
 project:
-  title:        "LIF on a Ring"      # Project title
+  title:        "LIF on a Ring Topology"      # Project title
   author:       "Taylor Kergan"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "LIF Neurons Connected in a Ring"      # One line description of what your project does
+  description:  "LIF neurons connected in a ring that displays different firing patterns." # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -23,34 +23,34 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: "External input current"
-  ui[1]: "External input current"
-  ui[2]: "External input current"
-  ui[3]: "External input current"
-  ui[4]: "External input current"
-  ui[5]: "External input current"
-  ui[6]: "External input current"
-  ui[7]: "External input current"
+  ui[0]: "Pattern select bit 0 (LSB)"
+  ui[1]: "Pattern select bit 1"
+  ui[2]: "Pattern select bit 2 (MSB)"
+  ui[3]: "Base current scaling bit 0 (LSB)"
+  ui[4]: "Base current scaling bit 1"
+  ui[5]: "Base current scaling bit 2"
+  ui[6]: "Base current scaling bit 3"
+  ui[7]: "Base current scaling bit 4 (MSB)"
 
   # Outputs
-  uo[0]: "Spike of the first neuron"
-  uo[1]: "Spike of the first neuron"
-  uo[2]: "Spike of the first neuron"
-  uo[3]: "Spike of the first neuron"
-  uo[4]: "Spike of the first neuron"
-  uo[5]: "Spike of the first neuron"
-  uo[6]: "Spike of the first neuron"
-  uo[7]: "Spike of the first neuron"
+  uo[0]: "Spike output from neuron 0"
+  uo[1]: "Spike output from neuron 1"
+  uo[2]: "Spike output from neuron 2"
+  uo[3]: "Spike output from neuron 3"
+  uo[4]: "Spike output from neuron 4"
+  uo[5]: "Spike output from neuron 5"
+  uo[6]: "Spike output from neuron 6"
+  uo[7]: "Spike output from neuron 7"
 
   # Bidirectional pins
-  uio[0]: "Enables output for the first neuron"
-  uio[1]: "Enables output for the first neuron"
-  uio[2]: "Enables output for the first neuron"
-  uio[3]: "Enables output for the first neuron"
-  uio[4]: "Enables output for the first neuron"
-  uio[5]: "Enables output for the first neuron"
-  uio[6]: "Enables output for the first neuron"
-  uio[7]: "Enables output for the first neuron"
+  uio[0]: "Coupling strength bit 0 (LSB)"
+  uio[1]: "Coupling strength bit 1"
+  uio[2]: "Coupling strength bit 2"
+  uio[3]: "Coupling strength bit 3"
+  uio[4]: "Coupling strength bit 4"
+  uio[5]: "Coupling strength bit 5"
+  uio[6]: "Coupling strength bit 6"
+  uio[7]: "Coupling strength bit 7 (MSB)"
 
 # Do not change!
 yaml_version: 6
