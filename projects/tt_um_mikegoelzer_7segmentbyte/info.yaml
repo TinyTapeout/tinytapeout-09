@@ -32,24 +32,24 @@ pinout:
   ui[7]: "Byte to display on 7-segment display (leftmost / high order bit)"
 
   # Outputs
-  uo[0]: "7-segment display a"
-  uo[1]: "7-segment display b"
-  uo[2]: "7-segment display c"
-  uo[3]: "7-segment display d"
-  uo[4]: "7-segment display e"
-  uo[5]: "7-segment display f"
-  uo[6]: "7-segment display g"
-  uo[7]: "(unused)"
+  uo[0]: "7-segment display (segment a)"
+  uo[1]: "7-segment display (segment b)"
+  uo[2]: "7-segment display (segment c)"
+  uo[3]: "7-segment display (segment d)"
+  uo[4]: "7-segment display (segment e)"
+  uo[5]: "7-segment display (segment f)"
+  uo[6]: "7-segment display (segment g)"
+  uo[7]: ""
 
   # Bidirectional pins
   uio[0]: "write enable (1=latch byte value on ui[7:0] and display it, 0=ignore ui[7:0] and keep displaying the current value)"
-  uio[1]: "(unused)"
-  uio[2]: "(unused)"
-  uio[3]: "(unused)"
-  uio[4]: "(unused)"
-  uio[5]: "(unused)"
-  uio[6]: "(unused)"
-  uio[7]: "(unused)"
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
 
 # Do not change!
 yaml_version: 6
