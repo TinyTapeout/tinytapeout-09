@@ -85,7 +85,7 @@ MACRO tt_um_pid_controller
   PIN ui_in[1]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.196500 ;
+    ANTENNAGATEAREA 0.213000 ;
     PORT
       LAYER met4 ;
         RECT 135.550 110.520 135.850 111.520 ;
@@ -94,7 +94,7 @@ MACRO tt_um_pid_controller
   PIN ui_in[2]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.196500 ;
+    ANTENNAGATEAREA 0.213000 ;
     PORT
       LAYER met4 ;
         RECT 132.790 110.520 133.090 111.520 ;
@@ -103,7 +103,7 @@ MACRO tt_um_pid_controller
   PIN ui_in[3]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.196500 ;
+    ANTENNAGATEAREA 0.213000 ;
     PORT
       LAYER met4 ;
         RECT 130.030 110.520 130.330 111.520 ;
@@ -157,7 +157,7 @@ MACRO tt_um_pid_controller
   PIN uio_in[1]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.196500 ;
+    ANTENNAGATEAREA 0.247500 ;
     PORT
       LAYER met4 ;
         RECT 113.470 110.520 113.770 111.520 ;
@@ -166,7 +166,7 @@ MACRO tt_um_pid_controller
   PIN uio_in[2]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.196500 ;
+    ANTENNAGATEAREA 0.213000 ;
     PORT
       LAYER met4 ;
         RECT 110.710 110.520 111.010 111.520 ;
@@ -175,7 +175,7 @@ MACRO tt_um_pid_controller
   PIN uio_in[3]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.196500 ;
+    ANTENNAGATEAREA 0.213000 ;
     PORT
       LAYER met4 ;
         RECT 107.950 110.520 108.250 111.520 ;
@@ -348,7 +348,6 @@ MACRO tt_um_pid_controller
   PIN uo_out[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.247500 ;
     ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
@@ -358,7 +357,6 @@ MACRO tt_um_pid_controller
   PIN uo_out[1]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.247500 ;
     ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
@@ -368,7 +366,6 @@ MACRO tt_um_pid_controller
   PIN uo_out[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.247500 ;
     ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
@@ -378,7 +375,6 @@ MACRO tt_um_pid_controller
   PIN uo_out[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.247500 ;
     ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
@@ -388,7 +384,6 @@ MACRO tt_um_pid_controller
   PIN uo_out[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.247500 ;
     ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
@@ -398,7 +393,6 @@ MACRO tt_um_pid_controller
   PIN uo_out[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.247500 ;
     ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
@@ -408,7 +402,6 @@ MACRO tt_um_pid_controller
   PIN uo_out[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.247500 ;
     ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
@@ -418,7 +411,6 @@ MACRO tt_um_pid_controller
   PIN uo_out[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.247500 ;
     ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
@@ -433,9 +425,9 @@ MACRO tt_um_pid_controller
       LAYER met1 ;
         RECT 2.760 2.480 158.240 109.440 ;
       LAYER met2 ;
-        RECT 18.310 2.535 148.020 110.685 ;
+        RECT 15.740 2.535 156.760 110.685 ;
       LAYER met3 ;
-        RECT 18.290 2.555 144.370 110.665 ;
+        RECT 18.290 2.555 152.195 110.665 ;
       LAYER met4 ;
         RECT 31.370 110.120 33.030 110.665 ;
         RECT 34.130 110.120 35.790 110.665 ;
@@ -479,13 +471,13 @@ MACRO tt_um_pid_controller
         RECT 139.010 110.120 140.670 110.665 ;
         RECT 141.770 110.120 143.430 110.665 ;
         RECT 30.655 109.440 144.145 110.120 ;
-        RECT 30.655 96.055 56.750 109.440 ;
-        RECT 59.150 96.055 60.050 109.440 ;
-        RECT 62.450 96.055 95.620 109.440 ;
-        RECT 98.020 96.055 98.920 109.440 ;
-        RECT 101.320 96.055 134.490 109.440 ;
-        RECT 136.890 96.055 137.790 109.440 ;
-        RECT 140.190 96.055 144.145 109.440 ;
+        RECT 30.655 95.375 56.750 109.440 ;
+        RECT 59.150 95.375 60.050 109.440 ;
+        RECT 62.450 95.375 95.620 109.440 ;
+        RECT 98.020 95.375 98.920 109.440 ;
+        RECT 101.320 95.375 134.490 109.440 ;
+        RECT 136.890 95.375 137.790 109.440 ;
+        RECT 140.190 95.375 144.145 109.440 ;
   END
 END tt_um_pid_controller
 END LIBRARY
