@@ -1,0 +1,63 @@
+# Tiny Tapeout project information
+project:
+  title:        "Atari 2600"
+  author:       "Renaldas Zioma"
+  discord:      "rzioma"
+  description:  "Replica of Atari 2600"
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     25175000 # Clock frequency in Hz
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "6x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_rejunity_atari2600"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "tt_um_rejunity_atari2600.v"
+    - "vga_hvsync_generator.v"
+    - "palette_24bpp.v"
+    - "qspi_flash.v"
+    - "atari2600.v"
+    - "6502.v"
+    - "ALU.v"
+    - "TIA.v"
+    - "PIA.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: ""
+  ui[1]: ""
+  ui[2]: ""
+  ui[3]: ""
+  ui[4]: ""
+  ui[5]: ""
+  ui[6]: ""
+  ui[7]: ""
+
+  # Outputs
+  uo[0]: "R1"
+  uo[1]: "G1"
+  uo[2]: "B1"
+  uo[3]: "VSync"
+  uo[4]: "R0"
+  uo[5]: "G0"
+  uo[6]: "B0"
+  uo[7]: "HSync"
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: "Audio (PWM)"
+
+# Do not change!
+yaml_version: 6
