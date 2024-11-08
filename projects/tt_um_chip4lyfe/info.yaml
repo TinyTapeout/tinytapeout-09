@@ -1,0 +1,56 @@
+# Tiny Tapeout project information
+project:
+  title:        "Leaky Integrate Fire Neuron"      # Project title
+  author:       "Rocky Lim"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Simulates a Leaky Integrate Fire Neuron based on snnTorch's implementation"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_chip4lyfe"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "tt_um_chip4lyfe.v"
+    - "lif.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "Input Current Bit [0] (Input Neuron 1)"
+  ui[1]: "Input Current Bit [1] (Input Neuron 1)"
+  ui[2]: "Input Current Bit [2] (Input Neuron 1)"
+  ui[3]: "Input Current Bit [3] (Input Neuron 1)"
+  ui[4]: "Input Current Bit [4] (Input Neuron 2)"
+  ui[5]: "Input Current Bit [5] (Input Neuron 2)"
+  ui[6]: "Input Current Bit [6] (Input Neuron 2)"
+  ui[7]: "Input Current Bit [7] (Input Neuron 2)"
+
+  # Outputs
+  uo[0]: "State Variable Bit [0] (Output Neuron 1)"
+  uo[1]: "State Variable Bit [1] (Output Neuron 1)"
+  uo[2]: "State Variable Bit [2] (Output Neuron 1)"
+  uo[3]: "State Variable Bit [3] (Output Neuron 1)"
+  uo[4]: "State Variable Bit [4] (Output Neuron 2)"
+  uo[5]: "State Variable Bit [5] (Output Neuron 2)"
+  uo[6]: "State Variable Bit [6] (Output Neuron 2)"
+  uo[7]: "State Variable Bit [7] (Output Neuron 2)"
+
+  # Bidirectional pins
+  uio[0]: "Spike Bit (Output Layer, Neuron 2)"
+  uio[1]: "Spike Bit (Output Layer, Neuron 1)"
+  uio[2]: "Spike Bit (Inner Layer 2, Neuron 2)"
+  uio[3]: "Spike Bit (Inner Layer 2, Neuron 1)"
+  uio[4]: "Spike Bit (Inner Layer 1, Neuron 2)"
+  uio[5]: "Spike Bit (Inner Layer 1, Neuron 1)"
+  uio[6]: "Spike Bit (Input Layer, Neuron 2)"
+  uio[7]: "Spike Bit (Input Layer, Neuron 1)"
+
+# Do not change!
+yaml_version: 6
