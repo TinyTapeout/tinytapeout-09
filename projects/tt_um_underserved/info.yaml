@@ -1,8 +1,8 @@
 # Tiny Tapeout project information
 project:
   title:        "ITS-RISCV"
-  author:       "Bambang T. Wibowo"
-  discord:      ""
+  author:       "Bambang T. Wibowo, Chazim Fikri A., Hernanda A. P., M. Hafidzh, Figo A. M., and Faiz S. K."
+  discord:      "LazEmp"
   description:  "ITS RISC V based on the underserved TinyTapeout 07."
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     20000000
