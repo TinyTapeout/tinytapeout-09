@@ -1,0 +1,44 @@
+project:
+  title:        "4-bit Array Multiplier"
+  author:       "Minjae Kim, Jiawei Ding"
+  discord:      "Your Discord Username (optional)"
+  description:  "4-bit array multiplier using structural Verilog"
+  language:     "Verilog"
+  clock_hz:     0
+  tiles:        "1x1"
+  top_module:   "tt_um_array_mult_structural_sectionD_group3"
+  source_files:
+    - "project.v"
+
+pinout:
+  # Inputs (ui_in in project.v)
+  ui[0]: "m[0]"         # LSB of the first 4-bit input
+  ui[1]: "m[1]"
+  ui[2]: "m[2]"
+  ui[3]: "m[3]"         # MSB of the first 4-bit input
+  ui[4]: "q[0]"
+  ui[5]: "q[1]"
+  ui[6]: "q[2]"
+  ui[7]: "q[3]"
+
+  # Outputs (uo_out in project.v)
+  uo[0]: ""
+  uo[1]: ""
+  uo[2]: ""
+  uo[3]: ""
+  uo[4]: ""
+  uo[5]: ""
+  uo[6]: ""
+  uo[7]: ""
+
+  # Bidirectional pins (uio_in and uio_out in project.v)
+  uio[0]: ""        # LSB of the second 4-bit input
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""        # MSB of the second 4-bit input
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+yaml_version: 6
