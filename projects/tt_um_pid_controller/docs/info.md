@@ -17,7 +17,7 @@ Integral Term (I): This term accumulates the past error over time, helping to el
 
 Derivative Term (D): This term predicts future error by observing the rate of change of the current error, thus providing a damping effect to reduce overshooting.
 
-The controller follows a state machine with states to calculate the error, update the integral and derivative terms, compute the output, and update the previous error value. Each calculation is performed on every clock cycle, ensuring that the controller continuously adapts the output to minimize the error between the setpoint and the feedback.
+The controller outputs a signal only in the positive direction. That means that we expect a system that naturally tends towards one point. Regarding a application in heating that means that we are not aiming to cool down the system when overshooting or if the setpoint is higher then our feedback but we just output 0 for control.
 
 ## How to test
 
