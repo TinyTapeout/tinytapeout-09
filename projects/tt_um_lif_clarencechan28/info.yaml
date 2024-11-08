@@ -3,7 +3,7 @@ project:
   title:        "Perceptron"      # Project title
   author:       "Clarence Chan"      # Your name
   discord:      "clrnz"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Hardware design of a simple leaky integrate and fire neuron"      # One line description of what your project does
+  description:  "Hardware implementation of a single layer perceptron"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -17,39 +17,39 @@ project:
   # Source files must be in ./src and you must list each source file separately, one per line.
   # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
   source_files:
-    - "tt_um_lif_clarencechan28.v"
-    - "lif.v"
+    - "tt_um_perceptron_clarencechan28.v"
+    - "perceptron.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: "Input current bit 1"
-  ui[1]: "Input current bit 2"
-  ui[2]: "Input current bit 3"
-  ui[3]: "Input current bit 4"
-  ui[4]: "Input current bit 5"
-  ui[5]: "Input current bit 6"
-  ui[6]: "Input current bit 7"
-  ui[7]: "Input current bit 8"
+  ui[0]: "Input bit 1"
+  ui[1]: "Input bit 2"
+  ui[2]: "Input bit 3"
+  ui[3]: "Input bit 4"
+  ui[4]: "Input bit 5"
+  ui[5]: "Input bit 6"
+  ui[6]: "Input bit 7"
+  ui[7]: "Input bit 8"
 
   # Outputs
-  uo[0]: "State variable bit 1"
-  uo[1]: "State variable bit 2"
-  uo[2]: "State variable bit 3"
-  uo[3]: "State variable bit 4"
-  uo[4]: "State variable bit 5"
-  uo[5]: "State variable bit 6"
-  uo[6]: "State variable bit 7"
-  uo[7]: "State variable bit 8"
+  uo[0]: "Perceptron class output"
+  uo[1]: ""
+  uo[2]: ""
+  uo[3]: ""
+  uo[4]: ""
+  uo[5]: ""
+  uo[6]: ""
+  uo[7]: ""
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
-  uio[2]: ""
-  uio[3]: ""
-  uio[4]: ""
-  uio[5]: ""
-  uio[6]: ""
-  uio[7]: "Spike bit"
+  uio[0]: "Weight bit 1"
+  uio[1]: "Weight bit 2"
+  uio[2]: "Weight bit 3"
+  uio[3]: "Weight bit 4"
+  uio[4]: "Weight bit 5"
+  uio[5]: "Weight bit 6"
+  uio[6]: "Weight bit 7"
+  uio[7]: "Weight bit 8"
 
 # Do not change!
 yaml_version: 6
