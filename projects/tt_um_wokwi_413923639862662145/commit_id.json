@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt09 a48b1c74",
+  "repo": "https://github.com/claudiotalarico/tt-xor",
+  "commit": "ffc6007e1a650b4fe24b12f9a84d895fe1f94970",
+  "workflow_url": "https://github.com/claudiotalarico/tt-xor/actions/runs/11745998947",
+  "sort_id": 1731084377368,
+  "openlane_version": "OpenLane2 2.1.9",
+  "pdk_version": "open_pdks bdc9412b3e468c102d01b7cf6337be06ec6e9c9a"
+}
