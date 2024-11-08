@@ -1,0 +1,18 @@
+64. Printing statistics.
+
+=== tt_um_idann ===
+
+   Number of wires:                 10
+   Number of wire bits:             45
+   Number of public wires:           9
+   Number of public wire bits:      44
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 26
+     sky130_fd_sc_hd__buf_2          3
+     sky130_fd_sc_hd__conb_1        21
+     sky130_fd_sc_hd__dfrtp_2        2
+
+   Chip area for module '\tt_um_idann': 146.390400
+
