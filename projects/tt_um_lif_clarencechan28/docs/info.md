@@ -9,7 +9,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Given an input current, the leaky integrate and fire neuron will determine whether to output a spike, typically for the next neuron in the network.
+Given 8 bits of inputs and 8 bits of weights, the single layer perceptron will classify the inputs as class 0 or 1.
 
 ## How to test
 
