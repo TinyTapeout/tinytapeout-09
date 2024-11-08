@@ -1,0 +1,55 @@
+# Tiny Tapeout project information
+project:
+  title:        "Multi-LFSR"                                                # Project title
+  author:       "Kevin W. Rudd"                                             # Your name
+  discord:      "kin.451"                                                   # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "variable-length 2-tap and 4-tap LFSR with hold & step"     # One line description of what your project does
+  language:     "Verilog"                                                   # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     1000                                                        # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um__kwr_lfsr__top"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "lfsr.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]:  "length_0"
+  ui[1]:  "length_1"
+  ui[2]:  "length_2"
+  ui[3]:  "length_3"
+  ui[4]:  "length_4"
+  ui[5]:  "n_taps"
+  ui[6]:  "step"
+  ui[7]:  "hold"
+
+  # Outputs
+  uo[0]:  "value_00"
+  uo[1]:  "value_01"
+  uo[2]:  "value_02"
+  uo[3]:  "value_03"
+  uo[4]:  "value_04"
+  uo[5]:  "value_05"
+  uo[6]:  "value_06"
+  uo[7]:  "value_07"
+
+  # Bidirectional pins
+  uio[0]: "value_08"
+  uio[1]: "value_09"
+  uio[2]: "value_10"
+  uio[3]: "value_11"
+  uio[4]: "value_12"
+  uio[5]: "value_13"
+  uio[6]: "value_14"
+  uio[7]: "valid"
+
+# Do not change!
+yaml_version: 6
