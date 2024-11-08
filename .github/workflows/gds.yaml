@@ -88,6 +88,10 @@ jobs:
             python ../sky130_density_fix/replace_decap.py --design $project --user-gds $project/$project.gds --replacement-gds ../sky130_density_fix/sky130_ef_sc_hd__newfill_12.gds
           done
 
+      # Workaround for DRC errors in the SRAM macro of tt_um_kmakise_sram:
+      - name: Patch tt_um_kmakise_sram for SRAM DRC errors
+        run: python sky130_sram_workaround/extract_sram_macro.py -n tt_um_kmakise_sram -p projects/tt_um_kmakise_sram/tt_um_kmakise_sram.gds -m myconfig_sky_dual -x projects/tt_um_kmakise_sram/myconfig_sky_dual.gds
+
       # run OpenLane to build the GDS
       - name: Harden Chip ROM
         run: nix-shell $GITHUB_WORKSPACE/openlane2/shell.nix --run "python -m openlane tt/rom/config.json"
@@ -106,6 +110,13 @@ jobs:
       - name: Harden tt_top
         working-directory: tt-multiplexer/ol2/tt_top
         run: nix-shell $GITHUB_WORKSPACE/openlane2/shell.nix --run "python build.py --skip-xor-checks"
+
+      - name: Copy sram macro back into tt_um_kmakise_sram
+        run: |
+          # Find the latest run directory:
+          RUN_DIR=$(ls -d tt-multiplexer/ol2/tt_top/runs/RUN_* | sort -n | tail -n 1)
+          cp $RUN_DIR/final/gds/openframe_project_wrapper.gds $RUN_DIR/final/gds/openframe_project_wrapper.orig.gds
+          python sky130_sram_workaround/inject_sram_macro.py -i $RUN_DIR/final/gds/openframe_project_wrapper.gds -o $RUN_DIR/final/gds/openframe_project_wrapper.gds -p tt_um_kmakise_sram -m myconfig_sky_dual --inject-gds projects/tt_um_kmakise_sram/myconfig_sky_dual.gds
 
       - name: Copy final results
         run: python ./tt/configure.py --copy-final-results
