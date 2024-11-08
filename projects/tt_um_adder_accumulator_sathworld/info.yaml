@@ -1,0 +1,60 @@
+# Tiny Tapeout project information
+project:
+  title:        "adder-accumulator"      # Project title
+  author:       "Damir Gazizullin, Owen Golden"      # Your name
+  discord:      "saworld"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "8-bit ripple adder and the complementary accumulator register"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     50000000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_adder_accumulator_sathworld"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
+    - "accumulator_register.v"
+    - "alu.v"
+    - "add_sub_8bit.v"
+    - "onebitfa.v"
+    
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "bus[0] if load_to_bus"
+  ui[1]: "bus[1] if load_to_bus"
+  ui[2]: "bus[2] if load_to_bus"
+  ui[3]: "bus[3] if load_to_bus"
+  ui[4]: "bus[4] if load_to_bus"
+  ui[5]: "bus[5] if load_to_bus"
+  ui[6]: "bus[6] if load_to_bus"
+  ui[7]: "bus[7] if load_to_bus"
+
+  # Outputs
+  uo[0]: "bus[0]/regA[0], bus_regA_sel = 1/0"
+  uo[1]: "bus[1]/regA[1], bus_regA_sel = 1/0"
+  uo[2]: "bus[2]/regA[2], bus_regA_sel = 1/0"
+  uo[3]: "bus[3]/regA[3], bus_regA_sel = 1/0"
+  uo[4]: "bus[4]/regA[4], bus_regA_sel = 1/0"
+  uo[5]: "bus[5]/regA[5], bus_regA_sel = 1/0"
+  uo[6]: "bus[6]/regA[6], bus_regA_sel = 1/0"
+  uo[7]: "bus[7]/regA[7], bus_regA_sel = 1/0"
+
+  # Bidirectional pins
+  uio[0]: "out_ZF"
+  uio[1]: "in_load_to_bus"
+  uio[2]: "in_sub"
+  uio[3]: "in_Eu"
+  uio[4]: "in_Ea"
+  uio[5]: "in_nLb"
+  uio[6]: "in_nLa"
+  uio[7]: "in_bus_regA_sel"
+
+# Do not change!
+yaml_version: 6
