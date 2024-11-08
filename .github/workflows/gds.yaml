@@ -67,28 +67,26 @@ jobs:
           pdk_version: ${{ env.SKY130_PDK_VERSION }}
           pdk_root: ${{ env.PDK_ROOT }}
 
-      # Patch selected designs + Wokwi projects to work around the poly density issue
+      # Patch all digital projects to work around the poly density issue
       - name: Patch projects for poly density issue
         working-directory: projects
         run: |
-          for project in tt_um_wokwi_* $DENSITY_REPLACEMENT_PROJECTS; do
+          for project in tt_um_*; do
+            if [ "$project" = "tt_um_chip_rom" ]; then
+              continue
+            fi
+
+            # Skip projects that were not built with OpenLane2 (e.g. analog and mixed-signal projects)
+            if [[ "$(jq -r '.openlane_version' $project/commit_id.json)" != "OpenLane2 2"* ]]; then
+              continue
+            fi
+
             if [ -f $project/$project.gds.br ]; then
               brotli -jd $project/$project.gds.br
             fi
+            
             python ../sky130_density_fix/replace_decap.py --design $project --user-gds $project/$project.gds --replacement-gds ../sky130_density_fix/sky130_ef_sc_hd__newfill_12.gds
           done
-        env:
-          DENSITY_REPLACEMENT_PROJECTS: |
-            tt_um_A_6_array_multiplier
-            tt_um_a3_array_multiplier
-            tt_um_a_0_array_multiplier
-            tt_um_a_4_array_multiplier
-            tt_um_array_mult_structural
-            tt_um_array_mult_structural_GnahsLliw
-            tt_um_array_mult_structural_sarahherrera
-            tt_um_arry_mult_structural
-            tt_um_secA_group5_array_multiplier
-            tt_um_snn_with_delays_paolaunisa
 
       # run OpenLane to build the GDS
       - name: Harden Chip ROM
