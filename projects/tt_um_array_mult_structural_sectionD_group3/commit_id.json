@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt09 a48b1c74",
+  "repo": "https://github.com/MinjaeKim09/tt09-sec-Section-D-Group-3-array-multiplier",
+  "commit": "30442a7b4ca880e26d614a4b264c53ec5cd03094",
+  "workflow_url": "https://github.com/MinjaeKim09/tt09-sec-Section-D-Group-3-array-multiplier/actions/runs/11744855005",
+  "sort_id": 1731103339961,
+  "openlane_version": "OpenLane2 2.1.9",
+  "pdk_version": "open_pdks bdc9412b3e468c102d01b7cf6337be06ec6e9c9a"
+}
