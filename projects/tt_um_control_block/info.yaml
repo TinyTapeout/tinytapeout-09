@@ -1,11 +1,11 @@
 # Tiny Tapeout project information
 project:
-  title:        "8-Bit CPU"                                                   # Project title
-  author:       "Siddharth Nema"                                              # Your name
-  discord:      ""                                                            # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "A basic 8-bit CPU design building off the SAP-1"             # One line description of what your project does
-  language:     "Verilog"                                                     # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     50000000                                                      # Clock frequency in Hz (or 0 if not applicable)
+  title:        "ECE 298A 8-Bit CPU Control Block"                                  # Project title
+  author:       "Siddharth Nema & Gerry Chen"                                       # Your name
+  discord:      ""                                                                  # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Generates the control signals required for other CPU sub blocks"   # One line description of what your project does
+  language:     "Verilog"                                                           # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     50000000                                                            # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
@@ -22,34 +22,34 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: "opcode_0"
-  ui[1]: "opcode_1"
-  ui[2]: "opcode_2"
-  ui[3]: "opcode_3"
+  ui[0]: "opcode[0]"
+  ui[1]: "opcode[1]"
+  ui[2]: "opcode[2]"
+  ui[3]: "opcode[3]"
   ui[4]: ""
   ui[5]: ""
   ui[6]: ""
   ui[7]: ""
 
   # Outputs
-  uo[0]: "controlsig_8"
-  uo[1]: "controlsig_9"
-  uo[2]: "controlsig_10"
-  uo[3]: "controlsig_11"
-  uo[4]: "controlsig_12"
-  uo[5]: "controlsig_13"
-  uo[6]: "controlsig_14"
-  uo[7]: ""
+  uo[0]: "SIG_RAM_LOAD_N"
+  uo[1]: "SIG_RAM_EN_N"
+  uo[2]: "SIG_MAR_MEM_LOAD_N"
+  uo[3]: "SIG_MAR_ADDR_LOAD_N"
+  uo[4]: "SIG_PC_LOAD"
+  uo[5]: "SIG_PC_EN"
+  uo[6]: "SIG_PC_INC"
+  uo[7]: "halted"
    
    # Bidirectional pins
-  uio[0]: "controlsig_0"
-  uio[1]: "controlsig_1"
-  uio[2]: "controlsig_2"
-  uio[3]: "controlsig_3"
-  uio[4]: "controlsig_4"
-  uio[5]: "controlsig_5"
-  uio[6]: "controlsig_6"
-  uio[7]: "controlsig_7"
+  uio[0]: "SIG_OUT_LOAD_N"
+  uio[1]: "SIG_REGB_LOAD_N"
+  uio[2]: "SIG_REGB_EN"
+  uio[3]: "SIG_ADDER_SUB"
+  uio[4]: "SIG_REGA_EN"
+  uio[5]: "SIG_REGA_LOAD_N"
+  uio[6]: "SIG_IR_EN_N"
+  uio[7]: "SIG_IR_LOAD_N"
 
 # Do not change!
 yaml_version: 6

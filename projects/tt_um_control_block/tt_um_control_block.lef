@@ -85,7 +85,7 @@ MACRO tt_um_control_block
   PIN ui_in[1]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.126000 ;
+    ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met4 ;
         RECT 135.550 110.520 135.850 111.520 ;
@@ -398,7 +398,7 @@ MACRO tt_um_control_block
   PIN uo_out[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.891000 ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 77.590 110.520 77.890 111.520 ;
@@ -407,6 +407,7 @@ MACRO tt_um_control_block
   PIN uo_out[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 0.795200 ;
     PORT
       LAYER met4 ;
         RECT 74.830 110.520 75.130 111.520 ;
@@ -418,11 +419,11 @@ MACRO tt_um_control_block
       LAYER li1 ;
         RECT 2.760 2.635 158.240 108.885 ;
       LAYER met1 ;
-        RECT 2.760 2.480 158.240 109.440 ;
+        RECT 2.760 2.480 158.240 109.040 ;
       LAYER met2 ;
-        RECT 18.310 2.535 144.350 110.685 ;
+        RECT 18.310 2.535 142.510 110.685 ;
       LAYER met3 ;
-        RECT 18.290 2.555 144.375 110.665 ;
+        RECT 18.290 2.555 144.170 110.665 ;
       LAYER met4 ;
         RECT 31.370 110.120 33.030 110.665 ;
         RECT 34.130 110.120 35.790 110.665 ;
