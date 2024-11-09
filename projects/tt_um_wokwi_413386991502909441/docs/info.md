@@ -9,12 +9,16 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explaidfsn hodsfw yousdfar projecsdft worksdfs
+The bi-directional pins are used to drive a charliplexed 8*7 LED display.  A SPI serial connection is used to set the values in a register map.  Auxilary functions are implemented, space/time permitting, ex: LFSR, PWM, freqency counting, ultrasonic distance sensing
 
 ## How to test
 
-Explaidsn hosafdw tsdfo ussdfe youdfr projecadft
+Use SPI to read/write values to the register map, observe the output on the LEDs and/or in the serial response.
+CS active low
+SPI MODE 0
+SPI_CLK <= SYS_CLK/2
+Most signigicant bit is exchanged first
 
 ## External hardware
 
-Lissadft externasdfl hardwardfe usedfd idfn youadfr projecasdft (e.dfg. PMOdfD, LEsdafD displadfy, etfc), isdff ansdfys
+Charlielexed 7*8 LED display
