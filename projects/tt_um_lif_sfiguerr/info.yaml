@@ -1,9 +1,9 @@
 # Tiny Tapeout project information
 project:
-  title:        "Leaky Integrate and Fire Neuron"      # Project title
+  title:        "Adaptive Leaky Integrate and Fire Neuron"      # Project title
   author:       "Sydnie Figuerres"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Simulates a leaky integrate and fire neuron"      # One line description of what your project does
+  description:  "Simulates an adaptive leaky integrate and fire neuron"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
