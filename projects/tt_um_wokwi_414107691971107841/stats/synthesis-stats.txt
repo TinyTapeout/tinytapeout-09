@@ -1,0 +1,53 @@
+62. Printing statistics.
+
+=== or_cell ===
+
+   Number of wires:                  3
+   Number of wire bits:              3
+   Number of public wires:           3
+   Number of public wire bits:       3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__or2_2          1
+
+   Chip area for module '\or_cell': 6.256000
+
+=== tt_um_wokwi_414107691971107841 ===
+
+   Number of wires:                 38
+   Number of wire bits:             73
+   Number of public wires:          38
+   Number of public wire bits:      73
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 54
+     or_cell                        30
+     sky130_fd_sc_hd__buf_2          7
+     sky130_fd_sc_hd__conb_1        17
+
+   Area for cell type \or_cell is unknown!
+
+   Chip area for module '\tt_um_wokwi_414107691971107841': 98.844800
+
+=== design hierarchy ===
+
+   tt_um_wokwi_414107691971107841      1
+     or_cell                        30
+
+   Number of wires:                128
+   Number of wire bits:            163
+   Number of public wires:         128
+   Number of public wire bits:     163
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 54
+     sky130_fd_sc_hd__buf_2          7
+     sky130_fd_sc_hd__conb_1        17
+     sky130_fd_sc_hd__or2_2         30
+
+   Chip area for top module '\tt_um_wokwi_414107691971107841': 286.524800
+
