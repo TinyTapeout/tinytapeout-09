@@ -1,0 +1,79 @@
+# Tiny Tapeout project information
+project:
+  title:        "Basic Oszilloscope and Signal Generator"      # Project title
+  author:       "Pascal Gesell"      # Your name
+  discord:      "gfcwfzkm"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Basic oscilloscope & signal generator on an ASIC"      # One line description of what your project does
+  language:     "VHDL"  # other examples include Verilog, SystemVerilog, Amaranth, etc
+  clock_hz:     25000000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_gfcwfzkm_scope_bfh_mht1_3"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  #
+  # WARNING: VHDL support in Tiny Tapeout is experimental. The template may get changes during
+  #          the shuttle and VHDL support may be dropped for future shuttles if we see low usage.
+  source_files:
+    - "tt_um_gfcwfzkm_scope_bfh_mht1_3.vhdl"  # Top module
+    - "settings/debouncer.vhdl"
+    - "settings/settings.vhdl"
+    - "video/video.vhdl"
+    - "video/vtgen.vhdl"
+    - "video/image_generators/merge_generators.vhdl"
+    - "video/image_generators/channel_gen.vhdl"
+    - "video/image_generators/grid_gen.vhdl"
+    - "video/image_generators/trigger_gen.vhdl"
+    - "measurements/measurement_sm.vhdl"
+    - "measurements/trigger_detection.vhdl"
+    - "measurements/adc/pmodAD1.vhdl"
+    - "measurements/samples_memory/fram.vhdl"
+    - "measurements/samples_memory/spi_master.vhdl"
+    - "signal_gen/signal_gen.vhdl"
+    - "signal_gen/pmodDA2.vhdl"
+    - "signal_gen/waveforms/sine.vhdl"
+    - "signal_gen/waveforms/rectangle.vhdl"
+    - "signal_gen/waveforms/sawtooth.vhdl"
+    - "signal_gen/waveforms/triangle.vhdl"
+    - "serial_out/print_settings.vhdl"
+    - "serial_out/uart_tx.vhdl"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "FRAM MISO"
+  ui[1]: "Button 1"
+  ui[2]: "Button 3"
+  ui[3]: "Switch 1"
+  ui[4]: "ADC MISO"
+  ui[5]: "Button 2"
+  ui[6]: "Button 4"
+  ui[7]: "Switch 2"
+
+  # Outputs
+  uo[0]: "ADC CS"
+  uo[1]: "DAC MOSI"
+  uo[2]: "ADC SCLK"
+  uo[3]: "FRAM SCLK"
+  uo[4]: "DAC CS"
+  uo[5]: "DAC SCLK"
+  uo[6]: "FRAM CS"
+  uo[7]: "FRAM MOSI"
+
+  # Bidirectional pins
+  uio[0]: "HDMI Pmod Green"
+  uio[1]: "HDMI Pmod Clock"
+  uio[2]: "HDMI Pmod HSYNC"
+  uio[3]: "UART_TX Settings Info (9600bps, 8N1)"
+  uio[4]: "HDMI Pmod Red"
+  uio[5]: "HDMI Pmod Blue"
+  uio[6]: "HDMI Pmod DE"
+  uio[7]: "HDMI Pmod VSYNC"
+
+# Do not change!
+yaml_version: 6
