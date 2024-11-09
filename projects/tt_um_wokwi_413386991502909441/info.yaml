@@ -21,6 +21,7 @@ project:
     - "spi_slave.v"
     - "charlie.v"
     - "lfsr_counter.v"
+    - "priority_write.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
