@@ -9,11 +9,18 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-neuromorphic-inspired LFSR with "synaptic neurons" that simulate excitatory / inhibitory responses. Each bit in the LFSR acts like a neuron, where detected edges (transitions from 0 to 1 or 1 to 0) generate excitatory or inhibitory signals, similar to synaptic inputs in neural networks. These signals modify the LFSR’s feedback , leading to behavior that mimics how biological synapses manage signal flow by either enhancing or suppressing activity. The result is a random sequence influenced by synaptic-like interactions.
+this project implements a neuromorphic-inspired Linear Feedback Shift Register (LFSR) with "synaptic neurons" that simulate excitatory/inhibitory responses. each bit in the LFSR behaves like a neuron, where transitions (rising/falling edges) from 0 to 1 or 1 to 0 generate excitatory or inhibitory signals, simulating synaptic inputs in neural networks. these signals modify the LFSR’s feedback path, resulting in pseudo-random output sequences that mimic synaptic interactions by either enhancing (excitatory) or suppressing (inhibitory) activity.
+
+additionally, this design allows for customizable seed inputs, set through external input pins, enabling users to initialize the LFSR with a specific seed to observe varying sequence outputs. this feature provides added flexibility and control over the pseudo-random behavior.
+
+
 
 ## How to test
 
-do something
+1. clock initialization: Run a clock signal to provide timing for the LFSR operation.
+2. reset: hold the reset pin active (low) to initialize the LFSR state with the selected seed.
+3. seed testing: configure the seed by setting the ui_in input pins, then observe the LFSR output sequence through uo_out.
+4. cycle observation: monitor the output sequence over multiple clock cycles to verify pseudo-random behavior, and repeat for different seed values for varied sequences.
 
 ## External hardware
 
