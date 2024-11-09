@@ -1,0 +1,61 @@
+# Tiny Tapeout project information
+project:
+  title:        "15 channels emission counter"      # Project title
+  author:       "Coline Chehense, Dinko Oletic"      # Your name
+  discord:      "dinko.oletic"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Counts the number of pulses received on each of 15 input channel and returns periodically a serial output of these values."      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     12000000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_Coline3003_top"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "FSM.v"
+    - "PISO_register.v"
+    - "channel_counter.v"
+    - "mux_16to1.v"
+    - "time_counter.v"
+    - "top.v"
+    - "tt_um_Coline3003_top.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "RTC"
+  ui[1]: "Channel 1"
+  ui[2]: "Channel 2"
+  ui[3]: "Channel 3"
+  ui[4]: "Channel 4"
+  ui[5]: "Channel 5"
+  ui[6]: "Channel 6"
+  ui[7]: "Channel 7"
+
+  # Outputs
+  uo[0]: "serial_out"
+  uo[1]: "ovf_global"
+  uo[2]: "ovf_RTC"
+  uo[3]: "a0"
+  uo[4]: "a1"
+  uo[5]: "a2"
+  uo[6]: "a3"
+  uo[7]: "SL_out"
+
+  # Bidirectional pins
+  uio[0]: "Channel 8"
+  uio[1]: "Channel 9"
+  uio[2]: "Channel 10"
+  uio[3]: "Channel 11"
+  uio[4]: "Channel 12"
+  uio[5]: "Channel 13"
+  uio[6]: "Channel 14"
+  uio[7]: "Channel 15"
+
+# Do not change!
+yaml_version: 6
