@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt09 a48b1c74",
+  "repo": "https://github.com/DinkoOletic/tt09-HDL_unizgfer_15ch_AE_evt_counter",
+  "commit": "90e15b62b6379c2b15e2a412dcaed24c519c3282",
+  "workflow_url": "https://github.com/DinkoOletic/tt09-HDL_unizgfer_15ch_AE_evt_counter/actions/runs/11757959328",
+  "sort_id": 1731185551121,
+  "openlane_version": "OpenLane2 2.1.9",
+  "pdk_version": "open_pdks bdc9412b3e468c102d01b7cf6337be06ec6e9c9a"
+}
