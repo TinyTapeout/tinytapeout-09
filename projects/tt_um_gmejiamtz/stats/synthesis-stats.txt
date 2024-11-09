@@ -1,0 +1,27 @@
+62. Printing statistics.
+
+=== tt_um_gmejiamtz ===
+
+   Number of wires:                 45
+   Number of wire bits:             80
+   Number of public wires:          19
+   Number of public wire bits:      54
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 61
+     sky130_fd_sc_hd__a21bo_2        1
+     sky130_fd_sc_hd__and2_2         9
+     sky130_fd_sc_hd__and2b_2        2
+     sky130_fd_sc_hd__buf_2          1
+     sky130_fd_sc_hd__conb_1        23
+     sky130_fd_sc_hd__dfxtp_2       10
+     sky130_fd_sc_hd__mux2_1        10
+     sky130_fd_sc_hd__mux4_2         1
+     sky130_fd_sc_hd__nand2b_2       1
+     sky130_fd_sc_hd__o21a_2         1
+     sky130_fd_sc_hd__o221a_2        1
+     sky130_fd_sc_hd__o31a_2         1
+
+   Chip area for module '\tt_um_gmejiamtz': 573.049600
+
