@@ -6,7 +6,7 @@ MACRO tt_um_snn_with_delays_paolaunisa
   CLASS BLOCK ;
   FOREIGN tt_um_snn_with_delays_paolaunisa ;
   ORIGIN 0.000 0.000 ;
-  SIZE 1030.400 BY 225.760 ;
+  SIZE 1378.160 BY 225.760 ;
   PIN VGND
     DIRECTION INOUT ;
     USE GROUND ;
@@ -113,6 +113,42 @@ MACRO tt_um_snn_with_delays_paolaunisa
     PORT
       LAYER met4 ;
         RECT 993.330 2.480 994.930 223.280 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1032.200 2.480 1033.800 223.280 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1071.070 2.480 1072.670 223.280 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1109.940 2.480 1111.540 223.280 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1148.810 2.480 1150.410 223.280 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1187.680 2.480 1189.280 223.280 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1226.550 2.480 1228.150 223.280 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1265.420 2.480 1267.020 223.280 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1304.290 2.480 1305.890 223.280 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1343.160 2.480 1344.760 223.280 ;
     END
   END VGND
   PIN VPWR
@@ -222,6 +258,42 @@ MACRO tt_um_snn_with_delays_paolaunisa
       LAYER met4 ;
         RECT 990.030 2.480 991.630 223.280 ;
     END
+    PORT
+      LAYER met4 ;
+        RECT 1028.900 2.480 1030.500 223.280 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1067.770 2.480 1069.370 223.280 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1106.640 2.480 1108.240 223.280 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1145.510 2.480 1147.110 223.280 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1184.380 2.480 1185.980 223.280 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1223.250 2.480 1224.850 223.280 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1262.120 2.480 1263.720 223.280 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1300.990 2.480 1302.590 223.280 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1339.860 2.480 1341.460 223.280 ;
+    END
   END VPWR
   PIN clk
     DIRECTION INPUT ;
@@ -243,7 +315,7 @@ MACRO tt_um_snn_with_delays_paolaunisa
   PIN rst_n
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.126000 ;
+    ANTENNAGATEAREA 0.213000 ;
     PORT
       LAYER met4 ;
         RECT 141.070 224.760 141.370 225.760 ;
@@ -252,7 +324,7 @@ MACRO tt_um_snn_with_delays_paolaunisa
   PIN ui_in[0]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.196500 ;
+    ANTENNAGATEAREA 0.247500 ;
     PORT
       LAYER met4 ;
         RECT 138.310 224.760 138.610 225.760 ;
@@ -261,7 +333,7 @@ MACRO tt_um_snn_with_delays_paolaunisa
   PIN ui_in[1]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.196500 ;
+    ANTENNAGATEAREA 0.247500 ;
     PORT
       LAYER met4 ;
         RECT 135.550 224.760 135.850 225.760 ;
@@ -270,7 +342,7 @@ MACRO tt_um_snn_with_delays_paolaunisa
   PIN ui_in[2]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.196500 ;
+    ANTENNAGATEAREA 0.247500 ;
     PORT
       LAYER met4 ;
         RECT 132.790 224.760 133.090 225.760 ;
@@ -279,7 +351,7 @@ MACRO tt_um_snn_with_delays_paolaunisa
   PIN ui_in[3]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.196500 ;
+    ANTENNAGATEAREA 0.426000 ;
     PORT
       LAYER met4 ;
         RECT 130.030 224.760 130.330 225.760 ;
@@ -288,7 +360,7 @@ MACRO tt_um_snn_with_delays_paolaunisa
   PIN ui_in[4]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.196500 ;
+    ANTENNAGATEAREA 0.426000 ;
     PORT
       LAYER met4 ;
         RECT 127.270 224.760 127.570 225.760 ;
@@ -297,7 +369,7 @@ MACRO tt_um_snn_with_delays_paolaunisa
   PIN ui_in[5]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.196500 ;
+    ANTENNAGATEAREA 0.247500 ;
     PORT
       LAYER met4 ;
         RECT 124.510 224.760 124.810 225.760 ;
@@ -306,7 +378,7 @@ MACRO tt_um_snn_with_delays_paolaunisa
   PIN ui_in[6]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.196500 ;
+    ANTENNAGATEAREA 0.247500 ;
     PORT
       LAYER met4 ;
         RECT 121.750 224.760 122.050 225.760 ;
@@ -315,7 +387,7 @@ MACRO tt_um_snn_with_delays_paolaunisa
   PIN ui_in[7]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.196500 ;
+    ANTENNAGATEAREA 0.426000 ;
     PORT
       LAYER met4 ;
         RECT 118.990 224.760 119.290 225.760 ;
@@ -324,7 +396,7 @@ MACRO tt_um_snn_with_delays_paolaunisa
   PIN uio_in[0]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.247500 ;
+    ANTENNAGATEAREA 0.495000 ;
     PORT
       LAYER met4 ;
         RECT 116.230 224.760 116.530 225.760 ;
@@ -333,7 +405,7 @@ MACRO tt_um_snn_with_delays_paolaunisa
   PIN uio_in[1]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.196500 ;
+    ANTENNAGATEAREA 0.247500 ;
     PORT
       LAYER met4 ;
         RECT 113.470 224.760 113.770 225.760 ;
@@ -351,6 +423,7 @@ MACRO tt_um_snn_with_delays_paolaunisa
     DIRECTION INPUT ;
     USE SIGNAL ;
     ANTENNAGATEAREA 0.852000 ;
+    ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met4 ;
         RECT 107.950 224.760 108.250 225.760 ;
@@ -376,7 +449,7 @@ MACRO tt_um_snn_with_delays_paolaunisa
   PIN uio_in[6]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.196500 ;
+    ANTENNAGATEAREA 0.213000 ;
     PORT
       LAYER met4 ;
         RECT 99.670 224.760 99.970 225.760 ;
@@ -473,7 +546,7 @@ MACRO tt_um_snn_with_delays_paolaunisa
   PIN uio_out[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.891000 ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 66.550 224.760 66.850 225.760 ;
@@ -498,7 +571,7 @@ MACRO tt_um_snn_with_delays_paolaunisa
   PIN uio_out[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.795200 ;
+    ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
         RECT 58.270 224.760 58.570 225.760 ;
@@ -515,7 +588,7 @@ MACRO tt_um_snn_with_delays_paolaunisa
   PIN uio_out[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
+    ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
         RECT 52.750 224.760 53.050 225.760 ;
@@ -542,7 +615,7 @@ MACRO tt_um_snn_with_delays_paolaunisa
   PIN uo_out[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.924000 ;
+    ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
         RECT 88.630 224.760 88.930 225.760 ;
@@ -560,7 +633,7 @@ MACRO tt_um_snn_with_delays_paolaunisa
   PIN uo_out[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.924000 ;
+    ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
         RECT 83.110 224.760 83.410 225.760 ;
@@ -595,17 +668,17 @@ MACRO tt_um_snn_with_delays_paolaunisa
   END uo_out[7]
   OBS
       LAYER nwell ;
-        RECT 2.570 2.635 1027.830 223.230 ;
+        RECT 2.570 2.635 1375.590 223.230 ;
       LAYER li1 ;
-        RECT 2.760 2.635 1027.640 223.125 ;
+        RECT 2.760 2.635 1375.400 223.125 ;
       LAYER met1 ;
-        RECT 2.760 0.040 1027.640 225.720 ;
+        RECT 2.760 0.040 1375.400 225.720 ;
       LAYER met2 ;
-        RECT 2.850 0.010 1026.160 225.750 ;
+        RECT 11.140 0.010 1366.560 225.750 ;
       LAYER met3 ;
-        RECT 2.825 0.175 1025.735 225.585 ;
+        RECT 14.325 0.175 1361.075 225.585 ;
       LAYER met4 ;
-        RECT 15.015 224.360 30.270 225.585 ;
+        RECT 24.215 224.360 30.270 225.585 ;
         RECT 31.370 224.360 33.030 225.585 ;
         RECT 34.130 224.360 35.790 225.585 ;
         RECT 36.890 224.360 38.550 225.585 ;
@@ -648,11 +721,9 @@ MACRO tt_um_snn_with_delays_paolaunisa
         RECT 139.010 224.360 140.670 225.585 ;
         RECT 141.770 224.360 143.430 225.585 ;
         RECT 144.530 224.360 146.190 225.585 ;
-        RECT 147.290 224.360 921.545 225.585 ;
-        RECT 15.015 223.680 921.545 224.360 ;
-        RECT 15.015 2.080 17.880 223.680 ;
-        RECT 20.280 2.080 21.180 223.680 ;
-        RECT 23.580 2.080 56.750 223.680 ;
+        RECT 147.290 224.360 1256.425 225.585 ;
+        RECT 24.215 223.680 1256.425 224.360 ;
+        RECT 24.215 2.080 56.750 223.680 ;
         RECT 59.150 2.080 60.050 223.680 ;
         RECT 62.450 2.080 95.620 223.680 ;
         RECT 98.020 2.080 98.920 223.680 ;
@@ -698,8 +769,24 @@ MACRO tt_um_snn_with_delays_paolaunisa
         RECT 875.420 2.080 876.320 223.680 ;
         RECT 878.720 2.080 911.890 223.680 ;
         RECT 914.290 2.080 915.190 223.680 ;
-        RECT 917.590 2.080 921.545 223.680 ;
-        RECT 15.015 1.535 921.545 2.080 ;
+        RECT 917.590 2.080 950.760 223.680 ;
+        RECT 953.160 2.080 954.060 223.680 ;
+        RECT 956.460 2.080 989.630 223.680 ;
+        RECT 992.030 2.080 992.930 223.680 ;
+        RECT 995.330 2.080 1028.500 223.680 ;
+        RECT 1030.900 2.080 1031.800 223.680 ;
+        RECT 1034.200 2.080 1067.370 223.680 ;
+        RECT 1069.770 2.080 1070.670 223.680 ;
+        RECT 1073.070 2.080 1106.240 223.680 ;
+        RECT 1108.640 2.080 1109.540 223.680 ;
+        RECT 1111.940 2.080 1145.110 223.680 ;
+        RECT 1147.510 2.080 1148.410 223.680 ;
+        RECT 1150.810 2.080 1183.980 223.680 ;
+        RECT 1186.380 2.080 1187.280 223.680 ;
+        RECT 1189.680 2.080 1222.850 223.680 ;
+        RECT 1225.250 2.080 1226.150 223.680 ;
+        RECT 1228.550 2.080 1256.425 223.680 ;
+        RECT 24.215 0.175 1256.425 2.080 ;
   END
 END tt_um_snn_with_delays_paolaunisa
 END LIBRARY
