@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt09 a48b1c74",
+  "repo": "https://github.com/DinkoOletic/tt09-HDL_unizgfer_2ch_AE_tf_spectrogram",
+  "commit": "47c65f767e760975226cf4666a4fef081809ae02",
+  "workflow_url": "https://github.com/DinkoOletic/tt09-HDL_unizgfer_2ch_AE_tf_spectrogram/actions/runs/11759723105",
+  "sort_id": 1731191218054,
+  "openlane_version": "OpenLane2 2.1.9",
+  "pdk_version": "open_pdks bdc9412b3e468c102d01b7cf6337be06ec6e9c9a"
+}
