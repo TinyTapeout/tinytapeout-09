@@ -131,6 +131,7 @@ MACRO tt_um_micro_tiles_container
     DIRECTION INPUT ;
     USE SIGNAL ;
     ANTENNAGATEAREA 0.196500 ;
+    ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met4 ;
         RECT 135.550 110.520 135.850 111.520 ;
@@ -140,6 +141,7 @@ MACRO tt_um_micro_tiles_container
     DIRECTION INPUT ;
     USE SIGNAL ;
     ANTENNAGATEAREA 0.196500 ;
+    ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met4 ;
         RECT 132.790 110.520 133.090 111.520 ;
@@ -149,7 +151,6 @@ MACRO tt_um_micro_tiles_container
     DIRECTION INPUT ;
     USE SIGNAL ;
     ANTENNAGATEAREA 0.196500 ;
-    ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met4 ;
         RECT 130.030 110.520 130.330 111.520 ;
@@ -461,11 +462,11 @@ MACRO tt_um_micro_tiles_container
       LAYER li1 ;
         RECT 2.760 2.635 155.480 106.165 ;
       LAYER met1 ;
-        RECT 2.760 2.480 155.480 107.060 ;
+        RECT 2.760 2.480 155.480 111.480 ;
       LAYER met2 ;
-        RECT 3.000 2.480 155.390 111.365 ;
+        RECT 3.000 2.480 153.550 111.510 ;
       LAYER met3 ;
-        RECT 3.010 2.515 155.415 111.345 ;
+        RECT 3.010 2.515 153.575 110.665 ;
       LAYER met4 ;
         RECT 31.370 110.120 33.030 111.170 ;
         RECT 34.130 110.120 35.790 111.170 ;
