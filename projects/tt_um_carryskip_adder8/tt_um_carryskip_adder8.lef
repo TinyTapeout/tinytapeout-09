@@ -50,7 +50,6 @@ MACRO tt_um_carryskip_adder8
   PIN clk
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.852000 ;
     PORT
       LAYER met4 ;
         RECT 143.830 110.520 144.130 111.520 ;
@@ -67,7 +66,6 @@ MACRO tt_um_carryskip_adder8
   PIN rst_n
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.159000 ;
     PORT
       LAYER met4 ;
         RECT 141.070 110.520 141.370 111.520 ;
@@ -348,7 +346,7 @@ MACRO tt_um_carryskip_adder8
   PIN uo_out[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.891000 ;
+    ANTENNADIFFAREA 0.795200 ;
     PORT
       LAYER met4 ;
         RECT 94.150 110.520 94.450 111.520 ;
@@ -357,7 +355,7 @@ MACRO tt_um_carryskip_adder8
   PIN uo_out[1]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.891000 ;
+    ANTENNADIFFAREA 0.795200 ;
     PORT
       LAYER met4 ;
         RECT 91.390 110.520 91.690 111.520 ;
@@ -366,7 +364,7 @@ MACRO tt_um_carryskip_adder8
   PIN uo_out[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.891000 ;
+    ANTENNADIFFAREA 0.795200 ;
     PORT
       LAYER met4 ;
         RECT 88.630 110.520 88.930 111.520 ;
@@ -375,7 +373,7 @@ MACRO tt_um_carryskip_adder8
   PIN uo_out[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.891000 ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 85.870 110.520 86.170 111.520 ;
@@ -384,7 +382,7 @@ MACRO tt_um_carryskip_adder8
   PIN uo_out[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.891000 ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 83.110 110.520 83.410 111.520 ;
@@ -393,7 +391,7 @@ MACRO tt_um_carryskip_adder8
   PIN uo_out[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.891000 ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 80.350 110.520 80.650 111.520 ;
@@ -402,7 +400,7 @@ MACRO tt_um_carryskip_adder8
   PIN uo_out[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.891000 ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 77.590 110.520 77.890 111.520 ;
@@ -411,7 +409,7 @@ MACRO tt_um_carryskip_adder8
   PIN uo_out[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.891000 ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 74.830 110.520 75.130 111.520 ;
@@ -423,11 +421,11 @@ MACRO tt_um_carryskip_adder8
       LAYER li1 ;
         RECT 2.760 2.635 158.240 108.885 ;
       LAYER met1 ;
-        RECT 2.760 2.480 158.240 110.120 ;
+        RECT 2.760 2.480 158.240 109.780 ;
       LAYER met2 ;
-        RECT 18.310 2.535 148.950 110.685 ;
+        RECT 18.310 2.535 146.190 110.685 ;
       LAYER met3 ;
-        RECT 18.290 2.555 148.975 110.665 ;
+        RECT 18.290 2.555 146.215 110.665 ;
       LAYER met4 ;
         RECT 31.370 110.120 33.030 110.665 ;
         RECT 34.130 110.120 35.790 110.665 ;
@@ -468,16 +466,13 @@ MACRO tt_um_carryskip_adder8
         RECT 130.730 110.120 132.390 110.665 ;
         RECT 133.490 110.120 135.150 110.665 ;
         RECT 136.250 110.120 137.910 110.665 ;
-        RECT 139.010 110.120 140.670 110.665 ;
-        RECT 141.770 110.120 143.430 110.665 ;
-        RECT 30.655 109.440 144.145 110.120 ;
+        RECT 30.655 109.440 138.625 110.120 ;
         RECT 30.655 93.335 56.750 109.440 ;
         RECT 59.150 93.335 60.050 109.440 ;
         RECT 62.450 93.335 95.620 109.440 ;
         RECT 98.020 93.335 98.920 109.440 ;
         RECT 101.320 93.335 134.490 109.440 ;
         RECT 136.890 93.335 137.790 109.440 ;
-        RECT 140.190 93.335 144.145 109.440 ;
   END
 END tt_um_carryskip_adder8
 END LIBRARY
