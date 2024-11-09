@@ -5,10 +5,10 @@ project:
   discord:      "paolaunisa"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "ChatGPT-generated Spiking Neural Network with Delays"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     50000000       # Clock frequency in Hz (or 0 if not applicable)
+  clock_hz:     5000000       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
-  tiles: "8x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+  tiles: "6x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
   top_module:  "tt_um_snn_with_delays_paolaunisa"
@@ -50,14 +50,14 @@ pinout:
   ui[7]: "input_spike[7]"
 
   # Outputs
-  uo[0]: "debug_output_0"
-  uo[1]: "debug_output_1"
-  uo[2]: "debug_output_2"
-  uo[3]: "debug_output_3"
-  uo[4]: "debug_output_4"
-  uo[5]: "debug_output_5"
-  uo[6]: "debug_output_6"
-  uo[7]: "debug_output_7"
+  uo[0]: "debug_output[0]"
+  uo[1]: "debug_output[1]"
+  uo[2]: "debug_output[2]"
+  uo[3]: "debug_output[3]"
+  uo[4]: "debug_output[4]"
+  uo[5]: "debug_output[5]"
+  uo[6]: "debug_output[6]"
+  uo[7]: "debug_output[7]"
 
   # Bidirectional pins
   uio[0]: "CS"
