@@ -1015,12 +1015,17 @@ module tt_um_micro_tiles_container (clk,
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 ANTENNA_5 (.DIODE(ui_in[3]),
+ sky130_fd_sc_hd__diode_2 ANTENNA_5 (.DIODE(ui_in[1]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 ANTENNA_6 (.DIODE(ui_in[4]),
+ sky130_fd_sc_hd__diode_2 ANTENNA_6 (.DIODE(ui_in[2]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR));
+ sky130_fd_sc_hd__diode_2 ANTENNA_7 (.DIODE(ui_in[4]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -1361,19 +1366,15 @@ module tt_um_micro_tiles_container (clk,
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__decap_6 FILLER_0_20_167 (.VGND(VGND),
+ sky130_fd_sc_hd__decap_8 FILLER_0_20_167 (.VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__decap_4 FILLER_0_21_141 (.VGND(VGND),
+ sky130_fd_sc_hd__fill_2 FILLER_0_21_143 (.VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__decap_4 FILLER_0_22_141 (.VGND(VGND),
-    .VNB(VGND),
-    .VPB(VPWR),
-    .VPWR(VPWR));
- sky130_fd_sc_hd__fill_1 FILLER_0_22_145 (.VGND(VGND),
+ sky130_fd_sc_hd__decap_3 FILLER_0_22_143 (.VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
