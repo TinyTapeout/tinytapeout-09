@@ -156,7 +156,6 @@ MACRO tt_um_adder_accumulator_sathworld
   PIN uio_in[1]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met4 ;
         RECT 113.470 110.520 113.770 111.520 ;
@@ -174,7 +173,7 @@ MACRO tt_um_adder_accumulator_sathworld
   PIN uio_in[3]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.213000 ;
+    ANTENNAGATEAREA 0.159000 ;
     PORT
       LAYER met4 ;
         RECT 107.950 110.520 108.250 111.520 ;
@@ -292,6 +291,7 @@ MACRO tt_um_adder_accumulator_sathworld
   PIN uio_out[1]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
+    ANTENNADIFFAREA 0.795200 ;
     PORT
       LAYER met4 ;
         RECT 69.310 110.520 69.610 111.520 ;
@@ -423,11 +423,11 @@ MACRO tt_um_adder_accumulator_sathworld
       LAYER li1 ;
         RECT 2.760 2.635 158.240 108.885 ;
       LAYER met1 ;
-        RECT 2.760 2.480 158.240 109.440 ;
+        RECT 2.760 2.480 158.240 110.120 ;
       LAYER met2 ;
-        RECT 18.310 2.535 153.080 110.685 ;
+        RECT 18.310 2.535 150.780 110.685 ;
       LAYER met3 ;
-        RECT 18.290 2.555 146.215 110.665 ;
+        RECT 18.290 2.555 147.595 110.665 ;
       LAYER met4 ;
         RECT 31.370 110.120 33.030 110.665 ;
         RECT 34.130 110.120 35.790 110.665 ;
@@ -471,13 +471,13 @@ MACRO tt_um_adder_accumulator_sathworld
         RECT 139.010 110.120 140.670 110.665 ;
         RECT 141.770 110.120 143.430 110.665 ;
         RECT 30.655 109.440 144.145 110.120 ;
-        RECT 30.655 89.935 56.750 109.440 ;
-        RECT 59.150 89.935 60.050 109.440 ;
-        RECT 62.450 89.935 95.620 109.440 ;
-        RECT 98.020 89.935 98.920 109.440 ;
-        RECT 101.320 89.935 134.490 109.440 ;
-        RECT 136.890 89.935 137.790 109.440 ;
-        RECT 140.190 89.935 144.145 109.440 ;
+        RECT 30.655 85.855 56.750 109.440 ;
+        RECT 59.150 85.855 60.050 109.440 ;
+        RECT 62.450 85.855 95.620 109.440 ;
+        RECT 98.020 85.855 98.920 109.440 ;
+        RECT 101.320 85.855 134.490 109.440 ;
+        RECT 136.890 85.855 137.790 109.440 ;
+        RECT 140.190 85.855 144.145 109.440 ;
   END
 END tt_um_adder_accumulator_sathworld
 END LIBRARY
