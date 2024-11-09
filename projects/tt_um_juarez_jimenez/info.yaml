@@ -30,19 +30,19 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
-  ui[4]: ""
-  ui[5]: ""
-  ui[6]: ""
-  ui[7]: ""
+  ui[0]: "LFSR Seed Bit 0"
+  ui[1]: "LFSR Seed Bit 1"
+  ui[2]: "LFSR Seed Bit 2"
+  ui[3]: "LFSR Seed Bit 3"
+  ui[4]: "LFSR Seed Bit 4"
+  ui[5]: "LFSR Seed Bit 5"
+  ui[6]: "LFSR Seed Bit 6"
+  ui[7]: "LFSR Seed Bit 7"
 
   # Outputs
   uo[0]:  "LFSR Output Bit 0"
-  uo[1]: "LFSR Output Bit 1"
-  uo[2]: "LFSR Output Bit 2"
+  uo[1]:  "LFSR Output Bit 1"
+  uo[2]:  "LFSR Output Bit 2"
   uo[3]:  "LFSR Output Bit 3"
   uo[4]:  "LFSR Output Bit 4"
   uo[5]:  "LFSR Output Bit 5"
