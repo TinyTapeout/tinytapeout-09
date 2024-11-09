@@ -1,9 +1,9 @@
 # Tiny Tapeout project information
 project:
-  title:        "A simple leaky integrate and fire neuron physical representation"      # Project title
+  title:        "Delta RNN and Leaky Integrate-and-Fire Nueron Circuit"      # Project title
   author:       "Katherine Rogacheva"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Fires an output spike once the input has passed a certain threshold value"      # One line description of what your project does
+  description:  "A physical representation of a delta recurrent neural network (Delta RNN) and a leaky integrate-and-fire (LIF) neuron, that creates an artificial spike when the difference in the previous and current state is greater than a set delta threshold."      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -19,6 +19,7 @@ project:
   source_files:
     - "tt_um_delta_liafn.v"
     - "lif.v"
+    - "reg_state_store.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
@@ -43,14 +44,14 @@ pinout:
   uo[7]: "State variable bit [7]"
 
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
-  uio[2]: ""
-  uio[3]: ""
-  uio[4]: ""
-  uio[5]: ""
-  uio[6]: ""
-  uio[7]: "Spike bit"
+  uio[0]: "Difference in states bit [1]"
+  uio[1]: "Difference in states bit [2]"
+  uio[2]: "Difference in states bit [3]"
+  uio[3]: "Difference in states bit [4]"
+  uio[4]: "Difference in states bit [5]"
+  uio[5]: "Difference in states bit [6]"
+  uio[6]: "Difference in states bit [7]"
+  uio[7]: "Difference in states bit [8]"
 
 # Do not change!
 yaml_version: 6
