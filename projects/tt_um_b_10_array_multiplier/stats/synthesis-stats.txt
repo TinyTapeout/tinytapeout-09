@@ -1,0 +1,38 @@
+61. Printing statistics.
+
+=== tt_um_b_10_array_multiplier ===
+
+   Number of wires:                 66
+   Number of wire bits:            101
+   Number of public wires:          15
+   Number of public wire bits:      50
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 82
+     sky130_fd_sc_hd__a211o_2        1
+     sky130_fd_sc_hd__a21o_2         5
+     sky130_fd_sc_hd__a21oi_2        6
+     sky130_fd_sc_hd__a221oi_2       1
+     sky130_fd_sc_hd__a22o_2         3
+     sky130_fd_sc_hd__a22oi_2        1
+     sky130_fd_sc_hd__a32oi_2        1
+     sky130_fd_sc_hd__and2_2         1
+     sky130_fd_sc_hd__and3_2         4
+     sky130_fd_sc_hd__and4_2         3
+     sky130_fd_sc_hd__buf_2          7
+     sky130_fd_sc_hd__conb_1        16
+     sky130_fd_sc_hd__inv_2          1
+     sky130_fd_sc_hd__mux2_1         2
+     sky130_fd_sc_hd__nand2_2        7
+     sky130_fd_sc_hd__nand2b_2       1
+     sky130_fd_sc_hd__nand3_2        4
+     sky130_fd_sc_hd__nand4_2        3
+     sky130_fd_sc_hd__nor2_2         6
+     sky130_fd_sc_hd__o2111a_2       2
+     sky130_fd_sc_hd__o31ai_2        1
+     sky130_fd_sc_hd__xnor2_2        5
+     sky130_fd_sc_hd__xor2_2         1
+
+   Chip area for module '\tt_um_b_10_array_multiplier': 671.894400
+
