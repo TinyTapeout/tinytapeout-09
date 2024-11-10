@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt09 a48b1c74",
+  "repo": "https://github.com/Purdue-SoCET/tt09-purdue-socet",
+  "commit": "4bf02099598a4a54fb2e60d8afad1a03caeba237",
+  "workflow_url": "https://github.com/Purdue-SoCET/tt09-purdue-socet/actions/runs/11767395691",
+  "sort_id": 1731262667188,
+  "openlane_version": "OpenLane2 2.1.9",
+  "pdk_version": "open_pdks bdc9412b3e468c102d01b7cf6337be06ec6e9c9a"
+}
