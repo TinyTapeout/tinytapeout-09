@@ -1,0 +1,20 @@
+62. Printing statistics.
+
+=== tt_um_ccu_goatgate ===
+
+   Number of wires:                 16
+   Number of wire bits:             51
+   Number of public wires:           8
+   Number of public wire bits:      43
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     sky130_fd_sc_hd__conb_1        20
+     sky130_fd_sc_hd__dfrtp_2        4
+     sky130_fd_sc_hd__inv_2          4
+     sky130_fd_sc_hd__xnor2_2        2
+     sky130_fd_sc_hd__xor2_2         2
+
+   Chip area for module '\tt_um_ccu_goatgate': 260.249600
+
