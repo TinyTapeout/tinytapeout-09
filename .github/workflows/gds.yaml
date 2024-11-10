@@ -142,6 +142,8 @@ jobs:
             tt-multiplexer/ol2/tt_top/lef/*
             tt-multiplexer/ol2/tt_top/spef/*
             tt-multiplexer/ol2/tt_top/verilog/*
+            tt-multiplexer/ol2/tt_mux/runs/RUN_*/*
+            tt-multiplexer/ol2/tt_ctrl/runs/RUN_*/*
 
       - name: upload shuttle_index.json
         if: success() || failure()
