@@ -1,0 +1,74 @@
+62. Printing statistics.
+
+=== dffsr_cell ===
+
+   Number of wires:                  9
+   Number of wire bits:              9
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     sky130_fd_sc_hd__dfbbn_2        1
+     sky130_fd_sc_hd__inv_2          2
+     sky130_fd_sc_hd__nand2b_2       1
+
+   Chip area for module '\dffsr_cell': 51.299200
+
+=== not_cell ===
+
+   Number of wires:                  2
+   Number of wire bits:              2
+   Number of public wires:           2
+   Number of public wire bits:       2
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__inv_2          1
+
+   Chip area for module '\not_cell': 3.753600
+
+=== tt_um_wokwi_414120378768943105 ===
+
+   Number of wires:                 33
+   Number of wire bits:             68
+   Number of public wires:          25
+   Number of public wire bits:      60
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 41
+     dffsr_cell                      8
+     not_cell                        1
+     sky130_fd_sc_hd__buf_2          8
+     sky130_fd_sc_hd__conb_1        24
+
+   Area for cell type \dffsr_cell is unknown!
+   Area for cell type \not_cell is unknown!
+
+   Chip area for module '\tt_um_wokwi_414120378768943105': 130.124800
+
+=== design hierarchy ===
+
+   tt_um_wokwi_414120378768943105      1
+     dffsr_cell                      8
+     not_cell                        1
+
+   Number of wires:                107
+   Number of wire bits:            142
+   Number of public wires:          75
+   Number of public wire bits:     110
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 65
+     sky130_fd_sc_hd__buf_2          8
+     sky130_fd_sc_hd__conb_1        24
+     sky130_fd_sc_hd__dfbbn_2        8
+     sky130_fd_sc_hd__inv_2         17
+     sky130_fd_sc_hd__nand2b_2       8
+
+   Chip area for top module '\tt_um_wokwi_414120378768943105': 544.272000
+
