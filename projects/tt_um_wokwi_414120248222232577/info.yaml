@@ -1,28 +1,36 @@
-# Tiny Tapeout project information (Wokwi project)
+# Tiny Tapeout project information
 project:
-  wokwi_id:     414120248222232577       # Set this to the ID of your Wokwi project (the number from the project's URL)
-  title:        "Test"      # Project title
-  author:       "mng2"      # Your name
+  title:        "A Tale of Two NCOs"      # Project title
+  author:       "Mike Ng"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "not a whole lot"      # One line description of what your project does
-  language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+  description:  "Two NCOs enter, one signal leaves"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     50000000       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
 
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_wokwi_414120248222232577"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "sine_table.v"
+    - "project.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: "IN0"
-  ui[1]: "IN1"
-  ui[2]: "IN2"
-  ui[3]: "IN3"
-  ui[4]: "IN4"
-  ui[5]: "IN5"
-  ui[6]: "IN6"
-  ui[7]: "IN7"
+  ui[0]: "phase_incr_A[0]"
+  ui[1]: "phase_incr_A[1]"
+  ui[2]: "phase_incr_A[2]"
+  ui[3]: "phase_incr_A[3]"
+  ui[4]: "phase_incr_A[4]"
+  ui[5]: "phase_incr_A[5]"
+  ui[6]: "phase_incr_A[6]"
+  ui[7]: "filter_on"
 
   # Outputs
   uo[0]: "OUT0"
@@ -35,14 +43,14 @@ pinout:
   uo[7]: "OUT7"
 
   # Bidirectional pins
-  uio[0]: "BID0"
-  uio[1]: "BID1"
-  uio[2]: "BID2"
-  uio[3]: "BID3"
-  uio[4]: "BID4"
-  uio[5]: "BID5"
-  uio[6]: "BID6"
-  uio[7]: "BID7"
-
+  uio[0]: "phase_incr_B[0]"
+  uio[1]: "phase_incr_B[1]"
+  uio[2]: "phase_incr_B[2]"
+  uio[3]: "phase_incr_B[3]"
+  uio[4]: "phase_incr_B[4]"
+  uio[5]: "phase_incr_B[5]"
+  uio[6]: "low_amplitude_B"
+  uio[7]: "bypass_B"
+  
 # Do not change!
 yaml_version: 6
