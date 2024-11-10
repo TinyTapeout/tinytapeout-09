@@ -25,8 +25,8 @@ Consists of a simple general purpose register, a memory address register, and an
 |------------------------|--------------|--------------------------------------------------------------------------------------------------|
 | CLK [1 bit]            | Input        | Clock signal. Executes actions on rising edges.                                                  |
 | W bus [8 bit]          | Input        | Takes 8 bits with the most significant 4 bits representing the opcode and the least significant 4 bits representing any other necessary value. Write them to the instruction register. |
-| \\L<sub>I</sub> [1 bit] | Input        | Control signal that decides whether to read from the bus.                                        |
-| \\E<sub>I</sub> [1 bit] | Input        | Control signal that decides tri-state buffer output to bus (drive register value if enabled, Z if disabled). |
+| <sub>I</sub> [1 bit] | Input        | Control signal that decides whether to read from the bus.                                        |
+| <sub>I</sub> [1 bit] | Input        | Control signal that decides tri-state buffer output to bus (drive register value if enabled, Z if disabled). |
 | CLR [1 bit]            | Input        | Clears the instruction register’s data.                                                          |
 | Instruction register[3:0] [4 bit] | Output | Output to W bus                                                                                  |
 | Instruction register[7:4] [4 bit] | Output | Output to controller/sequences                                                                   |
@@ -36,8 +36,8 @@ Consists of a simple general purpose register, a memory address register, and an
 |-----------------|--------------|
 | clk             | CLK          |
 | ui_in[7:0]      | W bus        |
-| uio_in [4]      | \\L<sub>I</sub> |
-| uio_in [5]      | \\E<sub>I</sub> |
+| uio_in [4]      | <sub>I</sub> |
+| uio_in [5]      | <sub>I</sub> |
 | rst_n           | CLR          |
 | uio_out[3:0]    | Instruction register[7:4] |
 | uo_out[3:0]     | Instruction register[3:0] |
@@ -51,8 +51,8 @@ Consists of a simple general purpose register, a memory address register, and an
 |-----------------|--------------|
 | clk             | CLK          |
 | ui_in[7:0]      | W bus        |
-| uio_in [1]      | \\L<sub>I</sub> |
-| uio_in [2]      | \\E<sub>I</sub> |
+| uio_in [1]      | <sub>I</sub> |
+| uio_in [2]      | <sub>I</sub> |
 | uio_in [0]      | CLR          |
 | uio_out[3:0]    | Instruction register[7:4] |
 | uo_out[3:0]     | Instruction register[3:0] |
@@ -63,7 +63,7 @@ Consists of a simple general purpose register, a memory address register, and an
 |------------------------|--------------|--------------------------------------------------------------------------------------------------|
 | CLK [1 bit]            | Input        | Clock signal. Executes actions on rising edges.                                                  |
 | W bus [8 bit]          | Input        | Data from the bus lines that are to be written to the Output register.                           |
-| \\L<sub>O</sub> [1 bit]  | Input        | Control signal that decides whether to read from the bus and load onto the output register.      |
+| <sub>O</sub> [1 bit]  | Input        | Control signal that decides whether to read from the bus and load onto the output register.      |
 | Output register [8 bit] | Output     | Register data that will be written to the binary display.                                        |
 
 #### Pinouts when output register is selected
@@ -71,7 +71,7 @@ Consists of a simple general purpose register, a memory address register, and an
 |-----------------|--------------|
 | clk             | CLK          |
 | ui_in[7:0]      | W bus        |
-| uio_in [4]      | \\L<sub>O</sub>  |
+| uio_in [4]      | <sub>O</sub>  |
 | uo_out[7:0]     | Output register |
 
 ![register](https://github.com/user-attachments/assets/5a68a43f-1b65-41bf-a61f-91ef55d1b58e)
@@ -81,7 +81,7 @@ Consists of a simple general purpose register, a memory address register, and an
 |-----------------|--------------|
 | clk             | CLK          |
 | ui_in[7:0]      | W bus        |
-| uio_in [0]      | \\L<sub>O</sub>  |
+| uio_in [0]      | <sub>O</sub>  |
 | uo_out[7:0]     | Output register |
 
 ### B Register
@@ -90,7 +90,7 @@ Consists of a simple general purpose register, a memory address register, and an
 |------------------------|--------------|--------------------------------------------------------------------------------------------------|
 | CLK [1 bit]            | Input        | Clock signal. Executes actions on rising edges.                                                  |
 | W bus [8 bit]          | Input        | Data from the bus lines that are to be written to the B register.                                |
-| \\L<sub>B</sub> [1 bit] | Input        | Control signal that decides whether to read from the bus and load onto the B register.           |
+| <sub>B</sub> [1 bit] | Input        | Control signal that decides whether to read from the bus and load onto the B register.           |
 | B register [8 bit]     | Output       | Register data that will be written to adder/subtractor.                                          |
 
 #### Pinouts when b register is selected
@@ -98,7 +98,7 @@ Consists of a simple general purpose register, a memory address register, and an
 |-----------------|--------------|
 | clk             | CLK          |
 | ui_in[7:0]      | W bus        |
-| uio_in [4]      | \\L<sub>B</sub> |
+| uio_in [4]      | <sub>B</sub> |
 | uo_out[7:0]     | B register |
 
 ![register](https://github.com/user-attachments/assets/a6f0c398-0f53-40a4-8b95-c0c5876fcb8d)
@@ -108,7 +108,7 @@ Consists of a simple general purpose register, a memory address register, and an
 |-----------------|--------------|
 | clk             | CLK          |
 | ui_in[7:0]      | W bus        |
-| uio_in [0]      | \\L<sub>B</sub> |
+| uio_in [0]      | <sub>B</sub> |
 | uo_out[7:0]     | B register |
 
 ### Input and MAR
@@ -117,8 +117,8 @@ Consists of a simple general purpose register, a memory address register, and an
 |------------------------|--------------|--------------------------------------------------------------------------------------------------|
 | CLK [1 bit]            | Input        | Clock signal. Executes actions on rising edges.                                                  |
 | W bus [8 bit]          | Input        | Data from the bus lines that are to be written either Input or MAR register.                     |
-| \\L<sub>MD</sub> [1 bit] | Input        | Control signal that decides if W bus data is to be written to the Input register. Should not be active at the same time as the MA control signal. |
-| \\L<sub>MA</sub> [1 bit] | Input        | Control signal that decides if W bus data is to be written to the MAR register. Should not be active at the same time as the MD control signal. |
+| <sub>MD</sub> [1 bit] | Input        | Control signal that decides if W bus data is to be written to the Input register. Should not be active at the same time as the MA control signal. |
+| <sub>MA</sub> [1 bit] | Input        | Control signal that decides if W bus data is to be written to the MAR register. Should not be active at the same time as the MD control signal. |
 | Input register [8 bit] | Output       | Register data to be written to memory.                                                           |
 | MAR [4 bit]            | Output       | Register data taken by RAM that controls where the data is to be written.                        |
 
@@ -127,8 +127,8 @@ Consists of a simple general purpose register, a memory address register, and an
 |-----------------|--------------|
 | clk             | CLK          |
 | ui_in[7:0]      | W bus        |
-| uio_in [4]      | \\L<sub>MD</sub> |
-| uio_in [5]      | \\L<sub>MA</sub> |
+| uio_in [4]      | <sub>MD</sub> |
+| uio_in [5]      | <sub>MA</sub> |
 | uo_out[7:0]     | Input register |
 | uio_out[3:0]    | MAR          |
 
@@ -139,7 +139,7 @@ Consists of a simple general purpose register, a memory address register, and an
 |-----------------|--------------|
 | clk             | CLK          |
 | ui_in[7:0]      | W bus        |
-| uio_in [0]      | \\L<sub>MD</sub> |
-| uio_in [1]      | \\L<sub>MA</sub> |
+| uio_in [0]      | <sub>MD</sub> |
+| uio_in [1]      | <sub>MA</sub> |
 | uo_out[7:0]     | Input register |
 | uio_out[3:0]    | MAR          |
