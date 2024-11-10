@@ -1,0 +1,60 @@
+# Tiny Tapeout project information
+project:
+  title:        "Classic 8-bit era Programmable Sound Generator SN76489"
+  author:       "ReJ aka Renaldas Zioma"
+  discord:      "rzioma"
+  description:  "The SN76489 Digital Complex Sound Generator (DCSG) is a programmable sound generator chip from Texas Instruments."
+  language:     "Verilog"
+  clock_hz:     4000000   # Clock frequency in Hz
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_rejunity_sn76489"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "attenuation.v"
+    - "tone.v"
+    - "noise.v"
+    - "signal_edge.v"
+    - "pwm.v"
+    - "tt_um_rejunity_sn76489.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "D0 data bus"
+  ui[1]: "D1 data bus"
+  ui[2]: "D2 data bus"
+  ui[3]: "D3 data bus"
+  ui[4]: "D4 data bus"
+  ui[5]: "D5 data bus"
+  ui[6]: "D6 data bus"
+  ui[7]: "D7 data bus"
+
+  # Outputs
+  uo[0]: "digital audio LSB"
+  uo[1]: "digital audio"
+  uo[2]: "digital audio"
+  uo[3]: "digital audio"
+  uo[4]: "digital audio"
+  uo[5]: "digital audio"
+  uo[6]: "digital audio"
+  uo[7]: "digital audio MSB"
+
+  # Bidirectional pins
+  uio[0]: "(in)  **/WE** write enable"
+  uio[1]: "(in)  **SEL0** clock divider"
+  uio[2]: "(in)  **SEL1** clock divider"
+  uio[3]: "(out) channel 0 (PWM)"
+  uio[4]: "(out) channel 1 (PWM)"
+  uio[5]: "(out) channel 2 (PWM)"
+  uio[6]: "(out) channel 3 (PWM)"
+  uio[7]: "(out) AUDIO OUT master (PWM)"
+
+# Do not change!
+yaml_version: 6
