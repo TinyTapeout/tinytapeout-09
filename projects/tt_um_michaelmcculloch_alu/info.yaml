@@ -1,0 +1,57 @@
+# Tiny Tapeout project information
+project:
+  title:        "Michaels Tiny Tapeout ALU"      # Project title
+  author:       "Michael McCulloch"      # Your name
+  discord:      "haosgreulur"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Should work as a 2 6 bit input ALU, which then can choose from the RISCV ALU opcodes to select the operation which will be outputed in 8bit"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_michaelmcculloch_alu"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
+    - "alu_op.vh"
+    - "alu.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "Bit 2 of ALU Input B"
+  ui[1]: "Bit 3 of ALU Input B"
+  ui[2]: "Bit 4 of ALU Input B"
+  ui[3]: "Bit 5 of ALU Input B"
+  ui[4]: "Bit 0 of ALU OpCode"
+  ui[5]: "Bit 1 of ALU Opcode"
+  ui[6]: "Bit 2 of ALU OpCode"
+  ui[7]: "Bit 3 of ALU OpCode"
+
+  # Outputs
+  uo[0]: "Bit 0 of ALU Output"
+  uo[1]: "Bit 1 of ALU Output"
+  uo[2]: "Bit 2 of ALU Output"
+  uo[3]: "Bit 3 of ALU Output"
+  uo[4]: "Bit 4 of ALU Output"
+  uo[5]: "Bit 5 of ALU Output"
+  uo[6]: "Bit 6 of ALU Output"
+  uo[7]: "Bit 7 of ALU Output"
+
+  # Bidirectional pins
+  uio[0]: "Bit 0 of ALU Input A"
+  uio[1]: "Bit 1 of ALU Input A"
+  uio[2]: "Bit 2 of ALU Input A"
+  uio[3]: "Bit 3 of ALU Input A"
+  uio[4]: "Bit 4 of ALU Input A"
+  uio[5]: "Bit 5 of ALU Input A"
+  uio[6]: "Bit 0 of ALU Input B"
+  uio[7]: "Bit 1 of ALU Input B"
+
+# Do not change!
+yaml_version: 6
