@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt09 a48b1c74",
+  "repo": "https://github.com/Fi50/tt09-eksdee",
+  "commit": "7ac4c80d27c9a04b2ee3f12cc7aa6cdcfea082c4",
+  "workflow_url": "https://github.com/Fi50/tt09-eksdee/actions/runs/11767595888",
+  "sort_id": 1731264307632,
+  "openlane_version": "OpenLane2 2.1.9",
+  "pdk_version": "open_pdks bdc9412b3e468c102d01b7cf6337be06ec6e9c9a"
+}
