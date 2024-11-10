@@ -34,7 +34,7 @@ project:
     - "spi_slave.v"
     - "spiking_network_top.v"
     - "synchronizer.v"
-    - "TwoLayerNetwork_debug.v"
+    - "ThreeLayerNetwork_debug.v"
     - "reset_manager.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
