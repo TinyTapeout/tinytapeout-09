@@ -9,13 +9,13 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-A simple 5 bit LFSR I took from nandland,
-https://nandland.com/lfsr-linear-feedback-shift-register/
+A simple 8 bit LFSR I took from this paper that popped up in a google search of LFSR designs
+[https://nandland.com/lfsr-linear-feedback-shift-register/](https://www.mecs-press.org/ijcnis/ijcnis-v10-n2/IJCNIS-V10-N2-5.pdf)
 
 ## How to test
 
-The 5 first LEDs should output a pseudo random 5 bit number
+The 8 output pins should output a pseudo random 8 bit number, about once per second
 
 ## External hardware
 
-5 LEDs connected to the first five output pins
+The 8 output pins can be connected to LEDs.
