@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Logic test
+Binary counter using flip flops connected to clock line. Displays numbers on the seven segment display.
 
 ## How to test
 
-Have fun and play
+Use the step button to count from zero to nine.
 
 ## External hardware
 
-number led array and buttons
+number led array and step button
