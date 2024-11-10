@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt09 a48b1c74",
+  "repo": "https://github.com/rejunity/tt09-ternary-septenary-decoders",
+  "commit": "16f708da01248a5f1bffa11cd1e22741de76bc70",
+  "workflow_url": "https://github.com/rejunity/tt09-ternary-septenary-decoders/actions/runs/11767908904",
+  "sort_id": 1731267402238,
+  "openlane_version": "OpenLane2 2.1.9",
+  "pdk_version": "open_pdks bdc9412b3e468c102d01b7cf6337be06ec6e9c9a"
+}
