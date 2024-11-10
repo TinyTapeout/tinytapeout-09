@@ -22,7 +22,7 @@ opcodes.
 ## How it works
 
 It works by "feeding" it opcodes and data via the ui[7:0] and ui[0] input pins and then executing them by toggling the uio[1] input pin.  Some instructions require additional "Immediate Data" to be supplied
-via the ui[7:0] input pins prioro to toggling the uio[1] "execute" input.
+via the ui[7:0] input pins prior to toggling the uio[1] "execute" input.
 
 The WokProc has an 8-bit accumulator and 4 8-bit working registers and can perform ADD, SUBTRACT and the standard logical functions AND,OR,XOR and NOT, as well as shift left/right operations.  It also keeps track of CARRY and ZERO bits to reflect the results of operations.
 
@@ -96,6 +96,37 @@ The WokProc has an 8-bit accumulator and 4 8-bit working registers and can perfo
  | 1100_00rr | R[1:0] <= IMM            | Load immediate data to rr        |
  | 1101_00rr | R[1:0] <= A              | Load A to rr                     |
  | 1110_RRrr | R[1:0] <= R[3:2]         | Copy register RR to rr           |
+
+## Selecting the Output
+
+The uo_out port is used to display the state of the WocProc trainer.  It can display either 7-Segment LED
+encoded register data or direct binary data.  
+
+ | uio_in[2] | uo_out Format |
+ | --------- | ------------- |
+ | LOW       | 7-Segment     |
+ | HIGH      | Binary        |
+
+The data output to uo_out (either 7-Segment or binary) is selected via the uio_in[5] input:
+
+ | uio_in[5] | uo_out Data                            |
+ | --------- | -------------------------------------- |
+ | LOW       | Acc Register                           |
+ | HIGH      | ALU result (value loaded upon EXECUTE) |
+
+For 7-Segment output format, a single digit LED display is used to show both the upper and lower nibble
+of the selected output data.  When the LOWER nibble is being displayed, the 7-Segment Decmial Point (DP)
+will be illuminted and when the UPPER nibble is displayed, it will be turned off, such as:
+
+    F1.
+
+The nibble display can be configured using uio_in[4:3] as follows:
+
+ | uio_in[4:3] | Displayed Nibble                            |
+ | ----------- | ------------------------------------------- |
+ | 2'b0x       | Auto toggle (counter tuned for 10KHz clock) |
+ | 2'b10       | Lower nibble (plus DP)                      |
+ | 2'b11       | Upper nibble                                |
 
 ## Hardware needed:
 
