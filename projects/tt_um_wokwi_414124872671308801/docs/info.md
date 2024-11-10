@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-It is a full adder
+I have used a 4bit synchronous counter to used And and Or gates to simulate "." and "-" of morsecode.
 
 ## How to test
 
-We can test it using LEDs or 7-segment display
+We can test it by connecting a 7 segment display and we can change inputs with a button(for J it's ".---" and for R it's ".-.").
 
 ## External hardware
 
-LED display
+button, 7 segment display, clock
