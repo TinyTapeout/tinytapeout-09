@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-This is planned to contain a simple ADC.
+komparator ini bekerja dengan memanfaatkan delay pafa delay element yang dikontrol oleh perbedaan tegangan pada input
 
 ## How to test
 
-TBC
+tinggal pasang aja
 
 ## External hardware
 
-TBC
+osiloskop

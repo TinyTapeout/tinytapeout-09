@@ -1,17 +1,17 @@
 # Tiny Tapeout project information
 project:
-  title:        "AMS Chip ITS"      # Project title
-  author:       "Astria Nur Irfansyah"      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "ITS tinytapeout 3"      # One line description of what your project does
+  title:        "Time_Domain_Comparator_ITS"      # Project title
+  author:       "M Taufiqul Huda, Astria Irfansyah (ITS)"      # Your name
+  discord:      "mthudaa"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "delay and phase shift based comparator"      # One line description of what your project does
   language:     "Analog" # other examples include Verilog, Amaranth, VHDL, etc
-  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+  clock_hz:     1000000       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x2"          # Valid values for analog projects: 1x2, 2x2
 
   # How many analog pins does your project use?
-  analog_pins: 3        # Valid values: 0 to 6
+  analog_pins: 2        # Valid values: 0 to 6
   uses_3v3: false       # Set to true if your project uses 3.3V (VAPWR) in addition to 1.8V (VDPWR)
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
@@ -24,7 +24,7 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: ""
+  ui[0]: "CLK"
   ui[1]: ""
   ui[2]: ""
   ui[3]: ""
@@ -34,8 +34,8 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
+  uo[0]: "OUTN"
+  uo[1]: "OUTP"
   uo[2]: ""
   uo[3]: ""
   uo[4]: ""
@@ -54,8 +54,8 @@ pinout:
   uio[7]: ""
 
   # Analog pins - make sure to also set "analog_pins" above, else the pins won't be connected
-  ua[0]: "out"
-  ua[1]: ""
+  ua[0]: "VINP"
+  ua[1]: "VINN"
   ua[2]: ""
   ua[3]: ""
   ua[4]: ""
