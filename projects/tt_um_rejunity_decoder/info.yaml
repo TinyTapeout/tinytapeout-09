@@ -1,0 +1,55 @@
+# Tiny Tapeout project information
+project:
+  title:        "ternary, E1M0, E2M0 decoders"
+  author:       "ReJ aka Renaldas Zioma"
+  discord:      "rzioma"
+  description:  "Ternary, Quinary and Septenary 1.6 .. 2.6 bits/param packed weights"
+  language:     "Verilog"
+  clock_hz:     0 # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_rejunity_decoder"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "packed weights LSB"
+  ui[1]: "packed weights"
+  ui[2]: "packed weights"
+  ui[3]: "packed weights"
+  ui[4]: "packed weights"
+  ui[5]: "packed weights"
+  ui[6]: "packed weights"
+  ui[7]: "packed weights MSB"
+
+  # Outputs
+  uo[0]: "unpacked"
+  uo[1]: "unpacked"
+  uo[2]: "unpacked"
+  uo[3]: "unpacked"
+  uo[4]: "unpacked"
+  uo[5]: "unpacked"
+  uo[6]: "unpacked"
+  uo[7]: "unpacked"
+
+  # Bidirectional pins
+  uio[0]: "(out) unpacked"
+  uio[1]: "(out) unpacked"
+  uio[2]: "(out) unpacked"
+  uio[3]: "(out) unpacked"
+  uio[4]: "(out) unpacked"
+  uio[5]: "(out) unpacked"
+  uio[6]: "(out) dummy"
+  uio[7]: "(in) Ternary / Septenary"
+
+# Do not change!
+yaml_version: 6
