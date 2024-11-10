@@ -1,10 +1,10 @@
 # Tiny Tapeout project information (Wokwi project)
 project:
   wokwi_id:     414120404427608065       # Set this to the ID of your Wokwi project (the number from the project's URL)
-  title:        "CRC-8 checker"      # Project title
+  title:        "7-seg display checker"      # Project title
   author:       "Ryan Taylor"      # Your name
-  discord:      " "      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  " "      # One line description of what your project does
+  discord:      "rt_ryantaylor"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Converts the inputs to seven seg display"      # One line description of what your project does
   language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -16,13 +16,13 @@ project:
 pinout:
   # Inputs
   ui[0]: "IN0"
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
-  ui[4]: ""
-  ui[5]: ""
-  ui[6]: ""
-  ui[7]: ""
+  ui[1]: "IN1"
+  ui[2]: "IN2"
+  ui[3]: "IN3"
+  ui[4]: "IN4"
+  ui[5]: "IN5"
+  ui[6]: "IN7"
+  ui[7]: "IN0"
 
   # Outputs
   uo[0]: "OUT0"
