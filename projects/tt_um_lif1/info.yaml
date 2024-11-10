@@ -1,9 +1,9 @@
 # Tiny Tapeout project information
 project:
-  title:        "simple leaky integrate fire neuron"      # Project title
+  title:        "STDP Circuit"      # Project title
   author:       "Mariah Regalado"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "simple leaky integrate and fire nueron"      # One line description of what your project does
+  description:  "STDP Circuit using a trace to model exponential behavior"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -18,7 +18,7 @@ project:
   # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
   source_files:
     - "tt_um_lif.v"
-    - "lif.v"
+    - "stdp.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
