@@ -1,0 +1,23 @@
+61. Printing statistics.
+
+=== tt_um_dog_BILBO ===
+
+   Number of wires:                 55
+   Number of wire bits:             90
+   Number of public wires:          32
+   Number of public wire bits:      67
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 71
+     sky130_fd_sc_hd__buf_2          9
+     sky130_fd_sc_hd__conb_1        15
+     sky130_fd_sc_hd__dfrtp_2        8
+     sky130_fd_sc_hd__dfxtp_2        8
+     sky130_fd_sc_hd__mux2_1        10
+     sky130_fd_sc_hd__nand2b_2       7
+     sky130_fd_sc_hd__xnor2_2       11
+     sky130_fd_sc_hd__xor2_2         3
+
+   Chip area for module '\tt_um_dog_BILBO': 883.347200
+
