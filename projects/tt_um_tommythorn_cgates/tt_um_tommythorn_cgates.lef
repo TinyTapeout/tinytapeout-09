@@ -351,7 +351,7 @@ MACRO tt_um_tommythorn_cgates
   PIN uo_out[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.795200 ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 88.630 110.520 88.930 111.520 ;
@@ -360,7 +360,7 @@ MACRO tt_um_tommythorn_cgates
   PIN uo_out[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
+    ANTENNADIFFAREA 0.795200 ;
     PORT
       LAYER met4 ;
         RECT 85.870 110.520 86.170 111.520 ;
@@ -378,7 +378,7 @@ MACRO tt_um_tommythorn_cgates
   PIN uo_out[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
+    ANTENNADIFFAREA 0.795200 ;
     PORT
       LAYER met4 ;
         RECT 80.350 110.520 80.650 111.520 ;
@@ -387,7 +387,7 @@ MACRO tt_um_tommythorn_cgates
   PIN uo_out[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.795200 ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 77.590 110.520 77.890 111.520 ;
@@ -396,7 +396,7 @@ MACRO tt_um_tommythorn_cgates
   PIN uo_out[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
+    ANTENNADIFFAREA 0.795200 ;
     PORT
       LAYER met4 ;
         RECT 74.830 110.520 75.130 111.520 ;
@@ -410,7 +410,7 @@ MACRO tt_um_tommythorn_cgates
       LAYER met1 ;
         RECT 2.760 2.480 158.240 109.040 ;
       LAYER met2 ;
-        RECT 18.310 2.535 147.560 110.685 ;
+        RECT 6.080 2.535 145.270 110.685 ;
       LAYER met3 ;
         RECT 18.290 2.555 145.295 110.665 ;
       LAYER met4 ;
@@ -455,13 +455,13 @@ MACRO tt_um_tommythorn_cgates
         RECT 136.250 110.120 137.910 110.665 ;
         RECT 139.010 110.120 140.670 110.665 ;
         RECT 30.655 109.440 141.385 110.120 ;
-        RECT 30.655 86.535 56.750 109.440 ;
-        RECT 59.150 86.535 60.050 109.440 ;
-        RECT 62.450 86.535 95.620 109.440 ;
-        RECT 98.020 86.535 98.920 109.440 ;
-        RECT 101.320 86.535 134.490 109.440 ;
-        RECT 136.890 86.535 137.790 109.440 ;
-        RECT 140.190 86.535 141.385 109.440 ;
+        RECT 30.655 94.015 56.750 109.440 ;
+        RECT 59.150 94.015 60.050 109.440 ;
+        RECT 62.450 94.015 95.620 109.440 ;
+        RECT 98.020 94.015 98.920 109.440 ;
+        RECT 101.320 94.015 134.490 109.440 ;
+        RECT 136.890 94.015 137.790 109.440 ;
+        RECT 140.190 94.015 141.385 109.440 ;
   END
 END tt_um_tommythorn_cgates
 END LIBRARY
