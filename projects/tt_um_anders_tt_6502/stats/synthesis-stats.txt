@@ -38,8 +38,8 @@
      sky130_fd_sc_hd__and4bb_2       5
      sky130_fd_sc_hd__buf_2          4
      sky130_fd_sc_hd__conb_1        12
-     sky130_fd_sc_hd__dfrtp_2       21
-     sky130_fd_sc_hd__dfstp_2        6
+     sky130_fd_sc_hd__dfrtp_2       20
+     sky130_fd_sc_hd__dfstp_2        7
      sky130_fd_sc_hd__dfxtp_2      380
      sky130_fd_sc_hd__dlclkp_1      53
      sky130_fd_sc_hd__dlclkp_2      34
