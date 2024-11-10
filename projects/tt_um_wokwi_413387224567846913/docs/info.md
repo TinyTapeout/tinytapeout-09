@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Right now, if pins 1 and 6 are set, and you get an 'A' on a 7-segment display wired up to the outputs. 
+Pressing the clock button should step through the 5 letters of my name, output on a 7-segment display.
 
 ## How to test
 
-Provide logical HIGH values to input pin 1 and input pin 6. Segments 0,1,2, 4,5,6 are driven HIGH.
+Press the clock button, letters appear. Note that 0 and 1 are the same letter.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+None (Well, the 7-segment display)
