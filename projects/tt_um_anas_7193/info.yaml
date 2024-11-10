@@ -1,0 +1,56 @@
+# Tiny Tapeout project information
+project:
+  title:        "Programmable PWM Generator"      # Project title
+  author:       "Anas Alam"                       # Your name
+  discord:      "anas7193"                        # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Programmabel PWM Generator"      # One line description of what your project does
+  language:     "Chisel"                          # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0                                 # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_anas_7193"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "tt_um_chisel_template.v"
+    - "PWM_Generator.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "pwm_threshold shift_amount[0]"
+  ui[1]: "pwm_threshold shift_amount[1]"
+  ui[2]: "pwm_threshold shift_amount[2]"
+  ui[3]: "pwm_threshold shift_amount[3]"
+  ui[4]: "pwm_threshold shift_amount[4]"
+  ui[5]: "pwm_threshold base[0]"
+  ui[6]: "pwm_threshold base[1]"
+  ui[7]: "pwm_threshold base[3]"
+
+  # Outputs
+  uo[0]: "pwm output"
+  uo[1]: "design is enabled (active high)"
+  uo[2]: "wired 0"
+  uo[3]: "wired 0"
+  uo[4]: "wired 0"
+  uo[5]: "wired 0"
+  uo[6]: "wired 0"
+  uo[7]: "wired 0"
+
+  # Bidirectional pins
+  uio[0]: "input: pwm_top shift_amount[0]"
+  uio[1]: "input: pwm_top shift_amount[1]"
+  uio[2]: "input: pwm_top shift_amount[2]"
+  uio[3]: "input: pwm_top shift_amount[3]"
+  uio[4]: "input: pwm_top shift_amount[4]"
+  uio[5]: "input: pwm_top base[0]"
+  uio[6]: "input: pwm_top base[1]"
+  uio[7]: "input: pwm_top base[2]"
+
+# Do not change!
+yaml_version: 6
