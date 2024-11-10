@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt09 a48b1c74",
+  "repo": "https://github.com/isabellaPhung/3bitadder",
+  "commit": "f7609ad31b9cd22bde23f934a45e5be31522b043",
+  "workflow_url": "https://github.com/isabellaPhung/3bitadder/actions/runs/11760731865",
+  "sort_id": 1731201803623,
+  "openlane_version": "OpenLane2 2.1.9",
+  "pdk_version": "open_pdks bdc9412b3e468c102d01b7cf6337be06ec6e9c9a"
+}
