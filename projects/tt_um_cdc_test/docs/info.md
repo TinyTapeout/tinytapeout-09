@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-TBD - Need to determine bus size and ALU complexity
+If you're seeing this, I couldn't the Clock Domain Crossing project running. This is just a TT08 demo again.
 
 ## How to test
 
-TBD
+Runs automaticaly.
 
 ## External hardware
 
-TBD - Probably juust some clock generators and the carrier board for UART
+VGA PMOD on UO.
