@@ -33,34 +33,34 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: "in_0"
-  ui[1]: "in_1"
-  ui[2]: "in_2"
-  ui[3]: "in_3"
-  ui[4]: "in_4"
-  ui[5]: "in_5"
-  ui[6]: "in_6"
-  ui[7]: "in_7"
+  ui[0]: "prog_in_0"
+  ui[1]: "prog_in_1"
+  ui[2]: "prog_in_2"
+  ui[3]: "prog_in_3"
+  ui[4]: "prog_in_4"
+  ui[5]: "prog_in_5"
+  ui[6]: "prog_in_6"
+  ui[7]: "prog_in_7"
 
   # Outputs
-  uo[0]: "out_0"
-  uo[1]: "out_1"
-  uo[2]: "out_2"
-  uo[3]: "out_3"
-  uo[4]: "out_4"
-  uo[5]: "out_5"
-  uo[6]: "out_6"
-  uo[7]: "out_7"
+  uo[0]: "output_register_0"
+  uo[1]: "output_register_1"
+  uo[2]: "output_register_2"
+  uo[3]: "output_register_3"
+  uo[4]: "output_register_4"
+  uo[5]: "output_register_5"
+  uo[6]: "output_register_6"
+  uo[7]: "output_register_7"
 
   # Bidirectional pins
-  uio[0]: "in_out_0"
-  uio[1]: "in_out_1"
-  uio[2]: "in_out_2"
-  uio[3]: "in_out_3"
-  uio[4]: "in_out_4"
-  uio[5]: "in_out_5"
-  uio[6]: "in_out_6"
-  uio[7]: "in_out_7"
+  uio[0]: "in_programming"
+  uio[1]: "out_ready_for_ui"
+  uio[2]: "out_done_load"
+  uio[3]: "out_CF"
+  uio[4]: "out_ZF"
+  uio[5]: "out_HF"
+  uio[6]: ""
+  uio[7]: ""
   
 # Do not change!
 yaml_version: 6
