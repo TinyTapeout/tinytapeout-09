@@ -1,11 +1,11 @@
 # Tiny Tapeout project information
 project:
-  title:        "Simple identity mapping ANN"      # Project title
+  title:        "Forward Pass Network for Simple ANN"      # Project title
   author:       "Arian Heidari"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Simple ANN that takes in a 4bit value, and trains the output to mirror the input"      # One line description of what your project does
+  description:  "ANN that takes in a 4-bit value, and completes a forward pass"    # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+  clock_hz:     50000000       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
@@ -20,29 +20,29 @@ project:
     - "tt_um_idann.v"
     - "hidden_neuron.v"
     - "output_neuron.v"
-    - "loss_calc.v"
+    - "state_mach.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
+  ui[0]: "Input bit [0]"
+  ui[1]: "Input bit [1]"
+  ui[2]: "Input bit [2]"
+  ui[3]: "Input bit [3]"
   ui[4]: ""
   ui[5]: ""
   ui[6]: ""
   ui[7]: ""
 
   # Outputs
-  uo[0]: "LFSR[0] output"
-  uo[1]: "LFSR[1] output"
-  uo[2]: "LFSR[2] output"
-  uo[3]: "LFSR[3] output"
-  uo[4]: "LFSR[4] output"
-  uo[5]: "LFSR[5] output"
-  uo[6]: "LFSR[6] output"
-  uo[7]: "LFSR[7] output"
+  uo[0]: "Output Calculation [0]"
+  uo[1]: "Output Calculation [1]"
+  uo[2]: "Output Calculation [2]"
+  uo[3]: "Output Calculation [3]"
+  uo[4]: "Output Calculation [4]"
+  uo[5]: "Output Calculation [5]"
+  uo[6]: "Output Calculation [6]"
+  uo[7]: "Output Calculation [7]"
 
   # Bidirectional pins
   uio[0]: ""
