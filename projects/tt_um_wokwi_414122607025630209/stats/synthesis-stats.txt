@@ -31,43 +31,43 @@
 
 === tt_um_wokwi_414122607025630209 ===
 
-   Number of wires:                325
-   Number of wire bits:            360
-   Number of public wires:         219
-   Number of public wire bits:     254
+   Number of wires:                514
+   Number of wire bits:            549
+   Number of public wires:         345
+   Number of public wire bits:     380
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                341
-     dff_cell                      105
-     mux_cell                      106
+   Number of cells:                530
+     dff_cell                      168
+     mux_cell                      169
      sky130_fd_sc_hd__buf_2          3
-     sky130_fd_sc_hd__conb_1       127
+     sky130_fd_sc_hd__conb_1       190
 
    Area for cell type \dff_cell is unknown!
    Area for cell type \mux_cell is unknown!
 
-   Chip area for module '\tt_um_wokwi_414122607025630209': 491.721600
+   Chip area for module '\tt_um_wokwi_414122607025630209': 728.198400
 
 === design hierarchy ===
 
    tt_um_wokwi_414122607025630209      1
-     dff_cell                      105
-     mux_cell                      106
+     dff_cell                      168
+     mux_cell                      169
 
-   Number of wires:               1169
-   Number of wire bits:           1204
-   Number of public wires:        1063
-   Number of public wire bits:    1098
+   Number of wires:               1862
+   Number of wire bits:           1897
+   Number of public wires:        1693
+   Number of public wire bits:    1728
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                446
+   Number of cells:                698
      sky130_fd_sc_hd__buf_2          3
-     sky130_fd_sc_hd__conb_1       127
-     sky130_fd_sc_hd__dfxtp_2      105
-     sky130_fd_sc_hd__inv_2        105
-     sky130_fd_sc_hd__mux2_1       106
+     sky130_fd_sc_hd__conb_1       190
+     sky130_fd_sc_hd__dfxtp_2      168
+     sky130_fd_sc_hd__inv_2        168
+     sky130_fd_sc_hd__mux2_1       169
 
-   Chip area for top module '\tt_um_wokwi_414122607025630209': 4312.886400
+   Chip area for top module '\tt_um_wokwi_414122607025630209': 6835.305600
 
