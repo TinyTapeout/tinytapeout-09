@@ -1,0 +1,71 @@
+62. Printing statistics.
+
+=== and_cell ===
+
+   Number of wires:                  3
+   Number of wire bits:              3
+   Number of public wires:           3
+   Number of public wire bits:       3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__and2_2         1
+
+   Chip area for module '\and_cell': 7.507200
+
+=== not_cell ===
+
+   Number of wires:                  2
+   Number of wire bits:              2
+   Number of public wires:           2
+   Number of public wire bits:       2
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__inv_2          1
+
+   Chip area for module '\not_cell': 3.753600
+
+=== tt_um_wokwi_414120500233937921 ===
+
+   Number of wires:                 11
+   Number of wire bits:             46
+   Number of public wires:          11
+   Number of public wire bits:      46
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 27
+     and_cell                        1
+     not_cell                        2
+     sky130_fd_sc_hd__buf_2          7
+     sky130_fd_sc_hd__conb_1        17
+
+   Area for cell type \not_cell is unknown!
+   Area for cell type \and_cell is unknown!
+
+   Chip area for module '\tt_um_wokwi_414120500233937921': 98.844800
+
+=== design hierarchy ===
+
+   tt_um_wokwi_414120500233937921      1
+     and_cell                        1
+     not_cell                        2
+
+   Number of wires:                 18
+   Number of wire bits:             53
+   Number of public wires:          18
+   Number of public wire bits:      53
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 27
+     sky130_fd_sc_hd__and2_2         1
+     sky130_fd_sc_hd__buf_2          7
+     sky130_fd_sc_hd__conb_1        17
+     sky130_fd_sc_hd__inv_2          2
+
+   Chip area for top module '\tt_um_wokwi_414120500233937921': 113.859200
+
