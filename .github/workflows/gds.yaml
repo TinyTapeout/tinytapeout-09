@@ -85,7 +85,7 @@ jobs:
               brotli -jd $project/$project.gds.br
             fi
             
-            python ../sky130_density_fix/replace_decap.py --design $project --user-gds $project/$project.gds --replacement-gds ../sky130_density_fix/sky130_ef_sc_hd__newfill_12.gds
+            python ../sky130_density_fix/replace_decap.py --design $project --user-gds $project/$project.gds --replacement-gds ../sky130_density_fix/sky130_ef_sc_hd__newfill_12.gds | tee -a ../tt-multiplexer/ol2/tt_top/gds/replace_decap.log
           done
 
       # Workaround for DRC errors in the SRAM macro of tt_um_kmakise_sram:
