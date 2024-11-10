@@ -12,14 +12,14 @@ You can also include images in this folder and reference them in the markdown. E
 This is a really bad implementation of RAM that uses standard verilog to
 implement a dual-port-read single-port-write RAM using D-type flipflops.
 
-DO_A Data Out Port-A
-DI_A Data In Port-A
-DO_B Data Out Port-B
-AD_A Address Port-A
-AD_B Address Port-B
-LOHI_A Nibble (4bit) select Port-A
-LOHI_B Nibble (4bit) select Port-B
-W_EN Write Enable (Port-A implied)
+* DO_A Data Out Port-A
+* DI_A Data In Port-A
+* DO_B Data Out Port-B
+* AD_A Address Port-A
+* AD_B Address Port-B
+* LOHI_A Nibble (4bit) select Port-A
+* LOHI_B Nibble (4bit) select Port-B
+* W_EN Write Enable (Port-A implied)
 
 2 pages of 16 bytes (8-bits) is the total storage.  The high 1-bit of
 address are set via RST_N configuration, see below.  the low 4-bits of
@@ -38,26 +38,26 @@ The RST_N release (posedge) is used to latch some additional configuration
 bits, so the following values are significant and can only be changed by
 clocking RST_N with a posedge which causes capture:
 
-uio_in[0] ADDRHI 1-bit to change the RAM page that can be accessed.  This
+* uio_in[0] ADDRHI 1-bit to change the RAM page that can be accessed.  This
 is a way to fill out the TT 1x1 tile space a little and allow the upper
 storage area to be accessible.
 
-uio_in[3:1] unused
+* uio_in[3:1] unused
 
-uio_in[4] READ_BUFFERED_A enable this will enable a synchronous output buffer
+* uio_in[4] READ_BUFFERED_A enable this will enable a synchronous output buffer
 register on the PORT-A to be enable, so the read value becomes available at
 the next cycle (pipelined) and held between cycles.  If this works as
 expected this makes the port output asynchronous or synchronous.
 
-uio_in[5] READ_BUFFERED_B enable, same as above but for PORT-B.
+* uio_in[5] READ_BUFFERED_B enable, same as above but for PORT-B.
 
-uio_in[6] WRITE_THROUGH this will activate a MUX bypass that has the effect
+* uio_in[6] WRITE_THROUGH this will activate a MUX bypass that has the effect
 of implementing a READ_AFTER_WRITE policy, so the currently written value is
 also the value found at the output port.  When inactive (set logic 0) a
 READ_BEFORE_WRITE policy should be in effect.  TODO check this works as
 expected when READ_BUFFERED_A is active.
 
-uio_in[7] unused, due to it also being the WRITE-ENABLE bit when in normal
+* uio_in[7] unused, due to it also being the WRITE-ENABLE bit when in normal
 operations so allowing the CLK to run freely across reset and an unwanted
 write occurring.
 
@@ -87,3 +87,33 @@ requiring a lot of wiring to get a solution.
 I pick dual-port-read support as that should provide a harder problem to
 solve as a single-port-read needs less wiring.
 
+## NOTES
+
+PL_TARGET_DENSITY_PCT=95%\
+PL_RESIZER_HOLD_SLACK_MARGIN=0.08\
+GRT_RESIZER_HOLD_SLACK_MARGIN=0.03\
+CLOCK_PERIOD=100 (10MHz)
+
+* 32x8 3 slew, 26 fanout vio, +106 buffers, resized 646, +16 tie, \
++238 hold buffers, No room for 156 instances.
+* 28x8 1 slew, 36 fanout vio, +124 buffers, resized 763, +16 tie, \
++201 hold buffers, No room for 23 instances.
+* 26x8 1 slew, 28 fanout vio, +105 buffers, resized 646, +16 tie, \
++191 hold buffers,\
+10091 vio, 6289 vio after 6th, did not get much better, 6H to 4025 (incomplete pass)
+* 24x8 0 slew, 26 fanout vio, +97 buffers, resized 632, +16 tie, \
++176 hold buffers,\
+9084 vio, 5305 vio after 6th, best 2134 vio after 24th
+* 22x8 0 slew, 20 fanout vio, +82 buffers, resized 555, +16 tie,\
++171 hold buffers,\
+7079 vio, 3583 vio after 6th, best 428 vio after 29th, 6H to 427
+* 20x8 4 slew, +101 buffers, +101 buffers, resized 649, +16 tie,\
++151 hold buffers,\
+6622 vio, 3390 vio after 6th, best 991 vio after 24th
+* 18x8 2 slew, 23 fanout vio, +72 buffers, resized 496, +16 tie,\
++138 hold buffers,\
+4379 vio, 1299 vio after 6th, 0 vio after 43rd,\
+SUCCESS
+* 16x8 0 slew, 24 fanout vio, +76 buffers, resized 506, +16 tie,\
++120 hold buffers,\
+4802 vio, 1631 vio after 6th, 1 vio after 56th, 6H to 64th
