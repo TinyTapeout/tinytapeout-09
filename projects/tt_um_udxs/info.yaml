@@ -1,0 +1,55 @@
+# Tiny Tapeout project information
+project:
+  title:        "Basic Perceptron + ReLU"      # Project title
+  author:       "UDXS"      # Your name
+  discord:      "udxs"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Basic Perceptron + ReLU Layer"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_udxs"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "Weight[0]"
+  ui[1]: "Weight[1]"
+  ui[2]: "Weight[2]"
+  ui[3]: "Weight[3]"
+  ui[4]: "Input[0]"
+  ui[5]: "Input[1]"
+  ui[6]: "Input[2]"
+  ui[7]: "Input[3]"
+
+  # Outputs
+  uo[0]: "ReLU[0]"
+  uo[1]: "ReLU[1]"
+  uo[2]: "ReLU[2]"
+  uo[3]: "ReLU[3]"
+  uo[4]: "ReLU[4]"
+  uo[5]: "ReLU[5]"
+  uo[6]: "ReLU[6]"
+  uo[7]: "ReLU[7]"
+
+  # Bidirectional pins
+  uio[0]: "ReLU[8]"
+  uio[1]: "ReLU[9]"
+  uio[2]: "ReLU[10]"
+  uio[3]: "ReLU[11]"
+  uio[4]: "ReLU[12]"
+  uio[5]: "ReLU[13]"
+  uio[6]: "ReLU[14]"
+  uio[7]: "ReLU[15]"
+
+# Do not change!
+yaml_version: 6
