@@ -1,18 +1,22 @@
-<!---
 
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
+## How it works?
 
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
+The 4-bit ALU (Arithmetic Logic Unit) is designed to perform a range of arithmetic and logical operations on two 4-bit inputs, A and B. The operation is determined by a 3-bit control signal, Opcode, which specifies the function to execute, such as addition, subtraction, multiplication, division, and bitwise operations (AND, OR, NOT, XOR).
 
-## How it works
+When an arithmetic operation like addition is selected, the ALU outputs an 8-bit result, ALU_Result, to accommodate larger sums or products, and it sets a Carry flag if there’s an overflow. For logical operations like AND or OR, the ALU applies the operation bit-by-bit between A and B. The Zero flag is activated when the result is zero, providing a useful condition for further logic. This flexibility allows the ALU to handle various computational tasks, making it a crucial part of digital systems that require multi-functional data processing.
 
-The 4 bit ALU (Arithmetic Logic Unit) has 2 inputs of 4 bits for each operand, 1 input of 3 bits to select the operational mode, 1 output of 8 bits with the result of the selected operation and 2 outputs of 1 bit each to identify an overflow or zero.
+## How to test?
 
-To test the design, the opcode was configured for addition (000), substraction (001), multiplication (010), division (011) and for zero (100).
+To test the design, the operation codes are: 
 
+- Addition (000)
+- Substraction (001)
+- Multiplication (010) 
+- Division (011) 
+- Logic AND (100) 
+- Logic OR (101) 
+- Logic NOT (110) 
+- Logic XOR (111) 
 
 
 
