@@ -1,0 +1,2783 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="2126"
+   height="718"
+   version="1.1"
+   id="svg247"
+   sodipodi:docname="block-diagram.svg"
+   inkscape:export-filename="block-diagram.png"
+   inkscape:export-xdpi="300.052"
+   inkscape:export-ydpi="300.052"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:s="https://github.com/nturley/netlistsvg">
+  <defs
+     id="defs247" />
+  <sodipodi:namedview
+     id="namedview247"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:export-bgcolor="#ffffffff"
+     inkscape:zoom="0.58101091"
+     inkscape:cx="1089.4804"
+     inkscape:cy="564.53328"
+     inkscape:window-width="2560"
+     inkscape:window-height="1395"
+     inkscape:window-x="1920"
+     inkscape:window-y="45"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg247" />
+  <style
+     id="style1">svg {
+    stroke:#000;
+    fill:none;
+  }
+  text {
+    fill:#000;
+    stroke:none;
+    font-size:10px;
+    font-weight: bold;
+    font-family: &quot;Courier New&quot;, monospace;
+  }
+  line {
+      stroke-linecap: round;
+  }
+  .nodelabel {
+    text-anchor: middle;
+  }
+  .inputPortLabel {
+    text-anchor: end;
+  }
+  .splitjoinBody {
+    fill:#000;
+  }</style>
+  <g
+     s:type="or"
+     transform="translate(1286,492.5)"
+     s:width="30"
+     s:height="25"
+     id="cell_$logic_or$/home/nebk/Documents/electronics/TinyTapeout/tt09_desk_alarm_clock/test/../src/clock_wrapper.v:111$2">
+    <s:alias
+       val="$or" />
+    <s:alias
+       val="$logic_or" />
+    <s:alias
+       val="$_OR_" />
+    <path
+       d="M0,25 L0,25 L15,25 A15 12.5 0 0 0 15,0 L0,0"
+       class="cell_$logic_or$/home/nebk/Documents/electronics/TinyTapeout/tt09_desk_alarm_clock/test/../src/clock_wrapper.v:111$2"
+       id="path1" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$logic_or$/home/nebk/Documents/electronics/TinyTapeout/tt09_desk_alarm_clock/test/../src/clock_wrapper.v:111$2"
+       id="path2" />
+    <g
+       s:x="2"
+       s:y="5"
+       s:pid="A"
+       id="g2" />
+    <g
+       s:x="2"
+       s:y="20"
+       s:pid="B"
+       id="g3" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g4" />
+  </g>
+  <g
+     s:type="mux"
+     transform="translate(795,523.5)"
+     s:width="20"
+     s:height="40"
+     id="cell_$ternary$/home/nebk/Documents/electronics/TinyTapeout/tt09_desk_alarm_clock/test/../src/clock_wrapper.v:108$1">
+    <s:alias
+       val="$pmux" />
+    <s:alias
+       val="$mux" />
+    <s:alias
+       val="$_MUX_" />
+    <path
+       d="M0,0 L20,10 L20,30 L0,40 Z"
+       class="cell_$ternary$/home/nebk/Documents/electronics/TinyTapeout/tt09_desk_alarm_clock/test/../src/clock_wrapper.v:108$1"
+       id="path4" />
+    <text
+       x="5"
+       y="32"
+       class="nodelabel cell_$ternary$/home/nebk/Documents/electronics/TinyTapeout/tt09_desk_alarm_clock/test/../src/clock_wrapper.v:108$1"
+       s:attribute=""
+       id="text4">1</text>
+    <text
+       x="5"
+       y="13"
+       class="nodelabel cell_$ternary$/home/nebk/Documents/electronics/TinyTapeout/tt09_desk_alarm_clock/test/../src/clock_wrapper.v:108$1"
+       s:attribute=""
+       id="text5">0</text>
+    <g
+       s:x="0"
+       s:y="10"
+       s:pid="A"
+       id="g5" />
+    <g
+       s:x="0"
+       s:y="30"
+       s:pid="B"
+       id="g6" />
+    <g
+       s:x="10"
+       s:y="35"
+       s:pid="S"
+       id="g7" />
+    <g
+       s:x="20"
+       s:y="20"
+       s:pid="Y"
+       id="g8" />
+  </g>
+  <g
+     s:type="generic"
+     transform="translate(356,351)"
+     s:width="30"
+     s:height="40"
+     id="cell_clk_gen_inst">
+    <s:alias
+       val="generic-bus">clk_gen</s:alias>
+    <text
+       x="15"
+       y="-4"
+       class="nodelabel cell_clk_gen_inst"
+       s:attribute="ref"
+       id="text8">clk_gen_inst</text>
+    <rect
+       width="30"
+       height="80"
+       s:generic="body"
+       class="cell_clk_gen_inst"
+       id="rect8" />
+    <g
+       transform="translate(0,10)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_clk_gen_inst~i_clk">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_clk_gen_inst"
+         id="text9">i_clk</text>
+    </g>
+    <g
+       transform="translate(0,30)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_clk_gen_inst~i_refclk">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_clk_gen_inst"
+         id="text10">i_refclk</text>
+    </g>
+    <g
+       transform="translate(0,50)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_clk_gen_inst~i_reset_n">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_clk_gen_inst"
+         id="text11">i_reset_n</text>
+    </g>
+    <g
+       transform="translate(30,10)"
+       s:x="30"
+       s:y="10"
+       s:pid="out0"
+       id="port_clk_gen_inst~o_1hz_stb">
+      <text
+         x="5"
+         y="-4"
+         style="fill:#000; stroke:none"
+         class="cell_clk_gen_inst"
+         id="text12">o_1hz_stb</text>
+    </g>
+    <g
+       transform="translate(30,30)"
+       s:x="30"
+       s:y="10"
+       s:pid="out0"
+       id="port_clk_gen_inst~o_debounce_stb">
+      <text
+         x="5"
+         y="-4"
+         style="fill:#000; stroke:none"
+         class="cell_clk_gen_inst"
+         id="text13">o_debounce_stb</text>
+    </g>
+    <g
+       transform="translate(30,50)"
+       s:x="30"
+       s:y="10"
+       s:pid="out0"
+       id="port_clk_gen_inst~o_fast_set_stb">
+      <text
+         x="5"
+         y="-4"
+         style="fill:#000; stroke:none"
+         class="cell_clk_gen_inst"
+         id="text14">o_fast_set_stb</text>
+    </g>
+    <g
+       transform="translate(30,70)"
+       s:x="30"
+       s:y="10"
+       s:pid="out0"
+       id="port_clk_gen_inst~o_slow_set_stb">
+      <text
+         x="5"
+         y="-4"
+         style="fill:#000; stroke:none"
+         class="cell_clk_gen_inst"
+         id="text15">o_slow_set_stb</text>
+    </g>
+  </g>
+  <g
+     s:type="generic"
+     transform="translate(934,145.5)"
+     s:width="30"
+     s:height="40"
+     id="cell_clock_reg_inst">
+    <s:alias
+       val="generic-bus">clock_register</s:alias>
+    <text
+       x="15"
+       y="-4"
+       class="nodelabel cell_clock_reg_inst"
+       s:attribute="ref"
+       id="text16">clock_reg_inst</text>
+    <rect
+       width="30"
+       height="120"
+       s:generic="body"
+       class="cell_clock_reg_inst"
+       id="rect16" />
+    <g
+       transform="translate(0,10)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_clock_reg_inst~i_1hz_stb">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_clock_reg_inst"
+         id="text17">i_1hz_stb</text>
+    </g>
+    <g
+       transform="translate(0,30)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_clock_reg_inst~i_clk">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_clock_reg_inst"
+         id="text18">i_clk</text>
+    </g>
+    <g
+       transform="translate(0,50)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_clock_reg_inst~i_reset_n">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_clock_reg_inst"
+         id="text19">i_reset_n</text>
+    </g>
+    <g
+       transform="translate(0,70)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_clock_reg_inst~i_set_hours">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_clock_reg_inst"
+         id="text20">i_set_hours</text>
+    </g>
+    <g
+       transform="translate(0,90)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_clock_reg_inst~i_set_minutes">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_clock_reg_inst"
+         id="text21">i_set_minutes</text>
+    </g>
+    <g
+       transform="translate(0,110)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_clock_reg_inst~i_set_stb">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_clock_reg_inst"
+         id="text22">i_set_stb</text>
+    </g>
+    <g
+       transform="translate(30,10)"
+       s:x="30"
+       s:y="10"
+       s:pid="out0"
+       id="port_clock_reg_inst~o_hours">
+      <text
+         x="5"
+         y="-4"
+         style="fill:#000; stroke:none"
+         class="cell_clock_reg_inst"
+         id="text23">o_hours</text>
+    </g>
+    <g
+       transform="translate(30,30)"
+       s:x="30"
+       s:y="10"
+       s:pid="out0"
+       id="port_clock_reg_inst~o_minutes">
+      <text
+         x="5"
+         y="-4"
+         style="fill:#000; stroke:none"
+         class="cell_clock_reg_inst"
+         id="text24">o_minutes</text>
+    </g>
+    <g
+       transform="translate(30,50)"
+       s:x="30"
+       s:y="10"
+       s:pid="out0"
+       id="port_clock_reg_inst~o_seconds">
+      <text
+         x="5"
+         y="-4"
+         style="fill:#000; stroke:none"
+         class="cell_clock_reg_inst"
+         id="text25">o_seconds</text>
+    </g>
+  </g>
+  <g
+     s:type="generic"
+     transform="translate(1616,573)"
+     s:width="30"
+     s:height="40"
+     id="cell_display_control_inst">
+    <s:alias
+       val="generic-bus">display_controller</s:alias>
+    <text
+       x="15"
+       y="-4"
+       class="nodelabel cell_display_control_inst"
+       s:attribute="ref"
+       id="text26">display_control_inst</text>
+    <rect
+       width="30"
+       height="120"
+       s:generic="body"
+       class="cell_display_control_inst"
+       id="rect26" />
+    <g
+       transform="translate(0,10)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_display_control_inst~i_1hz_stb">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_display_control_inst"
+         id="text27">i_1hz_stb</text>
+    </g>
+    <g
+       transform="translate(0,30)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_display_control_inst~i_clk">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_display_control_inst"
+         id="text28">i_clk</text>
+    </g>
+    <g
+       transform="translate(0,50)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_display_control_inst~i_clk_set">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_display_control_inst"
+         id="text29">i_clk_set</text>
+    </g>
+    <g
+       transform="translate(0,70)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_display_control_inst~i_clk_set_stb">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_display_control_inst"
+         id="text30">i_clk_set_stb</text>
+    </g>
+    <g
+       transform="translate(0,90)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_display_control_inst~i_display_ack">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_display_control_inst"
+         id="text31">i_display_ack</text>
+    </g>
+    <g
+       transform="translate(0,110)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_display_control_inst~i_reset_n">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_display_control_inst"
+         id="text32">i_reset_n</text>
+    </g>
+    <g
+       transform="translate(30,10)"
+       s:x="30"
+       s:y="10"
+       s:pid="out0"
+       id="port_display_control_inst~o_display_stb">
+      <text
+         x="5"
+         y="-4"
+         style="fill:#000; stroke:none"
+         class="cell_display_control_inst"
+         id="text33">o_display_stb</text>
+    </g>
+    <g
+       transform="translate(30,30)"
+       s:x="30"
+       s:y="10"
+       s:pid="out0"
+       id="port_display_control_inst~o_write_config">
+      <text
+         x="5"
+         y="-4"
+         style="fill:#000; stroke:none"
+         class="cell_display_control_inst"
+         id="text34">o_write_config</text>
+    </g>
+  </g>
+  <g
+     s:type="generic"
+     transform="translate(1891,453)"
+     s:width="30"
+     s:height="40"
+     id="cell_display_inst">
+    <s:alias
+       val="generic-bus">output_wrapper</s:alias>
+    <text
+       x="15"
+       y="-4"
+       class="nodelabel cell_display_inst"
+       s:attribute="ref"
+       id="text35">display_inst</text>
+    <rect
+       width="30"
+       height="160"
+       s:generic="body"
+       class="cell_display_inst"
+       id="rect35" />
+    <g
+       transform="translate(0,10)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_display_inst~i_clk">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_display_inst"
+         id="text36">i_clk</text>
+    </g>
+    <g
+       transform="translate(0,30)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_display_inst~i_dp">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_display_inst"
+         id="text37">i_dp</text>
+    </g>
+    <g
+       transform="translate(0,50)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_display_inst~i_hours">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_display_inst"
+         id="text38">i_hours</text>
+    </g>
+    <g
+       transform="translate(0,70)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_display_inst~i_minutes">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_display_inst"
+         id="text39">i_minutes</text>
+    </g>
+    <g
+       transform="translate(0,90)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_display_inst~i_reset_n">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_display_inst"
+         id="text40">i_reset_n</text>
+    </g>
+    <g
+       transform="translate(0,110)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_display_inst~i_seconds">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_display_inst"
+         id="text41">i_seconds</text>
+    </g>
+    <g
+       transform="translate(0,130)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_display_inst~i_stb">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_display_inst"
+         id="text42">i_stb</text>
+    </g>
+    <g
+       transform="translate(0,150)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_display_inst~i_write_config">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_display_inst"
+         id="text43">i_write_config</text>
+    </g>
+    <g
+       transform="translate(30,10)"
+       s:x="30"
+       s:y="10"
+       s:pid="out0"
+       id="port_display_inst~o_ack">
+      <text
+         x="5"
+         y="-4"
+         style="fill:#000; stroke:none"
+         class="cell_display_inst"
+         id="text44">o_ack</text>
+    </g>
+    <g
+       transform="translate(30,30)"
+       s:x="30"
+       s:y="10"
+       s:pid="out0"
+       id="port_display_inst~o_busy">
+      <text
+         x="5"
+         y="-4"
+         style="fill:#000; stroke:none"
+         class="cell_display_inst"
+         id="text45">o_busy</text>
+    </g>
+    <g
+       transform="translate(30,50)"
+       s:x="30"
+       s:y="10"
+       s:pid="out0"
+       id="port_display_inst~o_serial_clk">
+      <text
+         x="5"
+         y="-4"
+         style="fill:#000; stroke:none"
+         class="cell_display_inst"
+         id="text46">o_serial_clk</text>
+    </g>
+    <g
+       transform="translate(30,70)"
+       s:x="30"
+       s:y="10"
+       s:pid="out0"
+       id="port_display_inst~o_serial_dout">
+      <text
+         x="5"
+         y="-4"
+         style="fill:#000; stroke:none"
+         class="cell_display_inst"
+         id="text47">o_serial_dout</text>
+    </g>
+    <g
+       transform="translate(30,90)"
+       s:x="30"
+       s:y="10"
+       s:pid="out0"
+       id="port_display_inst~o_serial_load">
+      <text
+         x="5"
+         y="-4"
+         style="fill:#000; stroke:none"
+         class="cell_display_inst"
+         id="text48">o_serial_load</text>
+    </g>
+  </g>
+  <g
+     s:type="generic"
+     transform="translate(1412,302)"
+     s:width="30"
+     s:height="40"
+     id="cell_dp_control_inst">
+    <s:alias
+       val="generic-bus">decimal_point_controller</s:alias>
+    <text
+       x="15"
+       y="-4"
+       class="nodelabel cell_dp_control_inst"
+       s:attribute="ref"
+       id="text49">dp_control_inst</text>
+    <rect
+       width="30"
+       height="60"
+       s:generic="body"
+       class="cell_dp_control_inst"
+       id="rect49" />
+    <g
+       transform="translate(0,10)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_dp_control_inst~i_am_pm">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_dp_control_inst"
+         id="text50">i_am_pm</text>
+    </g>
+    <g
+       transform="translate(0,30)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_dp_control_inst~i_seconds">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_dp_control_inst"
+         id="text51">i_seconds</text>
+    </g>
+    <g
+       transform="translate(0,50)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_dp_control_inst~i_set_time">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_dp_control_inst"
+         id="text52">i_set_time</text>
+    </g>
+    <g
+       transform="translate(30,10)"
+       s:x="30"
+       s:y="10"
+       s:pid="out0"
+       id="port_dp_control_inst~o_dp">
+      <text
+         x="5"
+         y="-4"
+         style="fill:#000; stroke:none"
+         class="cell_dp_control_inst"
+         id="text53">o_dp</text>
+    </g>
+  </g>
+  <g
+     s:type="generic"
+     transform="translate(627,165.5)"
+     s:width="30"
+     s:height="40"
+     id="cell_input_debounce">
+    <s:alias
+       val="generic-bus">button_debounce</s:alias>
+    <text
+       x="15"
+       y="-4"
+       class="nodelabel cell_input_debounce"
+       s:attribute="ref"
+       id="text54">input_debounce</text>
+    <rect
+       width="30"
+       height="140"
+       s:generic="body"
+       class="cell_input_debounce"
+       id="rect54" />
+    <g
+       transform="translate(0,10)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_input_debounce~i_12h_mode">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_input_debounce"
+         id="text55">i_12h_mode</text>
+    </g>
+    <g
+       transform="translate(0,30)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_input_debounce~i_clk">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_input_debounce"
+         id="text56">i_clk</text>
+    </g>
+    <g
+       transform="translate(0,50)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_input_debounce~i_debounce_stb">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_input_debounce"
+         id="text57">i_debounce_stb</text>
+    </g>
+    <g
+       transform="translate(0,70)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_input_debounce~i_fast_set">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_input_debounce"
+         id="text58">i_fast_set</text>
+    </g>
+    <g
+       transform="translate(0,90)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_input_debounce~i_reset_n">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_input_debounce"
+         id="text59">i_reset_n</text>
+    </g>
+    <g
+       transform="translate(0,110)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_input_debounce~i_set_hours">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_input_debounce"
+         id="text60">i_set_hours</text>
+    </g>
+    <g
+       transform="translate(0,130)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_input_debounce~i_set_minutes">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_input_debounce"
+         id="text61">i_set_minutes</text>
+    </g>
+    <g
+       transform="translate(30,10)"
+       s:x="30"
+       s:y="10"
+       s:pid="out0"
+       id="port_input_debounce~o_12h_mode_db">
+      <text
+         x="5"
+         y="-4"
+         style="fill:#000; stroke:none"
+         class="cell_input_debounce"
+         id="text62">o_12h_mode_db</text>
+    </g>
+    <g
+       transform="translate(30,30)"
+       s:x="30"
+       s:y="10"
+       s:pid="out0"
+       id="port_input_debounce~o_fast_set_db">
+      <text
+         x="5"
+         y="-4"
+         style="fill:#000; stroke:none"
+         class="cell_input_debounce"
+         id="text63">o_fast_set_db</text>
+    </g>
+    <g
+       transform="translate(30,50)"
+       s:x="30"
+       s:y="10"
+       s:pid="out0"
+       id="port_input_debounce~o_set_hours_db">
+      <text
+         x="5"
+         y="-4"
+         style="fill:#000; stroke:none"
+         class="cell_input_debounce"
+         id="text64">o_set_hours_db</text>
+    </g>
+    <g
+       transform="translate(30,70)"
+       s:x="30"
+       s:y="10"
+       s:pid="out0"
+       id="port_input_debounce~o_set_minutes_db">
+      <text
+         x="5"
+         y="-4"
+         style="fill:#000; stroke:none"
+         class="cell_input_debounce"
+         id="text65">o_set_minutes_db</text>
+    </g>
+  </g>
+  <g
+     s:type="generic"
+     transform="translate(1160,373.5)"
+     s:width="30"
+     s:height="40"
+     id="cell_mode_conv_inst">
+    <s:alias
+       val="generic-bus">clock_mode_converter</s:alias>
+    <text
+       x="15"
+       y="-4"
+       class="nodelabel cell_mode_conv_inst"
+       s:attribute="ref"
+       id="text66">mode_conv_inst</text>
+    <rect
+       width="30"
+       height="80"
+       s:generic="body"
+       class="cell_mode_conv_inst"
+       id="rect66" />
+    <g
+       transform="translate(0,10)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_mode_conv_inst~i_12h_mode">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_mode_conv_inst"
+         id="text67">i_12h_mode</text>
+    </g>
+    <g
+       transform="translate(0,30)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_mode_conv_inst~i_hours">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_mode_conv_inst"
+         id="text68">i_hours</text>
+    </g>
+    <g
+       transform="translate(0,50)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_mode_conv_inst~i_minutes">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_mode_conv_inst"
+         id="text69">i_minutes</text>
+    </g>
+    <g
+       transform="translate(0,70)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_mode_conv_inst~i_seconds">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_mode_conv_inst"
+         id="text70">i_seconds</text>
+    </g>
+    <g
+       transform="translate(30,10)"
+       s:x="30"
+       s:y="10"
+       s:pid="out0"
+       id="port_mode_conv_inst~o_am_pm">
+      <text
+         x="5"
+         y="-4"
+         style="fill:#000; stroke:none"
+         class="cell_mode_conv_inst"
+         id="text71">o_am_pm</text>
+    </g>
+    <g
+       transform="translate(30,30)"
+       s:x="30"
+       s:y="10"
+       s:pid="out0"
+       id="port_mode_conv_inst~o_hours">
+      <text
+         x="5"
+         y="-4"
+         style="fill:#000; stroke:none"
+         class="cell_mode_conv_inst"
+         id="text72">o_hours</text>
+    </g>
+    <g
+       transform="translate(30,50)"
+       s:x="30"
+       s:y="10"
+       s:pid="out0"
+       id="port_mode_conv_inst~o_minutes">
+      <text
+         x="5"
+         y="-4"
+         style="fill:#000; stroke:none"
+         class="cell_mode_conv_inst"
+         id="text73">o_minutes</text>
+    </g>
+    <g
+       transform="translate(30,70)"
+       s:x="30"
+       s:y="10"
+       s:pid="out0"
+       id="port_mode_conv_inst~o_seconds">
+      <text
+         x="5"
+         y="-4"
+         style="fill:#000; stroke:none"
+         class="cell_mode_conv_inst"
+         id="text74">o_seconds</text>
+    </g>
+  </g>
+  <g
+     s:type="generic"
+     transform="translate(156,371)"
+     s:width="30"
+     s:height="40"
+     id="cell_refclk_sync_inst">
+    <s:alias
+       val="generic-bus">refclk_sync</s:alias>
+    <text
+       x="15"
+       y="-4"
+       class="nodelabel cell_refclk_sync_inst"
+       s:attribute="ref"
+       id="text75">refclk_sync_inst</text>
+    <rect
+       width="30"
+       height="60"
+       s:generic="body"
+       class="cell_refclk_sync_inst"
+       id="rect75" />
+    <g
+       transform="translate(0,10)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_refclk_sync_inst~i_clk">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_refclk_sync_inst"
+         id="text76">i_clk</text>
+    </g>
+    <g
+       transform="translate(0,30)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_refclk_sync_inst~i_refclk">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_refclk_sync_inst"
+         id="text77">i_refclk</text>
+    </g>
+    <g
+       transform="translate(0,50)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="port_refclk_sync_inst~i_reset_n">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel cell_refclk_sync_inst"
+         id="text78">i_reset_n</text>
+    </g>
+    <g
+       transform="translate(30,10)"
+       s:x="30"
+       s:y="10"
+       s:pid="out0"
+       id="port_refclk_sync_inst~o_refclk_sync">
+      <text
+         x="5"
+         y="-4"
+         style="fill:#000; stroke:none"
+         class="cell_refclk_sync_inst"
+         id="text79">o_refclk_sync</text>
+    </g>
+  </g>
+  <g
+     s:type="inputExt"
+     transform="translate(12,456.5)"
+     s:width="30"
+     s:height="20"
+     id="cell_i_reset_n">
+    <text
+       x="15"
+       y="-4"
+       class="nodelabel cell_i_reset_n"
+       s:attribute="ref"
+       id="text80">i_reset_n</text>
+    <s:alias
+       val="$_inputExt_" />
+    <path
+       d="M0,0 L0,20 L15,20 L30,10 L15,0 Z"
+       class="cell_i_reset_n"
+       id="path80" />
+    <g
+       s:x="30"
+       s:y="10"
+       s:pid="Y"
+       id="g80" />
+  </g>
+  <g
+     s:type="inputExt"
+     transform="translate(12,326.5)"
+     s:width="30"
+     s:height="20"
+     id="cell_i_clk">
+    <text
+       x="15"
+       y="-4"
+       class="nodelabel cell_i_clk"
+       s:attribute="ref"
+       id="text81">i_clk</text>
+    <s:alias
+       val="$_inputExt_" />
+    <path
+       d="M0,0 L0,20 L15,20 L30,10 L15,0 Z"
+       class="cell_i_clk"
+       id="path81" />
+    <g
+       s:x="30"
+       s:y="10"
+       s:pid="Y"
+       id="g81" />
+  </g>
+  <g
+     s:type="inputExt"
+     transform="translate(12,22)"
+     s:width="30"
+     s:height="20"
+     id="cell_i_en">
+    <text
+       x="15"
+       y="-4"
+       class="nodelabel cell_i_en"
+       s:attribute="ref"
+       id="text82">i_en</text>
+    <s:alias
+       val="$_inputExt_" />
+    <path
+       d="M0,0 L0,20 L15,20 L30,10 L15,0 Z"
+       class="cell_i_en"
+       id="path82" />
+    <g
+       s:x="30"
+       s:y="10"
+       s:pid="Y"
+       id="g82" />
+  </g>
+  <g
+     s:type="inputExt"
+     transform="translate(12,391.5)"
+     s:width="30"
+     s:height="20"
+     id="cell_i_refclk">
+    <text
+       x="15"
+       y="-4"
+       class="nodelabel cell_i_refclk"
+       s:attribute="ref"
+       id="text83">i_refclk</text>
+    <s:alias
+       val="$_inputExt_" />
+    <path
+       d="M0,0 L0,20 L15,20 L30,10 L15,0 Z"
+       class="cell_i_refclk"
+       id="path83" />
+    <g
+       s:x="30"
+       s:y="10"
+       s:pid="Y"
+       id="g83" />
+  </g>
+  <g
+     s:type="inputExt"
+     transform="translate(356,170)"
+     s:width="30"
+     s:height="20"
+     id="cell_i_fast_set">
+    <text
+       x="15"
+       y="-4"
+       class="nodelabel cell_i_fast_set"
+       s:attribute="ref"
+       id="text84">i_fast_set</text>
+    <s:alias
+       val="$_inputExt_" />
+    <path
+       d="M0,0 L0,20 L15,20 L30,10 L15,0 Z"
+       class="cell_i_fast_set"
+       id="path84" />
+    <g
+       s:x="30"
+       s:y="10"
+       s:pid="Y"
+       id="g84" />
+  </g>
+  <g
+     s:type="inputExt"
+     transform="translate(356,221)"
+     s:width="30"
+     s:height="20"
+     id="cell_i_set_hours">
+    <text
+       x="15"
+       y="-4"
+       class="nodelabel cell_i_set_hours"
+       s:attribute="ref"
+       id="text85">i_set_hours</text>
+    <s:alias
+       val="$_inputExt_" />
+    <path
+       d="M0,0 L0,20 L15,20 L30,10 L15,0 Z"
+       class="cell_i_set_hours"
+       id="path85" />
+    <g
+       s:x="30"
+       s:y="10"
+       s:pid="Y"
+       id="g85" />
+  </g>
+  <g
+     s:type="inputExt"
+     transform="translate(356,286)"
+     s:width="30"
+     s:height="20"
+     id="cell_i_set_minutes">
+    <text
+       x="15"
+       y="-4"
+       class="nodelabel cell_i_set_minutes"
+       s:attribute="ref"
+       id="text86">i_set_minutes</text>
+    <s:alias
+       val="$_inputExt_" />
+    <path
+       d="M0,0 L0,20 L15,20 L30,10 L15,0 Z"
+       class="cell_i_set_minutes"
+       id="path86" />
+    <g
+       s:x="30"
+       s:y="10"
+       s:pid="Y"
+       id="g86" />
+  </g>
+  <g
+     s:type="inputExt"
+     transform="translate(356,119)"
+     s:width="30"
+     s:height="20"
+     id="cell_i_12h_mode">
+    <text
+       x="15"
+       y="-4"
+       class="nodelabel cell_i_12h_mode"
+       s:attribute="ref"
+       id="text87">i_12h_mode</text>
+    <s:alias
+       val="$_inputExt_" />
+    <path
+       d="M0,0 L0,20 L15,20 L30,10 L15,0 Z"
+       class="cell_i_12h_mode"
+       id="path87" />
+    <g
+       s:x="30"
+       s:y="10"
+       s:pid="Y"
+       id="g87" />
+  </g>
+  <g
+     s:type="outputExt"
+     transform="translate(2036,578.5)"
+     s:width="30"
+     s:height="20"
+     id="cell_o_serial_load">
+    <text
+       x="15"
+       y="-4"
+       class="nodelabel cell_o_serial_load"
+       s:attribute="ref"
+       id="text88">o_serial_load</text>
+    <s:alias
+       val="$_outputExt_" />
+    <path
+       d="M30,0 L30,20 L15,20 L0,10 L15,0 Z"
+       class="cell_o_serial_load"
+       id="path88" />
+    <g
+       s:x="0"
+       s:y="10"
+       s:pid="A"
+       id="g88" />
+  </g>
+  <g
+     s:type="outputExt"
+     transform="translate(2036,513.5)"
+     s:width="30"
+     s:height="20"
+     id="cell_o_serial_dout">
+    <text
+       x="15"
+       y="-4"
+       class="nodelabel cell_o_serial_dout"
+       s:attribute="ref"
+       id="text89">o_serial_dout</text>
+    <s:alias
+       val="$_outputExt_" />
+    <path
+       d="M30,0 L30,20 L15,20 L0,10 L15,0 Z"
+       class="cell_o_serial_dout"
+       id="path89" />
+    <g
+       s:x="0"
+       s:y="10"
+       s:pid="A"
+       id="g89" />
+  </g>
+  <g
+     s:type="outputExt"
+     transform="translate(2036,448.5)"
+     s:width="30"
+     s:height="20"
+     id="cell_o_serial_clk">
+    <text
+       x="15"
+       y="-4"
+       class="nodelabel cell_o_serial_clk"
+       s:attribute="ref"
+       id="text90">o_serial_clk</text>
+    <s:alias
+       val="$_outputExt_" />
+    <path
+       d="M30,0 L30,20 L15,20 L0,10 L15,0 Z"
+       class="cell_o_serial_clk"
+       id="path90" />
+    <g
+       s:x="0"
+       s:y="10"
+       s:pid="A"
+       id="g90" />
+  </g>
+  <line
+     x1="658"
+     x2="785"
+     y1="216"
+     y2="216"
+     class="net_13 width_1"
+     style="stroke-width: 1"
+     id="line90" />
+  <line
+     x1="785"
+     x2="785"
+     y1="216"
+     y2="497.5"
+     class="net_13 width_1"
+     style="stroke-width: 1"
+     id="line91" />
+  <circle
+     cx="785"
+     cy="216"
+     r="2"
+     style="fill:#000"
+     class="net_13 width_1"
+     id="circle91" />
+  <line
+     x1="785"
+     x2="1288"
+     y1="497.5"
+     y2="497.5"
+     class="net_13 width_1"
+     style="stroke-width: 1"
+     id="line92" />
+  <line
+     x1="658"
+     x2="934"
+     y1="216"
+     y2="216"
+     class="net_13 width_1"
+     style="stroke-width: 1"
+     id="line93" />
+  <line
+     x1="658"
+     x2="775"
+     y1="236"
+     y2="236"
+     class="net_14 width_1"
+     style="stroke-width: 1"
+     id="line94" />
+  <line
+     x1="775"
+     x2="775"
+     y1="236"
+     y2="512.5"
+     class="net_14 width_1"
+     style="stroke-width: 1"
+     id="line95" />
+  <circle
+     cx="775"
+     cy="236"
+     r="2"
+     style="fill:#000"
+     class="net_14 width_1"
+     id="circle95" />
+  <line
+     x1="775"
+     x2="1288"
+     y1="512.5"
+     y2="512.5"
+     class="net_14 width_1"
+     style="stroke-width: 1"
+     id="line96" />
+  <line
+     x1="658"
+     x2="934"
+     y1="236"
+     y2="236"
+     class="net_14 width_1"
+     style="stroke-width: 1"
+     id="line97" />
+  <line
+     x1="387"
+     x2="522"
+     y1="421.5"
+     y2="421.5"
+     class="net_16 width_1"
+     style="stroke-width: 1"
+     id="line98" />
+  <line
+     x1="522"
+     x2="522"
+     y1="421.5"
+     y2="533.5"
+     class="net_16 width_1"
+     style="stroke-width: 1"
+     id="line99" />
+  <line
+     x1="522"
+     x2="795"
+     y1="533.5"
+     y2="533.5"
+     class="net_16 width_1"
+     style="stroke-width: 1"
+     id="line100" />
+  <line
+     x1="387"
+     x2="532"
+     y1="401.5"
+     y2="401.5"
+     class="net_17 width_1"
+     style="stroke-width: 1"
+     id="line101" />
+  <line
+     x1="532"
+     x2="532"
+     y1="401.5"
+     y2="553.5"
+     class="net_17 width_1"
+     style="stroke-width: 1"
+     id="line102" />
+  <line
+     x1="532"
+     x2="795"
+     y1="553.5"
+     y2="553.5"
+     class="net_17 width_1"
+     style="stroke-width: 1"
+     id="line103" />
+  <line
+     x1="658"
+     x2="765"
+     y1="196"
+     y2="196"
+     class="net_18 width_1"
+     style="stroke-width: 1"
+     id="line104" />
+  <line
+     x1="765"
+     x2="765"
+     y1="196"
+     y2="573.5"
+     class="net_18 width_1"
+     style="stroke-width: 1"
+     id="line105" />
+  <line
+     x1="765"
+     x2="805"
+     y1="573.5"
+     y2="573.5"
+     class="net_18 width_1"
+     style="stroke-width: 1"
+     id="line106" />
+  <line
+     x1="805"
+     x2="805"
+     y1="573.5"
+     y2="558.5"
+     class="net_18 width_1"
+     style="stroke-width: 1"
+     id="line107" />
+  <line
+     x1="42"
+     x2="276"
+     y1="336.5"
+     y2="336.5"
+     class="net_3 width_1"
+     style="stroke-width: 1"
+     id="line108" />
+  <line
+     x1="276"
+     x2="276"
+     y1="336.5"
+     y2="361.5"
+     class="net_3 width_1"
+     style="stroke-width: 1"
+     id="line109" />
+  <line
+     x1="276"
+     x2="356"
+     y1="361.5"
+     y2="361.5"
+     class="net_3 width_1"
+     style="stroke-width: 1"
+     id="line110" />
+  <line
+     x1="42"
+     x2="86"
+     y1="336.5"
+     y2="336.5"
+     class="net_3 width_1"
+     style="stroke-width: 1"
+     id="line111" />
+  <line
+     x1="86"
+     x2="86"
+     y1="336.5"
+     y2="87"
+     class="net_3 width_1"
+     style="stroke-width: 1"
+     id="line112" />
+  <line
+     x1="86"
+     x2="835"
+     y1="87"
+     y2="87"
+     class="net_3 width_1"
+     style="stroke-width: 1"
+     id="line113" />
+  <line
+     x1="835"
+     x2="835"
+     y1="87"
+     y2="176"
+     class="net_3 width_1"
+     style="stroke-width: 1"
+     id="line114" />
+  <circle
+     cx="86"
+     cy="336.5"
+     r="2"
+     style="fill:#000"
+     class="net_3 width_1"
+     id="circle114" />
+  <line
+     x1="835"
+     x2="934"
+     y1="176"
+     y2="176"
+     class="net_3 width_1"
+     style="stroke-width: 1"
+     id="line115" />
+  <line
+     x1="42"
+     x2="86"
+     y1="336.5"
+     y2="336.5"
+     class="net_3 width_1"
+     style="stroke-width: 1"
+     id="line116" />
+  <line
+     x1="86"
+     x2="86"
+     y1="336.5"
+     y2="603.5"
+     class="net_3 width_1"
+     style="stroke-width: 1"
+     id="line117" />
+  <line
+     x1="86"
+     x2="1616"
+     y1="603.5"
+     y2="603.5"
+     class="net_3 width_1"
+     style="stroke-width: 1"
+     id="line118" />
+  <line
+     x1="42"
+     x2="86"
+     y1="336.5"
+     y2="336.5"
+     class="net_3 width_1"
+     style="stroke-width: 1"
+     id="line119" />
+  <line
+     x1="86"
+     x2="86"
+     y1="336.5"
+     y2="87"
+     class="net_3 width_1"
+     style="stroke-width: 1"
+     id="line120" />
+  <line
+     x1="86"
+     x2="482"
+     y1="87"
+     y2="87"
+     class="net_3 width_1"
+     style="stroke-width: 1"
+     id="line121" />
+  <line
+     x1="482"
+     x2="482"
+     y1="87"
+     y2="54"
+     class="net_3 width_1"
+     style="stroke-width: 1"
+     id="line122" />
+  <line
+     x1="482"
+     x2="1796"
+     y1="54"
+     y2="54"
+     class="net_3 width_1"
+     style="stroke-width: 1"
+     id="line123" />
+  <line
+     x1="1796"
+     x2="1796"
+     y1="54"
+     y2="463.5"
+     class="net_3 width_1"
+     style="stroke-width: 1"
+     id="line124" />
+  <circle
+     cx="482"
+     cy="87"
+     r="2"
+     style="fill:#000"
+     class="net_3 width_1"
+     id="circle124" />
+  <line
+     x1="1796"
+     x2="1891"
+     y1="463.5"
+     y2="463.5"
+     class="net_3 width_1"
+     style="stroke-width: 1"
+     id="line125" />
+  <line
+     x1="42"
+     x2="86"
+     y1="336.5"
+     y2="336.5"
+     class="net_3 width_1"
+     style="stroke-width: 1"
+     id="line126" />
+  <line
+     x1="86"
+     x2="86"
+     y1="336.5"
+     y2="149"
+     class="net_3 width_1"
+     style="stroke-width: 1"
+     id="line127" />
+  <line
+     x1="86"
+     x2="522"
+     y1="149"
+     y2="149"
+     class="net_3 width_1"
+     style="stroke-width: 1"
+     id="line128" />
+  <line
+     x1="522"
+     x2="522"
+     y1="149"
+     y2="196"
+     class="net_3 width_1"
+     style="stroke-width: 1"
+     id="line129" />
+  <circle
+     cx="86"
+     cy="149"
+     r="2"
+     style="fill:#000"
+     class="net_3 width_1"
+     id="circle129" />
+  <line
+     x1="522"
+     x2="627"
+     y1="196"
+     y2="196"
+     class="net_3 width_1"
+     style="stroke-width: 1"
+     id="line130" />
+  <line
+     x1="42"
+     x2="86"
+     y1="336.5"
+     y2="336.5"
+     class="net_3 width_1"
+     style="stroke-width: 1"
+     id="line131" />
+  <line
+     x1="86"
+     x2="86"
+     y1="336.5"
+     y2="381.5"
+     class="net_3 width_1"
+     style="stroke-width: 1"
+     id="line132" />
+  <circle
+     cx="86"
+     cy="381.5"
+     r="2"
+     style="fill:#000"
+     class="net_3 width_1"
+     id="circle132" />
+  <line
+     x1="86"
+     x2="156"
+     y1="381.5"
+     y2="381.5"
+     class="net_3 width_1"
+     style="stroke-width: 1"
+     id="line133" />
+  <line
+     x1="187"
+     x2="356"
+     y1="381.5"
+     y2="381.5"
+     class="net_20 width_1"
+     style="stroke-width: 1"
+     id="line134" />
+  <line
+     x1="42"
+     x2="276"
+     y1="466.5"
+     y2="466.5"
+     class="net_2 width_1"
+     style="stroke-width: 1"
+     id="line135" />
+  <line
+     x1="276"
+     x2="276"
+     y1="466.5"
+     y2="401.5"
+     class="net_2 width_1"
+     style="stroke-width: 1"
+     id="line136" />
+  <circle
+     cx="276"
+     cy="466.5"
+     r="2"
+     style="fill:#000"
+     class="net_2 width_1"
+     id="circle136" />
+  <line
+     x1="276"
+     x2="356"
+     y1="401.5"
+     y2="401.5"
+     class="net_2 width_1"
+     style="stroke-width: 1"
+     id="line137" />
+  <line
+     x1="42"
+     x2="76"
+     y1="466.5"
+     y2="466.5"
+     class="net_2 width_1"
+     style="stroke-width: 1"
+     id="line138" />
+  <line
+     x1="76"
+     x2="76"
+     y1="466.5"
+     y2="98"
+     class="net_2 width_1"
+     style="stroke-width: 1"
+     id="line139" />
+  <line
+     x1="76"
+     x2="825"
+     y1="98"
+     y2="98"
+     class="net_2 width_1"
+     style="stroke-width: 1"
+     id="line140" />
+  <line
+     x1="825"
+     x2="825"
+     y1="98"
+     y2="196"
+     class="net_2 width_1"
+     style="stroke-width: 1"
+     id="line141" />
+  <circle
+     cx="76"
+     cy="466.5"
+     r="2"
+     style="fill:#000"
+     class="net_2 width_1"
+     id="circle141" />
+  <line
+     x1="825"
+     x2="934"
+     y1="196"
+     y2="196"
+     class="net_2 width_1"
+     style="stroke-width: 1"
+     id="line142" />
+  <line
+     x1="42"
+     x2="76"
+     y1="466.5"
+     y2="466.5"
+     class="net_2 width_1"
+     style="stroke-width: 1"
+     id="line143" />
+  <line
+     x1="76"
+     x2="76"
+     y1="466.5"
+     y2="683.5"
+     class="net_2 width_1"
+     style="stroke-width: 1"
+     id="line144" />
+  <line
+     x1="76"
+     x2="1616"
+     y1="683.5"
+     y2="683.5"
+     class="net_2 width_1"
+     style="stroke-width: 1"
+     id="line145" />
+  <line
+     x1="42"
+     x2="1756"
+     y1="466.5"
+     y2="466.5"
+     class="net_2 width_1"
+     style="stroke-width: 1"
+     id="line146" />
+  <line
+     x1="1756"
+     x2="1756"
+     y1="466.5"
+     y2="543.5"
+     class="net_2 width_1"
+     style="stroke-width: 1"
+     id="line147" />
+  <line
+     x1="1756"
+     x2="1891"
+     y1="543.5"
+     y2="543.5"
+     class="net_2 width_1"
+     style="stroke-width: 1"
+     id="line148" />
+  <line
+     x1="42"
+     x2="76"
+     y1="466.5"
+     y2="466.5"
+     class="net_2 width_1"
+     style="stroke-width: 1"
+     id="line149" />
+  <line
+     x1="76"
+     x2="76"
+     y1="466.5"
+     y2="200"
+     class="net_2 width_1"
+     style="stroke-width: 1"
+     id="line150" />
+  <line
+     x1="76"
+     x2="492"
+     y1="200"
+     y2="200"
+     class="net_2 width_1"
+     style="stroke-width: 1"
+     id="line151" />
+  <line
+     x1="492"
+     x2="492"
+     y1="200"
+     y2="256"
+     class="net_2 width_1"
+     style="stroke-width: 1"
+     id="line152" />
+  <circle
+     cx="76"
+     cy="200"
+     r="2"
+     style="fill:#000"
+     class="net_2 width_1"
+     id="circle152" />
+  <line
+     x1="492"
+     x2="627"
+     y1="256"
+     y2="256"
+     class="net_2 width_1"
+     style="stroke-width: 1"
+     id="line153" />
+  <line
+     x1="42"
+     x2="76"
+     y1="466.5"
+     y2="466.5"
+     class="net_2 width_1"
+     style="stroke-width: 1"
+     id="line154" />
+  <line
+     x1="76"
+     x2="76"
+     y1="466.5"
+     y2="421.5"
+     class="net_2 width_1"
+     style="stroke-width: 1"
+     id="line155" />
+  <circle
+     cx="76"
+     cy="421.5"
+     r="2"
+     style="fill:#000"
+     class="net_2 width_1"
+     id="circle155" />
+  <line
+     x1="76"
+     x2="156"
+     y1="421.5"
+     y2="421.5"
+     class="net_2 width_1"
+     style="stroke-width: 1"
+     id="line156" />
+  <line
+     x1="387"
+     x2="512"
+     y1="361.5"
+     y2="361.5"
+     class="net_21 width_1"
+     style="stroke-width: 1"
+     id="line157" />
+  <line
+     x1="512"
+     x2="512"
+     y1="361.5"
+     y2="76"
+     class="net_21 width_1"
+     style="stroke-width: 1"
+     id="line158" />
+  <line
+     x1="512"
+     x2="845"
+     y1="76"
+     y2="76"
+     class="net_21 width_1"
+     style="stroke-width: 1"
+     id="line159" />
+  <line
+     x1="845"
+     x2="845"
+     y1="76"
+     y2="156"
+     class="net_21 width_1"
+     style="stroke-width: 1"
+     id="line160" />
+  <circle
+     cx="512"
+     cy="361.5"
+     r="2"
+     style="fill:#000"
+     class="net_21 width_1"
+     id="circle160" />
+  <line
+     x1="845"
+     x2="934"
+     y1="156"
+     y2="156"
+     class="net_21 width_1"
+     style="stroke-width: 1"
+     id="line161" />
+  <line
+     x1="387"
+     x2="512"
+     y1="361.5"
+     y2="361.5"
+     class="net_21 width_1"
+     style="stroke-width: 1"
+     id="line162" />
+  <line
+     x1="512"
+     x2="512"
+     y1="361.5"
+     y2="583.5"
+     class="net_21 width_1"
+     style="stroke-width: 1"
+     id="line163" />
+  <line
+     x1="512"
+     x2="1616"
+     y1="583.5"
+     y2="583.5"
+     class="net_21 width_1"
+     style="stroke-width: 1"
+     id="line164" />
+  <line
+     x1="815"
+     x2="825"
+     y1="543.5"
+     y2="543.5"
+     class="net_19 width_1"
+     style="stroke-width: 1"
+     id="line165" />
+  <line
+     x1="825"
+     x2="825"
+     y1="543.5"
+     y2="256"
+     class="net_19 width_1"
+     style="stroke-width: 1"
+     id="line166" />
+  <circle
+     cx="825"
+     cy="543.5"
+     r="2"
+     style="fill:#000"
+     class="net_19 width_1"
+     id="circle166" />
+  <line
+     x1="825"
+     x2="934"
+     y1="256"
+     y2="256"
+     class="net_19 width_1"
+     style="stroke-width: 1"
+     id="line167" />
+  <line
+     x1="815"
+     x2="825"
+     y1="543.5"
+     y2="543.5"
+     class="net_19 width_1"
+     style="stroke-width: 1"
+     id="line168" />
+  <line
+     x1="825"
+     x2="825"
+     y1="543.5"
+     y2="643.5"
+     class="net_19 width_1"
+     style="stroke-width: 1"
+     id="line169" />
+  <line
+     x1="825"
+     x2="1616"
+     y1="643.5"
+     y2="643.5"
+     class="net_19 width_1"
+     style="stroke-width: 1"
+     id="line170" />
+  <line
+     x1="1316"
+     x2="1326"
+     y1="505"
+     y2="505"
+     class="net_15 width_1"
+     style="stroke-width: 1"
+     id="line171" />
+  <line
+     x1="1326"
+     x2="1326"
+     y1="505"
+     y2="623.5"
+     class="net_15 width_1"
+     style="stroke-width: 1"
+     id="line172" />
+  <circle
+     cx="1326"
+     cy="505"
+     r="2"
+     style="fill:#000"
+     class="net_15 width_1"
+     id="circle172" />
+  <line
+     x1="1326"
+     x2="1616"
+     y1="623.5"
+     y2="623.5"
+     class="net_15 width_1"
+     style="stroke-width: 1"
+     id="line173" />
+  <line
+     x1="1316"
+     x2="1326"
+     y1="505"
+     y2="505"
+     class="net_15 width_1"
+     style="stroke-width: 1"
+     id="line174" />
+  <line
+     x1="1326"
+     x2="1326"
+     y1="505"
+     y2="352.5"
+     class="net_15 width_1"
+     style="stroke-width: 1"
+     id="line175" />
+  <line
+     x1="1326"
+     x2="1412"
+     y1="352.5"
+     y2="352.5"
+     class="net_15 width_1"
+     style="stroke-width: 1"
+     id="line176" />
+  <line
+     x1="1922"
+     x2="2011"
+     y1="463.5"
+     y2="463.5"
+     class="net_40 width_1"
+     style="stroke-width: 1"
+     id="line177" />
+  <line
+     x1="2011"
+     x2="2011"
+     y1="463.5"
+     y2="706"
+     class="net_40 width_1"
+     style="stroke-width: 1"
+     id="line178" />
+  <line
+     x1="2011"
+     x2="1512"
+     y1="706"
+     y2="706"
+     class="net_40 width_1"
+     style="stroke-width: 1"
+     id="line179" />
+  <line
+     x1="1512"
+     x2="1512"
+     y1="706"
+     y2="663.5"
+     class="net_40 width_1"
+     style="stroke-width: 1"
+     id="line180" />
+  <line
+     x1="1512"
+     x2="1616"
+     y1="663.5"
+     y2="663.5"
+     class="net_40 width_1"
+     style="stroke-width: 1"
+     id="line181" />
+  <line
+     x1="1443"
+     x2="1786"
+     y1="312.5"
+     y2="312.5"
+     class="net_43,44,45,46,47,48 width_6"
+     style="stroke-width: 2"
+     id="line182" />
+  <line
+     x1="1786"
+     x2="1786"
+     y1="312.5"
+     y2="483.5"
+     class="net_43,44,45,46,47,48 width_6"
+     style="stroke-width: 2"
+     id="line183" />
+  <line
+     x1="1786"
+     x2="1891"
+     y1="483.5"
+     y2="483.5"
+     class="net_43,44,45,46,47,48 width_6"
+     style="stroke-width: 2"
+     id="line184" />
+  <line
+     x1="1191"
+     x2="1776"
+     y1="404"
+     y2="404"
+     class="net_49,50,51,52,53 width_5"
+     style="stroke-width: 2"
+     id="line185" />
+  <line
+     x1="1776"
+     x2="1776"
+     y1="404"
+     y2="503.5"
+     class="net_49,50,51,52,53 width_5"
+     style="stroke-width: 2"
+     id="line186" />
+  <line
+     x1="1776"
+     x2="1891"
+     y1="503.5"
+     y2="503.5"
+     class="net_49,50,51,52,53 width_5"
+     style="stroke-width: 2"
+     id="line187" />
+  <line
+     x1="1191"
+     x2="1276"
+     y1="424"
+     y2="424"
+     class="net_54,55,56,57,58,59 width_6"
+     style="stroke-width: 2"
+     id="line188" />
+  <line
+     x1="1276"
+     x2="1276"
+     y1="424"
+     y2="450.5"
+     class="net_54,55,56,57,58,59 width_6"
+     style="stroke-width: 2"
+     id="line189" />
+  <line
+     x1="1276"
+     x2="1766"
+     y1="450.5"
+     y2="450.5"
+     class="net_54,55,56,57,58,59 width_6"
+     style="stroke-width: 2"
+     id="line190" />
+  <line
+     x1="1766"
+     x2="1766"
+     y1="450.5"
+     y2="523.5"
+     class="net_54,55,56,57,58,59 width_6"
+     style="stroke-width: 2"
+     id="line191" />
+  <line
+     x1="1766"
+     x2="1891"
+     y1="523.5"
+     y2="523.5"
+     class="net_54,55,56,57,58,59 width_6"
+     style="stroke-width: 2"
+     id="line192" />
+  <line
+     x1="1191"
+     x2="1266"
+     y1="444"
+     y2="444"
+     class="net_60,61,62,63,64,65 width_6"
+     style="stroke-width: 2"
+     id="line193" />
+  <line
+     x1="1266"
+     x2="1266"
+     y1="444"
+     y2="481.5"
+     class="net_60,61,62,63,64,65 width_6"
+     style="stroke-width: 2"
+     id="line194" />
+  <line
+     x1="1266"
+     x2="1746"
+     y1="481.5"
+     y2="481.5"
+     class="net_60,61,62,63,64,65 width_6"
+     style="stroke-width: 2"
+     id="line195" />
+  <line
+     x1="1746"
+     x2="1746"
+     y1="481.5"
+     y2="563.5"
+     class="net_60,61,62,63,64,65 width_6"
+     style="stroke-width: 2"
+     id="line196" />
+  <circle
+     cx="1266"
+     cy="444"
+     r="3"
+     style="fill:#000"
+     class="net_60,61,62,63,64,65 width_6"
+     id="circle196" />
+  <line
+     x1="1746"
+     x2="1891"
+     y1="563.5"
+     y2="563.5"
+     class="net_60,61,62,63,64,65 width_6"
+     style="stroke-width: 2"
+     id="line197" />
+  <line
+     x1="1191"
+     x2="1266"
+     y1="444"
+     y2="444"
+     class="net_60,61,62,63,64,65 width_6"
+     style="stroke-width: 2"
+     id="line198" />
+  <line
+     x1="1266"
+     x2="1266"
+     y1="444"
+     y2="332.5"
+     class="net_60,61,62,63,64,65 width_6"
+     style="stroke-width: 2"
+     id="line199" />
+  <line
+     x1="1266"
+     x2="1412"
+     y1="332.5"
+     y2="332.5"
+     class="net_60,61,62,63,64,65 width_6"
+     style="stroke-width: 2"
+     id="line200" />
+  <line
+     x1="1647"
+     x2="1891"
+     y1="583.5"
+     y2="583.5"
+     class="net_41 width_1"
+     style="stroke-width: 1"
+     id="line201" />
+  <line
+     x1="1647"
+     x2="1891"
+     y1="603.5"
+     y2="603.5"
+     class="net_42 width_1"
+     style="stroke-width: 1"
+     id="line202" />
+  <line
+     x1="1191"
+     x2="1256"
+     y1="384"
+     y2="384"
+     class="net_67 width_1"
+     style="stroke-width: 1"
+     id="line203" />
+  <line
+     x1="1256"
+     x2="1256"
+     y1="384"
+     y2="312.5"
+     class="net_67 width_1"
+     style="stroke-width: 1"
+     id="line204" />
+  <line
+     x1="1256"
+     x2="1412"
+     y1="312.5"
+     y2="312.5"
+     class="net_67 width_1"
+     style="stroke-width: 1"
+     id="line205" />
+  <line
+     x1="386"
+     x2="532"
+     y1="129"
+     y2="129"
+     class="net_9 width_1"
+     style="stroke-width: 1"
+     id="line206" />
+  <line
+     x1="532"
+     x2="532"
+     y1="129"
+     y2="176"
+     class="net_9 width_1"
+     style="stroke-width: 1"
+     id="line207" />
+  <line
+     x1="532"
+     x2="627"
+     y1="176"
+     y2="176"
+     class="net_9 width_1"
+     style="stroke-width: 1"
+     id="line208" />
+  <line
+     x1="387"
+     x2="522"
+     y1="381.5"
+     y2="381.5"
+     class="net_22 width_1"
+     style="stroke-width: 1"
+     id="line209" />
+  <line
+     x1="522"
+     x2="522"
+     y1="381.5"
+     y2="216"
+     class="net_22 width_1"
+     style="stroke-width: 1"
+     id="line210" />
+  <line
+     x1="522"
+     x2="627"
+     y1="216"
+     y2="216"
+     class="net_22 width_1"
+     style="stroke-width: 1"
+     id="line211" />
+  <line
+     x1="386"
+     x2="502"
+     y1="180"
+     y2="180"
+     class="net_6 width_1"
+     style="stroke-width: 1"
+     id="line212" />
+  <line
+     x1="502"
+     x2="502"
+     y1="180"
+     y2="236"
+     class="net_6 width_1"
+     style="stroke-width: 1"
+     id="line213" />
+  <line
+     x1="502"
+     x2="627"
+     y1="236"
+     y2="236"
+     class="net_6 width_1"
+     style="stroke-width: 1"
+     id="line214" />
+  <line
+     x1="386"
+     x2="482"
+     y1="231"
+     y2="231"
+     class="net_7 width_1"
+     style="stroke-width: 1"
+     id="line215" />
+  <line
+     x1="482"
+     x2="482"
+     y1="231"
+     y2="276"
+     class="net_7 width_1"
+     style="stroke-width: 1"
+     id="line216" />
+  <line
+     x1="482"
+     x2="627"
+     y1="276"
+     y2="276"
+     class="net_7 width_1"
+     style="stroke-width: 1"
+     id="line217" />
+  <line
+     x1="386"
+     x2="627"
+     y1="296"
+     y2="296"
+     class="net_8 width_1"
+     style="stroke-width: 1"
+     id="line218" />
+  <line
+     x1="658"
+     x2="765"
+     y1="176"
+     y2="176"
+     class="net_68 width_1"
+     style="stroke-width: 1"
+     id="line219" />
+  <line
+     x1="765"
+     x2="765"
+     y1="176"
+     y2="65"
+     class="net_68 width_1"
+     style="stroke-width: 1"
+     id="line220" />
+  <line
+     x1="765"
+     x2="1089"
+     y1="65"
+     y2="65"
+     class="net_68 width_1"
+     style="stroke-width: 1"
+     id="line221" />
+  <line
+     x1="1089"
+     x2="1089"
+     y1="65"
+     y2="384"
+     class="net_68 width_1"
+     style="stroke-width: 1"
+     id="line222" />
+  <line
+     x1="1089"
+     x2="1160"
+     y1="384"
+     y2="384"
+     class="net_68 width_1"
+     style="stroke-width: 1"
+     id="line223" />
+  <line
+     x1="965"
+     x2="1079"
+     y1="156"
+     y2="156"
+     class="net_23,24,25,26,27 width_5"
+     style="stroke-width: 2"
+     id="line224" />
+  <line
+     x1="1079"
+     x2="1079"
+     y1="156"
+     y2="404"
+     class="net_23,24,25,26,27 width_5"
+     style="stroke-width: 2"
+     id="line225" />
+  <line
+     x1="1079"
+     x2="1160"
+     y1="404"
+     y2="404"
+     class="net_23,24,25,26,27 width_5"
+     style="stroke-width: 2"
+     id="line226" />
+  <line
+     x1="965"
+     x2="1069"
+     y1="176"
+     y2="176"
+     class="net_28,29,30,31,32,33 width_6"
+     style="stroke-width: 2"
+     id="line227" />
+  <line
+     x1="1069"
+     x2="1069"
+     y1="176"
+     y2="424"
+     class="net_28,29,30,31,32,33 width_6"
+     style="stroke-width: 2"
+     id="line228" />
+  <line
+     x1="1069"
+     x2="1160"
+     y1="424"
+     y2="424"
+     class="net_28,29,30,31,32,33 width_6"
+     style="stroke-width: 2"
+     id="line229" />
+  <line
+     x1="965"
+     x2="1030"
+     y1="196"
+     y2="196"
+     class="net_34,35,36,37,38,39 width_6"
+     style="stroke-width: 2"
+     id="line230" />
+  <line
+     x1="1030"
+     x2="1030"
+     y1="196"
+     y2="444"
+     class="net_34,35,36,37,38,39 width_6"
+     style="stroke-width: 2"
+     id="line231" />
+  <line
+     x1="1030"
+     x2="1160"
+     y1="444"
+     y2="444"
+     class="net_34,35,36,37,38,39 width_6"
+     style="stroke-width: 2"
+     id="line232" />
+  <line
+     x1="42"
+     x2="156"
+     y1="401.5"
+     y2="401.5"
+     class="net_5 width_1"
+     style="stroke-width: 1"
+     id="line233" />
+  <line
+     x1="1922"
+     x2="2021"
+     y1="543.5"
+     y2="543.5"
+     class="net_10 width_1"
+     style="stroke-width: 1"
+     id="line234" />
+  <line
+     x1="2021"
+     x2="2021"
+     y1="543.5"
+     y2="588.5"
+     class="net_10 width_1"
+     style="stroke-width: 1"
+     id="line235" />
+  <line
+     x1="2021"
+     x2="2036"
+     y1="588.5"
+     y2="588.5"
+     class="net_10 width_1"
+     style="stroke-width: 1"
+     id="line236" />
+  <line
+     x1="1922"
+     x2="2036"
+     y1="523.5"
+     y2="523.5"
+     class="net_11 width_1"
+     style="stroke-width: 1"
+     id="line237" />
+  <line
+     x1="1922"
+     x2="2021"
+     y1="503.5"
+     y2="503.5"
+     class="net_12 width_1"
+     style="stroke-width: 1"
+     id="line238" />
+  <line
+     x1="2021"
+     x2="2021"
+     y1="503.5"
+     y2="458.5"
+     class="net_12 width_1"
+     style="stroke-width: 1"
+     id="line239" />
+  <line
+     x1="2021"
+     x2="2036"
+     y1="458.5"
+     y2="458.5"
+     class="net_12 width_1"
+     style="stroke-width: 1"
+     id="line240" />
+  <rect
+     x="1635.5"
+     y="307.5"
+     width="16"
+     height="9"
+     class="net_43,44,45,46,47,48 width_6 busLabel_6"
+     style="fill: white; stroke: none"
+     id="rect240" />
+  <text
+     x="1634.5"
+     y="315.5"
+     class="net_43,44,45,46,47,48 width_6 busLabel_6"
+     id="text240">/6/</text>
+  <rect
+     x="1425.5"
+     y="399"
+     width="16"
+     height="9"
+     class="net_49,50,51,52,53 width_5 busLabel_5"
+     style="fill: white; stroke: none"
+     id="rect241" />
+  <text
+     x="1424.5"
+     y="407"
+     class="net_49,50,51,52,53 width_5 busLabel_5"
+     id="text241">/5/</text>
+  <rect
+     x="1425.5"
+     y="445.5"
+     width="16"
+     height="9"
+     class="net_54,55,56,57,58,59 width_6 busLabel_6"
+     style="fill: white; stroke: none"
+     id="rect242" />
+  <text
+     x="1424.5"
+     y="453.5"
+     class="net_54,55,56,57,58,59 width_6 busLabel_6"
+     id="text242">/6/</text>
+  <rect
+     x="1300"
+     y="327.5"
+     width="16"
+     height="9"
+     class="net_60,61,62,63,64,65 width_6 busLabel_6"
+     style="fill: white; stroke: none"
+     id="rect243" />
+  <text
+     x="1299"
+     y="335.5"
+     class="net_60,61,62,63,64,65 width_6 busLabel_6"
+     id="text243">/6/</text>
+  <rect
+     x="1300"
+     y="327.5"
+     width="16"
+     height="9"
+     class="net_60,61,62,63,64,65 width_6 busLabel_6"
+     style="fill: white; stroke: none"
+     id="rect244" />
+  <text
+     x="1299"
+     y="335.5"
+     class="net_60,61,62,63,64,65 width_6 busLabel_6"
+     id="text244">/6/</text>
+  <rect
+     x="1056"
+     y="151"
+     width="16"
+     height="9"
+     class="net_23,24,25,26,27 width_5 busLabel_5"
+     style="fill: white; stroke: none"
+     id="rect245" />
+  <text
+     x="1055"
+     y="159"
+     class="net_23,24,25,26,27 width_5 busLabel_5"
+     id="text245">/5/</text>
+  <rect
+     x="1056"
+     y="171"
+     width="16"
+     height="9"
+     class="net_28,29,30,31,32,33 width_6 busLabel_6"
+     style="fill: white; stroke: none"
+     id="rect246" />
+  <text
+     x="1055"
+     y="179"
+     class="net_28,29,30,31,32,33 width_6 busLabel_6"
+     id="text246">/6/</text>
+  <rect
+     x="1056"
+     y="439"
+     width="16"
+     height="9"
+     class="net_34,35,36,37,38,39 width_6 busLabel_6"
+     style="fill: white; stroke: none"
+     id="rect247"
+     inkscape:label="rect247" />
+  <text
+     x="1055"
+     y="447"
+     class="net_34,35,36,37,38,39 width_6 busLabel_6"
+     id="text247"
+     inkscape:label="text247">/6/</text>
+</svg>
