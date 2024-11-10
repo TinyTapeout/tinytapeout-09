@@ -11,8 +11,7 @@
       "rotate": 90,
       "attrs": {}
     },
-    { "type": "wokwi-gate-not", "id": "not3", "top": -316.8, "left": 288, "attrs": {} },
-    { "type": "wokwi-gate-not", "id": "not4", "top": -220.8, "left": 192, "attrs": {} },
+    { "type": "wokwi-gate-not", "id": "not4", "top": -182.4, "left": 192, "attrs": {} },
     {
       "type": "wokwi-clock-generator",
       "id": "clock1",
@@ -20,13 +19,13 @@
       "left": -115.2,
       "attrs": { "frequency": "10000" }
     },
-    { "type": "wokwi-gnd", "id": "pwr2", "top": -76.8, "left": 690.6, "attrs": {} },
+    { "type": "wokwi-gnd", "id": "pwr2", "top": -124.8, "left": 988.2, "attrs": {} },
     { "type": "wokwi-vcc", "id": "pwr1", "top": -229.64, "left": -115.2, "attrs": {} },
     {
       "type": "wokwi-7segment",
       "id": "sevseg1",
-      "top": -183.24,
-      "left": 677.08,
+      "top": -235.02,
+      "left": 974.68,
       "attrs": { "common": "cathode" }
     },
     {
@@ -62,8 +61,8 @@
     {
       "type": "board-tt-block-output",
       "id": "ttout",
-      "top": -208.93,
-      "left": 484.8,
+      "top": -256.93,
+      "left": 782.4,
       "attrs": { "verilogRole": "output" }
     },
     {
@@ -137,7 +136,16 @@
       "left": 184.55,
       "attrs": { "text": "Bidirectional I/O pins" }
     },
-    { "type": "wokwi-gate-and-2", "id": "and1", "top": -316.8, "left": 153.6, "attrs": {} }
+    { "type": "wokwi-gate-not", "id": "not1", "top": -230.4, "left": 192, "attrs": {} },
+    { "type": "wokwi-gate-not", "id": "not2", "top": -134.4, "left": 192, "attrs": {} },
+    { "type": "wokwi-gate-not", "id": "not3", "top": -278.4, "left": 192, "attrs": {} },
+    { "type": "wokwi-gate-and-2", "id": "and1", "top": -307.2, "left": 307.2, "attrs": {} },
+    { "type": "wokwi-gate-and-2", "id": "and2", "top": -249.6, "left": 307.2, "attrs": {} },
+    { "type": "wokwi-gate-and-2", "id": "and3", "top": -192, "left": 307.2, "attrs": {} },
+    { "type": "wokwi-gate-and-2", "id": "and4", "top": -144, "left": 307.2, "attrs": {} },
+    { "type": "wokwi-gate-and-2", "id": "and5", "top": -297.6, "left": 422.4, "attrs": {} },
+    { "type": "wokwi-gate-and-2", "id": "and6", "top": -182.4, "left": 422.4, "attrs": {} },
+    { "type": "wokwi-gate-and-2", "id": "and7", "top": -240, "left": 547.2, "attrs": {} }
   ],
   "connections": [
     [ "pwr1:VCC", "sw1:8a", "red", [ "v0" ] ],
@@ -172,22 +180,33 @@
     [ "sw1:7b", "ttin:EXTIN6", "green", [ "h0" ] ],
     [ "sw1:8b", "ttin:EXTIN7", "green", [ "v0" ] ],
     [ "sw2:2", "ttin:EXTCLK", "blue", [ "v0" ] ],
-    [ "ttin:IN4", "ttout:OUT4", "green", [ "h0" ] ],
-    [ "ttout:OUT5", "ttin:IN5", "green", [ "h0" ] ],
-    [ "ttin:IN6", "ttout:OUT6", "green", [ "h0" ] ],
-    [ "ttout:OUT7", "ttin:IN7", "green", [ "h0" ] ],
     [ "btn1:1.l", "sw2:3", "blue", [ "h0" ] ],
     [ "pwr3:VCC", "btn1:2.r", "red", [ "v0" ] ],
     [ "btn2:2.l", "gnd1:GND", "black", [ "h0" ] ],
     [ "ttin:EXTRST_N", "btn2:1.r", "orange", [ "h-38.4", "v-96" ] ],
     [ "btn2:1.l", "r2:2", "green", [ "h0" ] ],
     [ "pwr5:VCC", "r2:1", "red", [ "v0" ] ],
-    [ "and1:A", "ttin:IN0", "green", [ "h-38.4", "v57.6" ] ],
-    [ "and1:B", "ttin:IN1", "green", [ "h-28.8", "v48" ] ],
-    [ "and1:OUT", "not3:IN", "green", [ "v48", "h-57.6" ] ],
-    [ "not3:OUT", "ttout:OUT0", "green", [ "v0" ] ],
-    [ "not4:IN", "ttin:IN2", "green", [ "v0" ] ],
-    [ "not4:OUT", "ttout:OUT1", "green", [ "v0" ] ]
+    [ "ttin:IN1", "not3:IN", "green", [ "h48", "v-86.4" ] ],
+    [ "ttin:IN3", "not1:IN", "green", [ "h67.2", "v-57.6" ] ],
+    [ "ttin:IN5", "not4:IN", "green", [ "h0" ] ],
+    [ "ttin:IN7", "not2:IN", "green", [ "h0" ] ],
+    [ "ttin:IN0", "and1:A", "green", [ "h38.4", "v-115.2", "h240" ] ],
+    [ "not3:OUT", "and1:B", "green", [ "v0" ] ],
+    [ "ttin:IN2", "and2:A", "green", [ "h57.6", "v-76.8", "h163.2" ] ],
+    [ "not1:OUT", "and2:B", "green", [ "v0" ] ],
+    [ "ttin:IN4", "and3:A", "green", [ "h76.8", "v-48" ] ],
+    [ "not4:OUT", "and3:B", "green", [ "v0" ] ],
+    [ "ttin:IN6", "and4:A", "green", [ "h105.6", "v-19.2", "h134.4" ] ],
+    [ "not2:OUT", "and4:B", "green", [ "v0" ] ],
+    [ "and1:OUT", "and5:A", "green", [ "v0" ] ],
+    [ "and2:OUT", "and5:B", "green", [ "v0" ] ],
+    [ "and3:OUT", "and6:A", "green", [ "v0" ] ],
+    [ "and4:OUT", "and6:B", "green", [ "v0" ] ],
+    [ "and5:OUT", "and7:A", "green", [ "v0" ] ],
+    [ "and6:OUT", "and7:B", "green", [ "v0" ] ],
+    [ "and7:OUT", "ttout:OUT0", "green", [ "v0" ] ],
+    [ "and7:OUT", "ttout:OUT4", "green", [ "v0" ] ],
+    [ "and7:OUT", "ttout:OUT5", "green", [ "v0" ] ]
   ],
   "dependencies": {}
 }

@@ -9,14 +9,16 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-This is a simple project to test then end-to-end manufacturing process as a first-time tiny tapeout user.
+This project follows the "secret code" next step in the TinyTapeout workshop:
+https://tinytapeout.com/guides/workshop/simulate-a-gate/
+
+If you input the correct code, you get the first letter of my name output on the 7-segment display ('r').
 
 ## How to test
 
-The whole project is two gates:
-- a NAND gate composed of AND and NOT (pins IN0, IN1, OUT0)
-- a NOT gate (pins IN2, OUT1)
+Set bits 10101010 in order on IN0 through IN7 ("1" is high, "0" low), then you should receive an output of 10001100 on OUT0 through OUT7. Any other input should output 00000000.
 
 ## External hardware
 
-No particular external hardware is required, other than a power supply and some test tools (output scope, logic level inputs).
+- Dip switch for inputs
+- 7-segment display for outputs
