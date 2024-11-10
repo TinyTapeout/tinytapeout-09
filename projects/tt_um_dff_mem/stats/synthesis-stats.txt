@@ -1,0 +1,30 @@
+61. Printing statistics.
+
+=== tt_um_dff_mem ===
+
+   Number of wires:                361
+   Number of wire bits:            396
+   Number of public wires:         136
+   Number of public wire bits:     171
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                377
+     sky130_fd_sc_hd__a21oi_2       16
+     sky130_fd_sc_hd__a221o_2        8
+     sky130_fd_sc_hd__a22o_2       136
+     sky130_fd_sc_hd__and2_2        17
+     sky130_fd_sc_hd__and2b_2        2
+     sky130_fd_sc_hd__and4b_2        1
+     sky130_fd_sc_hd__and4bb_2       2
+     sky130_fd_sc_hd__buf_1          8
+     sky130_fd_sc_hd__conb_1        16
+     sky130_fd_sc_hd__dfxtp_2      128
+     sky130_fd_sc_hd__ebufn_2        8
+     sky130_fd_sc_hd__inv_2          1
+     sky130_fd_sc_hd__mux4_2        32
+     sky130_fd_sc_hd__nor2_2         1
+     sky130_fd_sc_hd__nor4b_2        1
+
+   Chip area for module '\tt_um_dff_mem': 5421.449600
+
