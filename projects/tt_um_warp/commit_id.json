@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt08 b85e49a2",
+  "repo": "https://github.com/sylefeb/tt08-compo-entry",
+  "commit": "7266e2b30d1f2941e256517aafdf2087d2b2cba3",
+  "workflow_url": "https://github.com/sylefeb/tt08-compo-entry/actions/runs/11642518686",
+  "sort_id": 1731268546051,
+  "openlane_version": "OpenLane2 2.0.8",
+  "pdk_version": "open_pdks bdc9412b3e468c102d01b7cf6337be06ec6e9c9a"
+}
