@@ -1,0 +1,33 @@
+61. Printing statistics.
+
+=== tt_um_tommythorn_cgates ===
+
+   Number of wires:                300
+   Number of wire bits:            335
+   Number of public wires:         155
+   Number of public wire bits:     190
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                316
+     sky130_fd_sc_hd__a211o_1        3
+     sky130_fd_sc_hd__and2_2        34
+     sky130_fd_sc_hd__and2b_2        2
+     sky130_fd_sc_hd__buf_2          8
+     sky130_fd_sc_hd__conb_1        16
+     sky130_fd_sc_hd__dlxtn_1       37
+     sky130_fd_sc_hd__inv_2         45
+     sky130_fd_sc_hd__nand2_2        1
+     sky130_fd_sc_hd__nand2b_2       1
+     sky130_fd_sc_hd__nor2_2        63
+     sky130_fd_sc_hd__o21a_1        71
+     sky130_fd_sc_hd__o21ai_2        1
+     sky130_fd_sc_hd__o22a_2         4
+     sky130_fd_sc_hd__o2bb2a_2       1
+     sky130_fd_sc_hd__xor2_2        29
+
+   Area for cell type \sky130_fd_sc_hd__a211o_1 is unknown!
+   Area for cell type \sky130_fd_sc_hd__o21a_1 is unknown!
+
+   Chip area for module '\tt_um_tommythorn_cgates': 2038.204800
+
