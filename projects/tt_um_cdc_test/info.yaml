@@ -1,11 +1,11 @@
 # Tiny Tapeout project information
 project:
-  title:        "Clock Domain Crossing Test"      # Project title
-  author:       "Nicklaus Thompson"      # Your name
-  discord:      "fangameempire"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "A ring of ALUs separated by CDCs"      # One line description of what your project does
-  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     50000000       # Clock frequency in Hz (or 0 if not applicable)
+  title:        "SkyKing Demo"        # Project title
+  author:       "Nicklaus Thompson"   # Your name
+  discord:      "fangameempire"       # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Types some text over an image of a plane flying into the sunset"        # One line description of what your project does
+  language:     "Verilog"             # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     25200000               # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
@@ -18,6 +18,7 @@ project:
   # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
   source_files:
     - "project.v"
+    - "hvsync_generator.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
@@ -25,21 +26,21 @@ pinout:
   ui[0]: ""
   ui[1]: ""
   ui[2]: ""
-  ui[3]: "RX"
+  ui[3]: ""
   ui[4]: ""
   ui[5]: ""
   ui[6]: ""
   ui[7]: ""
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: "TX"
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  uo[0]: "HS"
+  uo[1]: "R0"
+  uo[2]: "G0"
+  uo[3]: "B0"
+  uo[4]: "VS"
+  uo[5]: "R1"
+  uo[6]: "G1"
+  uo[7]: "B1"
 
   # Bidirectional pins
   uio[0]: ""
