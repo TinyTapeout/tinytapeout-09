@@ -1,0 +1,48 @@
+# Tiny Tapeout project information (Wokwi project)
+project:
+  wokwi_id:     414120513895838721       # Set this to the ID of your Wokwi project (the number from the project's URL)
+  title:        gatesoup      # Project title
+  author:       Elio Bourcart      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "a tasteful selection of logic gates between input and output"      # One line description of what your project does
+  language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "FAFO"
+  ui[1]: "FAFO"
+  ui[2]: "FAFO"
+  ui[3]: "FAFO"
+  ui[4]: "FAFO"
+  ui[5]: "FAFO"
+  ui[6]: "FAFO"
+  ui[7]: "FAFO"
+
+  # Outputs
+  uo[0]: "LED 0"
+  uo[1]: "LED 1"
+  uo[2]: "LED 2"
+  uo[3]: "LED 3"
+  uo[4]: "LED 4"
+  uo[5]: "LED 5"
+  uo[6]: "LED 6"
+  uo[7]: "LED 7"
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
