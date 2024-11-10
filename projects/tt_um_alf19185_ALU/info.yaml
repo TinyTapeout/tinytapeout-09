@@ -3,7 +3,7 @@ project:
   title:        "4 bit ALU "      # Project title
   author:       "Gabriela Alfaro"      # Your name
   discord:      "N/A"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "A simple design of an Arithmetic Logic Unit capable of basic operations: addition, substraction , multiplication and division."      # One line description of what your project does
+  description:  "A simple design of an Arithmetic Logic Unit capable of basic operations: addition, substraction , multiplication, division and some logic operations."      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -36,14 +36,14 @@ pinout:
   uo[1]: "ALU_Out[1]"
   uo[2]: "ALU_Out[2]"
   uo[3]: "ALU_Out[3]"
-  uo[4]: "ZeroFlag"
-  uo[5]: "CarryOut"
-  uo[6]: ""
-  uo[7]: ""
+  uo[4]: "ALU_Out[4]"
+  uo[5]: "ALU_Out[5]"
+  uo[6]: "ALU_Out[6]"
+  uo[7]: "ALU_Out[7]"
 
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
+  uio[0]: "ZeroFlag"
+  uio[1]: "CarryOut"
   uio[2]: ""
   uio[3]: ""
   uio[4]: ""
