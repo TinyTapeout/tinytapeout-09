@@ -1,11 +1,11 @@
 # Tiny Tapeout project information
 project:
-  title:        "A simple leaky integrate and fire neuron"      # Project title
+  title:        "Frequency Encoder and Decoder"      # Project title
   author:       "Miguel Robles"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Simple implementation of an 8-bit lif neuron"      # One line description of what your project does
+  description:  "Simple implementation of an 8-bit frequency encoder/decoder for a 1 bit frequency channel"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+  clock_hz:     10000000       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
@@ -19,38 +19,39 @@ project:
   source_files:
     - "tt_um_mroblesh.v"
     - "FrequencyDecoder.v"
+    - "FrequencyEncoder.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: "Input current bit [0]"
-  ui[1]: "Input current bit [1]"
-  ui[2]: "Input current bit [2]"
-  ui[3]: "Input current bit [3]"
-  ui[4]: "Input current bit [4]"
-  ui[5]: "Input current bit [5]"
-  ui[6]: "Input current bit [6]"
-  ui[7]: "Input current bit [7]"
+  ui[0]: "Input frequency channel for decoder OR input bit for encoder [0]"
+  ui[1]: "Input encoder bit [1]"
+  ui[2]: "Input encoder bit [2]"
+  ui[3]: "Input encoder bit [3]"
+  ui[4]: "Input encoder bit [4]"
+  ui[5]: "Input encoder bit [5]"
+  ui[6]: "Input encoder bit [6]"
+  ui[7]: "Input encoder bit [7]"
 
   # Outputs
-  uo[0]: "State variable bit [0]"
-  uo[1]: "State variable bit [1]"
-  uo[2]: "State variable bit [2]"
-  uo[3]: "State variable bit [3]"
-  uo[4]: "State variable bit [4]"
-  uo[5]: "State variable bit [5]"
-  uo[6]: "State variable bit [6]"
-  uo[7]: "State variable bit [7]"
+  uo[0]: "LSB output of decoder [0] OR output frequency channel for encoder"
+  uo[1]: "Output encoder bit [1]"
+  uo[2]: "Output encoder bit [2]"
+  uo[3]: "Output encoder bit [3]"
+  uo[4]: "Output encoder bit [4]"
+  uo[5]: "Output encoder bit [5]"
+  uo[6]: "Output encoder bit [6]"
+  uo[7]: "Output encoder bit [7]"
 
   # Bidirectional pins
-  uio[0]: "Spike Bit"
+  uio[0]: "Input selector bit to choose between encoder or decoder"
   uio[1]: ""
   uio[2]: ""
   uio[3]: ""
   uio[4]: ""
   uio[5]: ""
-  uio[6]: ""
-  uio[7]: ""
+  uio[6]: "Input configuration bit for encoder sample rate [0]"
+  uio[7]: "Input configuration bit for encoder sample rate [1]"
 
 # Do not change!
 yaml_version: 6
