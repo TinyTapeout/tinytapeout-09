@@ -1,0 +1,55 @@
+# Tiny Tapeout project information
+project:
+  title:        "mips.sv"      # Project title
+  author:       "Eric Smith"      # Your name
+  discord:      "@ericsmith8798"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "The MIPs core example from Weste & Harris"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     1000000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_ericsmi_mips"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "memdata[0]"
+  ui[1]: "memdata[1]"
+  ui[2]: "memdata[2]"
+  ui[3]: "memdata[3]"
+  ui[4]: "memdata[4]"
+  ui[5]: "memdata[5]"
+  ui[6]: "memdata[6]"
+  ui[7]: "memdata[7]"
+
+  # Outputs
+  uo[0]: "writedata[0]"
+  uo[1]: "writedata[1]"
+  uo[2]: "writedata[2]"
+  uo[3]: "writedata[3]"
+  uo[4]: "writedata[4]"
+  uo[5]: "writedata[5]"
+  uo[6]: "writedata[6]"
+  uo[7]: "writedata[7]"
+
+  # Bidirectional pins
+  uio[0]: "adr[0]"
+  uio[1]: "adr[1]"
+  uio[2]: "adr[2]"
+  uio[3]: "adr[3]"
+  uio[4]: "adr[4]"
+  uio[5]: "adr[5]"
+  uio[6]: "memread"
+  uio[7]: "memwrite"
+
+# Do not change!
+yaml_version: 6
