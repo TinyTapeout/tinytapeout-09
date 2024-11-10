@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt09 a48b1c74",
+  "repo": "https://github.com/samkho/TwoChannelSquareWaveGenerator",
+  "commit": "3d48ad9f5d83a8fc197bfee41603715d1d032825",
+  "workflow_url": "https://github.com/samkho/TwoChannelSquareWaveGenerator/actions/runs/11765810289",
+  "sort_id": 1731250222105,
+  "openlane_version": "OpenLane2 2.1.9",
+  "pdk_version": "open_pdks bdc9412b3e468c102d01b7cf6337be06ec6e9c9a"
+}
