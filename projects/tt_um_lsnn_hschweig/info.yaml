@@ -1,0 +1,103 @@
+# Tiny Tapeout project information
+project:
+  title:        "Neuromorphic Hardware for SNN LSTM"      
+  author:       "Hunter Schweiger"      
+  discord:      "hunter557445"      
+  description:  "efficient neuromorphic hardware for running a SNN LSTM unit"      
+  language:     "Verilog"
+  clock_hz:     50000000       # Adding suggested clock frequency since your design is clocked
+  tiles: "1x1"          
+  top_module:  "tt_um_lsnn_hschweig"
+  source_files:
+    - "tt_um_lsnn_hschweig.v"
+
+# Required documentation fields
+documentation:
+  author: "Hunter Schweiger"
+  title: "Neuromorphic Hardware for SNN LSTM"
+  description: "Efficient neuromorphic hardware implementation of a Leaky Spike Neural Network (LSNN) with adaptive threshold and refractory period"
+  how_it_works: |
+    This LSNN implementation features:
+    - 12-bit membrane potential with configurable decay (DECAY_FACTOR = 1/4)
+    - Adaptive threshold mechanism with learning rate control
+    - 3-cycle refractory period after spike generation
+    - 7-bit spike counter for monitoring activity
+    - Base threshold of 100 units with dynamic adaptation
+    
+    Key features:
+    1. Membrane Dynamics:
+       - Integrates 8-bit input current
+       - Applies leaky decay of 1/4 per cycle
+       - Resets to 0 after spike
+    
+    2. Adaptation Mechanism:
+       - Learning-enabled threshold adjustment (controlled by uio_in[0])
+       - Adaptation increases with each spike
+       - Gradual decay when not spiking
+    
+    3. Output Monitoring:
+       - uo_out[7]: Refractory state indicator
+       - uo_out[6:0]: Current membrane potential
+       - uio_out[7]: Spike output
+       - uio_out[6:0]: Spike counter
+  
+  how_to_test: |
+    Testing procedure:
+    1. Reset (rst_n = 0): 
+       - Verify all state variables reset to 0
+       - Threshold should reset to base value (100)
+    
+    2. Basic Operation:
+       - Apply input current through ui_in[7:0]
+       - Monitor membrane potential on uo_out[6:0]
+       - Observe spike generation on uio_out[7]
+       - Check refractory period indicator on uo_out[7]
+    
+    3. Learning Mode:
+       - Set uio_in[0] to enable learning
+       - Verify threshold adaptation after spikes
+       - Monitor spike frequency changes
+    
+    4. Performance Verification:
+       - Track spike count through uio_out[6:0]
+       - Verify proper threshold adjustment
+       - Test different input current levels
+  
+  external_hw: "None required - all testing can be done through digital I/O"
+  language: "Verilog"
+  clock_hz: 50000000  # Suggested 50MHz clock for digital operation
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "Input current bit [0]"
+  ui[1]: "Input current bit [1]"
+  ui[2]: "Input current bit [2]"
+  ui[3]: "Input current bit [3]"
+  ui[4]: "Input current bit [4]"
+  ui[5]: "Input current bit [5]"
+  ui[6]: "Input current bit [6]"
+  ui[7]: "Input current bit [7]"
+
+  # Outputs
+  uo[0]: "State variable bit [0]"
+  uo[1]: "State variable bit [1]"
+  uo[2]: "State variable bit [2]"
+  uo[3]: "State variable bit [3]"
+  uo[4]: "State variable bit [4]"
+  uo[5]: "State variable bit [5]"
+  uo[6]: "State variable bit [6]"
+  uo[7]: "State variable bit [7]"
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: "Spike bit [7]"
+
+# Do not change!
+yaml_version: 6
