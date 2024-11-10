@@ -1,0 +1,57 @@
+# Tiny Tapeout project information
+project:
+  title:        "Basic Matrix-Vector Multiplication"      # Project title
+  author:       "Andy Ly"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Basic matrix and vector multiplier that multiplies a 2x2 matrix with a 2x1 vector. Inputs are limited to 2 bit elements"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_matrix_mult"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "tt_um_matrix_mult.v"
+    - "lif.v"
+    - "matrix_mult.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "Input bit [0] for matrix element 11"
+  ui[1]: "Input bit [1] for matrix element 11"
+  ui[2]: "Input bit [0] for matrix element 12"
+  ui[3]: "Input bit [1] for matrix element 12"
+  ui[4]: "Input bit [0] for matrix element 21"
+  ui[5]: "Input bit [1] for matrix element 21"
+  ui[6]: "Input bit [0] for matrix element 22"
+  ui[7]: "Input bit [1] for matrix element 22"
+
+  # Outputs
+  uo[0]: "Output bit [0] for output vector element 1"
+  uo[1]: "Output bit [1] for output vector element 1"
+  uo[2]: "Output bit [2] for output vector element 1"
+  uo[3]: "Output bit [3] for output vector element 1"
+  uo[4]: "Output bit [4] for output vector element 1"
+  uo[5]: "Output bit [0] for output vector element 2"
+  uo[6]: "Output bit [1] for output vector element 2"
+  uo[7]: "Output bit [2] for output vector element 2"
+
+  # Bidirectional pins
+  uio[0]: "Output bit [3] for output vector element 2"
+  uio[1]: "Output bit [4] for output vector element 2"
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: "Input bit [0] for input vector element 1"
+  uio[5]: "Input bit [1] for input vector element 1"
+  uio[6]: "Input bit [0] for input vector element 2"
+  uio[7]: "Input bit [1] for input vector element 2"
+
+# Do not change!
+yaml_version: 6
