@@ -1,10 +1,10 @@
 # Tiny Tapeout project information (Wokwi project)
 project:
   wokwi_id:     414121715329142785       # Set this to the ID of your Wokwi project (the number from the project's URL)
-  title:        "Sigma Delta ADC"      # Project title
+  title:        "Sigma-Delta ADC"      # Project title
   author:       "Martin Schoeberl"      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Analog to digital converter"      # One line description of what your project does
+  discord:      "maybe I do not want to make this public ;-)"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Analog to digital converter - and back"      # One-line description of what your project does
   language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     50000000       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -26,7 +26,7 @@ pinout:
 
   # Outputs
   uo[0]: "OUT0"
-  uo[1]: ""
+  uo[1]: "OUT1"
   uo[2]: ""
   uo[3]: ""
   uo[4]: ""

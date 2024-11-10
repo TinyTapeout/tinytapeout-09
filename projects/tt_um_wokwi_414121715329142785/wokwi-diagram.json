@@ -10,8 +10,6 @@
       "left": -115.2,
       "attrs": { "frequency": "10000" }
     },
-    { "type": "wokwi-gnd", "id": "pwr2", "top": -76.8, "left": 565.8, "attrs": {} },
-    { "type": "wokwi-vcc", "id": "pwr1", "top": -229.64, "left": -115.2, "attrs": {} },
     {
       "type": "wokwi-slide-switch",
       "id": "sw2",
@@ -122,7 +120,6 @@
     },
     { "type": "wokwi-flip-flop-d", "id": "flop1", "top": -268.8, "left": 153.6, "attrs": {} },
     { "type": "wokwi-gate-not", "id": "not5", "top": -374.4, "left": 374.4, "attrs": {} },
-    { "type": "wokwi-gnd", "id": "gnd2", "top": -19.2, "left": -77.4, "attrs": {} },
     { "type": "wokwi-flip-flop-d", "id": "flop2", "top": -268.8, "left": 278.4, "attrs": {} },
     {
       "type": "wokwi-resistor",
@@ -137,7 +134,8 @@
       "top": -120.85,
       "left": -124.8,
       "attrs": { "value": "1000" }
-    }
+    },
+    { "type": "wokwi-flip-flop-d", "id": "flop3", "top": -268.8, "left": 412.8, "attrs": {} }
   ],
   "connections": [
     [ "sw2:1", "clock1:CLK", "blue", [ "h-19.2", "v-57.6" ] ],
@@ -160,7 +158,10 @@
     [ "ttout:EXTOUT0", "r1:1", "green", [ "v0", "h86.4", "v-316.8", "h-844.8", "v336" ] ],
     [ "flop1:D", "ttin:IN0", "green", [ "h-28.8", "v76.8" ] ],
     [ "ttin:CLK", "flop1:CLK", "green", [ "v0", "h48" ] ],
-    [ "ttin:CLK", "flop2:CLK", "green", [ "v0", "h172.8" ] ]
+    [ "ttin:CLK", "flop2:CLK", "green", [ "v0", "h172.8" ] ],
+    [ "flop2:Q", "flop3:D", "green", [ "v0", "h38.4" ] ],
+    [ "flop3:Q", "ttout:OUT1", "green", [ "v0", "h134.4", "v192", "h-336", "v-105.6" ] ],
+    [ "ttin:CLK", "flop3:CLK", "green", [ "v0", "h182.4" ] ]
   ],
   "dependencies": {}
 }
