@@ -1,0 +1,53 @@
+62. Printing statistics.
+
+=== nand_cell ===
+
+   Number of wires:                  3
+   Number of wire bits:              3
+   Number of public wires:           3
+   Number of public wire bits:       3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__nand2_2        1
+
+   Chip area for module '\nand_cell': 6.256000
+
+=== tt_um_wokwi_414122362169493505 ===
+
+   Number of wires:                 12
+   Number of wire bits:             47
+   Number of public wires:          12
+   Number of public wire bits:      47
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 28
+     nand_cell                       4
+     sky130_fd_sc_hd__buf_2          2
+     sky130_fd_sc_hd__conb_1        22
+
+   Area for cell type \nand_cell is unknown!
+
+   Chip area for module '\tt_um_wokwi_414122362169493505': 92.588800
+
+=== design hierarchy ===
+
+   tt_um_wokwi_414122362169493505      1
+     nand_cell                       4
+
+   Number of wires:                 24
+   Number of wire bits:             59
+   Number of public wires:          24
+   Number of public wire bits:      59
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 28
+     sky130_fd_sc_hd__buf_2          2
+     sky130_fd_sc_hd__conb_1        22
+     sky130_fd_sc_hd__nand2_2        4
+
+   Chip area for top module '\tt_um_wokwi_414122362169493505': 117.612800
+
