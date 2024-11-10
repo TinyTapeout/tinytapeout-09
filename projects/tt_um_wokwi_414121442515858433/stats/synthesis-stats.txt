@@ -1,0 +1,109 @@
+62. Printing statistics.
+
+=== and_cell ===
+
+   Number of wires:                  3
+   Number of wire bits:              3
+   Number of public wires:           3
+   Number of public wire bits:       3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__and2_2         1
+
+   Chip area for module '\and_cell': 7.507200
+
+=== dff_cell ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     sky130_fd_sc_hd__dfxtp_2        1
+     sky130_fd_sc_hd__inv_2          1
+
+   Chip area for module '\dff_cell': 25.024000
+
+=== or_cell ===
+
+   Number of wires:                  3
+   Number of wire bits:              3
+   Number of public wires:           3
+   Number of public wire bits:       3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__or2_2          1
+
+   Chip area for module '\or_cell': 6.256000
+
+=== tt_um_wokwi_414121442515858433 ===
+
+   Number of wires:                 31
+   Number of wire bits:             66
+   Number of public wires:          31
+   Number of public wire bits:      66
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 47
+     and_cell                        3
+     dff_cell                       16
+     or_cell                         1
+     sky130_fd_sc_hd__buf_2          4
+     sky130_fd_sc_hd__conb_1        20
+     xor_cell                        3
+
+   Area for cell type \xor_cell is unknown!
+   Area for cell type \and_cell is unknown!
+   Area for cell type \or_cell is unknown!
+   Area for cell type \dff_cell is unknown!
+
+   Chip area for module '\tt_um_wokwi_414121442515858433': 95.091200
+
+=== xor_cell ===
+
+   Number of wires:                  3
+   Number of wire bits:              3
+   Number of public wires:           3
+   Number of public wire bits:       3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__xor2_2         1
+
+   Chip area for module '\xor_cell': 16.265600
+
+=== design hierarchy ===
+
+   tt_um_wokwi_414121442515858433      1
+     and_cell                        3
+     dff_cell                       16
+     or_cell                         1
+     xor_cell                        3
+
+   Number of wires:                116
+   Number of wire bits:            151
+   Number of public wires:         116
+   Number of public wire bits:     151
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 63
+     sky130_fd_sc_hd__and2_2         3
+     sky130_fd_sc_hd__buf_2          4
+     sky130_fd_sc_hd__conb_1        20
+     sky130_fd_sc_hd__dfxtp_2       16
+     sky130_fd_sc_hd__inv_2         16
+     sky130_fd_sc_hd__or2_2          1
+     sky130_fd_sc_hd__xor2_2         3
+
+   Chip area for top module '\tt_um_wokwi_414121442515858433': 573.049600
+
