@@ -4,7 +4,7 @@ project:
   title:        "TT Test"      # Project title
   author:       "Austin"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "This is a test proj."      # One line description of what your project does
+  description:  "8-bit shift register."      # One line description of what your project does
   language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -15,24 +15,24 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: "input0"
-  ui[1]: "input1"
-  ui[2]: "input2"
-  ui[3]: "input3"
-  ui[4]: "input4"
-  ui[5]: "input5"
-  ui[6]: "input6"
+  ui[0]: "input"
+  ui[1]: "set"
+  ui[2]: ""
+  ui[3]: ""
+  ui[4]: ""
+  ui[5]: ""
+  ui[6]: ""
   ui[7]: ""
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  uo[0]: "output0"
+  uo[1]: "output1"
+  uo[2]: "output2"
+  uo[3]: "output3"
+  uo[4]: "output4"
+  uo[5]: "output5"
+  uo[6]: "output6"
+  uo[7]: "output7"
 
   # Bidirectional pins
   uio[0]: ""
