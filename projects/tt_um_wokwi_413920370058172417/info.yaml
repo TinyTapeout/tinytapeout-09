@@ -1,10 +1,10 @@
 # Tiny Tapeout project information (Wokwi project)
 project:
   wokwi_id:     413920370058172417       # Set this to the ID of your Wokwi project (the number from the project's URL)
-  title:        "Garbage BCD"      # Project title
+  title:        "2 Bit Times 2 Bit Plus 4 Bit MAD and 5 Bit Binary to 7 Segment Display"      # Project title
   author:       "Nathan"      # Your name
   discord:      "N8rBeans"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "It doesnt work"      # One line description of what your project does
+  description:  "Bit 1 = A1, Bit 2 = A0, Bit 3 = B1, Bit 4 = B0, Bit 5 = C3, Bit 6 = C2, Bit 7 = C1, Bit 8 = C0"      # One line description of what your project does
   language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -16,23 +16,23 @@ project:
 pinout:
   # Inputs
   ui[0]: "IN0"
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
-  ui[4]: ""
-  ui[5]: ""
-  ui[6]: ""
-  ui[7]: ""
+  ui[1]: "IN1"
+  ui[2]: "IN2"
+  ui[3]: "IN3"
+  ui[4]: "IN4"
+  ui[5]: "IN5"
+  ui[6]: "IN6"
+  ui[7]: "IN7"
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  uo[0]: "OUT0"
+  uo[1]: "OUT1"
+  uo[2]: "OUT2"
+  uo[3]: "OUT3"
+  uo[4]: "OUT4"
+  uo[5]: "OUT5"
+  uo[6]: "OUT6"
+  uo[7]: "OUT7"
 
   # Bidirectional pins
   uio[0]: ""
