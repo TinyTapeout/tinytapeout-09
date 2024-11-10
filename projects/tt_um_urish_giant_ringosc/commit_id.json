@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt09 a48b1c74",
+  "repo": "https://github.com/urish/tt09-giant-ring-oscillator",
+  "commit": "795542b21e69c8b2479923dda0255edc4ad700d6",
+  "workflow_url": "https://github.com/urish/tt09-giant-ring-oscillator/actions/runs/11766337662",
+  "sort_id": 1731252890878,
+  "openlane_version": "OpenLane2 2.1.9",
+  "pdk_version": "open_pdks bdc9412b3e468c102d01b7cf6337be06ec6e9c9a"
+}
