@@ -1,12 +1,12 @@
 # Tiny Tapeout project information (Wokwi project)
 project:
-  wokwi_id:     414122607025630209       # Set this to the ID of your Wokwi project (the number from the project's URL)
-  title:        "UART TX"      # Project title
-  author:       "Anonymous"      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "A UART transmitter"      # One line description of what your project does
-  language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     50000000       # Clock frequency in Hz (or 0 if not applicable)
+  wokwi_id:     414122607025630209  # Set this to the ID of your Wokwi project (the number from the project's URL)
+  title:        "UART TX"           # Project title
+  author:       "Shaokai Lin"       # Your name
+  discord:      "Shaokai"           # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "A UART transmitter modified from the one from the TinyTapeout website"      # One line description of what your project does
+  language:     "Wokwi"             # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     50000000            # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
