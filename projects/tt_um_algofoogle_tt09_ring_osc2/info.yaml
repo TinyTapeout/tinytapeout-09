@@ -1,0 +1,56 @@
+# Tiny Tapeout project information
+project:
+  title:        "Verilog ring oscillator V2"
+  author:       "algofoogle (Anton Maurovic)"
+  discord:      "algofoogle"
+  description:  "Multiple simple ring oscillators by instantiating sky130 inv_2 inverter rings"
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_algofoogle_tt09_ring_osc2"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "ring_osc.v"
+    - "project.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "pwm2_in[0]"
+  ui[1]: "pwm2_in[1]"
+  ui[2]: "pwm3_in[0]"
+  ui[3]: "pwm3_in[1]"
+  ui[4]: ""
+  ui[5]: "pwm3a_in[0]"
+  ui[6]: "pwm3a_in[1]"
+  ui[7]: "pwm3a_in[2]"
+
+  # Outputs
+  uo[0]: "ring_125"
+  uo[1]: "ring_251"
+  uo[2]: "ring_501"
+  uo[3]: "ring_1001"
+  uo[4]: "c0_3"
+  uo[5]: "c1_3"
+  uo[6]: "c2_5"
+  uo[7]: "c3_5"
+
+  # Bidirectional pins
+  uio[0]: "dummy"
+  uio[1]: "pwm3a_out"
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: "pwm2_out"
+  uio[7]: "pwm3_out"
+
+# Do not change!
+yaml_version: 6

@@ -1,0 +1,32 @@
+62. Printing statistics.
+
+=== tt_um_algofoogle_tt09_ring_osc2 ===
+
+   Number of wires:               1988
+   Number of wire bits:           2023
+   Number of public wires:        1944
+   Number of public wire bits:    1979
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               2004
+     sky130_fd_sc_hd__a21o_2         2
+     sky130_fd_sc_hd__a21oi_2        4
+     sky130_fd_sc_hd__a22o_2         1
+     sky130_fd_sc_hd__and2_2         1
+     sky130_fd_sc_hd__and3_2         5
+     sky130_fd_sc_hd__and4_2         6
+     sky130_fd_sc_hd__buf_2          9
+     sky130_fd_sc_hd__conb_1        12
+     sky130_fd_sc_hd__dfxtp_2       19
+     sky130_fd_sc_hd__inv_2       1923
+     sky130_fd_sc_hd__nand2_2        2
+     sky130_fd_sc_hd__nor2_2         6
+     sky130_fd_sc_hd__o211a_2        3
+     sky130_fd_sc_hd__o22a_2         1
+     sky130_fd_sc_hd__or2_2          1
+     sky130_fd_sc_hd__xnor2_2        2
+     sky130_fd_sc_hd__xor2_2         7
+
+   Chip area for module '\tt_um_algofoogle_tt09_ring_osc2': 8122.790400
+
