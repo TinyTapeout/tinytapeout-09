@@ -90,6 +90,9 @@ jobs:
         with:
           submodules: recursive
 
+      - name: Free Disk Space (Ubuntu)
+        uses: jlumbroso/free-disk-space@main
+
       - name: Checkout Caravel
         uses: actions/checkout@v4
         with:
