@@ -1,12 +1,3 @@
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
-
 ## How it works
 
 (This is a variant of tt06-ncl-lfsr, but with different C-gate
@@ -24,15 +15,38 @@ to uo[0] and uo[1].
 We also build four rings from this, with uo[2] and uo[3] being the
 output of a four stage build from Cl and Cc gates respectively.
 Similar for uo[4]/uo[5] except using 16 stage rings and uo[6]/uo[7]
-for (TBD) stage rings.
+for 64 stage rings.
+
+![](ring4.png "A 4-stage ring of C-gates")
+
+Since the pulse from each C-gate rings last only a few gate delay
+times, we use it to feed a toggle flip-flop, thus the corresponding
+output ping will toggle every time the pulse makes it round the ring.
+In other words, the cycle time of 4, 16, and 64 stage ring
+corresponding 8, 32, and 128 times the average stage delay of the
+corresponding ring.
+
+Why is this interesting?  Most asynchronous circuits disciplines rely
+heavily on the Cgate and this stage delay represents the absolute
+best-case for an asynchronous pipestage.  Of course, for most
+interesting circuits the stage delay will be dominated by the
+computation performed.
 
 ## How to test
 
 Set ui[0] and ui[1] different values and verify that uo[0]/uo[1] only
-changes when both agree.  Observe uo[7:2] and look for transitions.
+changes when both agree.  The remaining six uo outputs corresponding
+to six rings, two 4-stage, two 16-stage, and two 64-stage.  The first
+of each pair are built from latches, the latter from combinatorial
+logic.  It will be interesting to see which is faster.  The outputs
+are limited to 33 MHz / 30.3 ns, thus if the stage delay is less 3.8
+ns we likely will not observe anything.  For the other two the limits,
+are 947 ps and 237 ps, respectively.  In hindsight, I should have made
+the rings more than an order of magnitude longer.
 
 ## External hardware
 
 For the basic test the rp2040 on the bringup board should be enough
-for the ring test, an oscilloscope is [probably] required.
+for the ring test, an oscilloscope is definely required to see
+anything from the rings.
 
