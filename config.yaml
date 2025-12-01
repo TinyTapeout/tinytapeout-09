@@ -30,3 +30,14 @@ datasheet_config:
     - tt_um_rejunity_ay8913
     - tt_um_wokwi_411783629732984833
     - tt_um_control_block
+
+  artwork:
+    - {id: TT_POCA_01_A, rotate: 90deg}
+    - {id: TT_POCA_01_B, rotate: 90deg}
+    - {id: TT_POCA_01_C, rotate: 90deg}
+    - {id: TT_POCA_01_D, rotate: 90deg}
+    - {id: TT_POCA_01_E, rotate: 90deg}
+    - {id: TT_POCA_01_F, rotate: 90deg}
+    - {id: TT_POCA_01_G, rotate: 90deg}
+    - {id: TT_POCA_01_H, rotate: -90deg}
+    - {id: TT_POCA_01_I, rotate: 90deg}
