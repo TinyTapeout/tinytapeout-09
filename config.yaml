@@ -4,3 +4,29 @@ end_date: '2024-11-10'
 project_dir: 'projects'
 top_level_macro: 'openframe_project_wrapper'
 powered_netlists: true
+
+datasheet_config:
+  disabled:
+    - tt_um_four_bit_multiplier_nasan016_npham2003
+    - tt_um_wokwi_413920640800531457
+    - tt_um_adder_accumulator_sathworld
+    - tt_um_secA_11_nyancar_alanz23
+    - tt_um_CLA8
+    - tt_um_secB_15_array_multiplier
+    - tt_um_ronikant_jeremykam_tinyregisters
+    - tt_um_4x4multiplier
+    - tt_um_b_12_array_multiplier
+    - tt_um_B_14_array_multiplier
+    - tt_um_d_4_array_multiplier
+    - tt_um_SarpHS_array_mult
+    - tt_um_koggestone_adder8
+    - tt_um_c1_array_mult_structural
+    - tt_um_A_6_array_multiplier
+    - tt_um_a_0_array_multiplier
+    - tt_um_m4rthaswur1d
+    - tt_um_arry_mult_structural
+    - tt_um_dff_mem
+    - tt_um_rejunity_sn76489
+    - tt_um_rejunity_ay8913
+    - tt_um_wokwi_411783629732984833
+    - tt_um_control_block
