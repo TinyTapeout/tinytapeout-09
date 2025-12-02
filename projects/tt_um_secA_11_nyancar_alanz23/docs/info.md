@@ -9,7 +9,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-![4x4mult](https://github.com/user-attachments/assets/0e4835ab-a4a5-4f88-8e4f-00ef02a235ea)
+![](images/1.png)
 
 A 4x4 array multiplier multiplies two 4-bit binary numbers by arranging AND gates and adders in a grid-like pattern.
 Each bit of the first 4-bit number (multiplicand) is ANDed with each bit of the second 4-bit number (multiplier), creating 16 "partial products." As shown in the image, each bit of "q" is ANDed with each bit of "m" for four rows.
