@@ -30,6 +30,7 @@ datasheet_config:
     - tt_um_rejunity_ay8913
     - tt_um_wokwi_411783629732984833
     - tt_um_control_block
+    - tt_um_multiplier
 
   artwork:
     - {id: TT_POCA_01_A, rotate: 90deg}
