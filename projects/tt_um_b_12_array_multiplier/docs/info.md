@@ -10,7 +10,8 @@ You can also include images in this folder and reference them in the markdown. E
 ## How it works
 
 This is a array multiplier to multiply two 4-bit binaries. It uses full adders to process bitwise multiplications, the circuit diagram is as shown below:
-![Untitled Diagram drawio](https://github.com/user-attachments/assets/b4fffb0e-9ea4-4cdb-ab74-da03ab33f226)
+
+![](images/1.png)
 
 
 ## How to test
