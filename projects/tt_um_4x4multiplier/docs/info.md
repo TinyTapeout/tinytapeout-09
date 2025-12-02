@@ -10,7 +10,8 @@ You can also include images in this folder and reference them in the markdown. E
 ## How it works
 
 The code takes in two 4-bit inputs, and multiplies them, outputting the 8-bit result. The way this is done is by utilizing multiple layers of full adders, with each layer of full adders acting as a multiplication. Four layers indicate the four multiplications, each bit of the second input being multiplied by the first input. Each layer is additionally offset, to correct for bit placement.
-![Untitled Diagram drawio](https://github.com/user-attachments/assets/1bd4f531-abd4-452a-b0ce-fdd27330d877)
+
+![](images/1.png)
 
 
 ## How to test
