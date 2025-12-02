@@ -44,23 +44,19 @@ These two modules work in tandem and are a part of a larger project which includ
 The waveform in Figure 1 shows the loading and output functionality of the accumulator (RegA). The yellow marker displays the load functionality of the accumulator: On the rising edge of the clock, when nLa is low, the value from the bus is loaded onto the RegA.  
 The red marker displays the output functionality of the accumulator: On the rising edge of the clock, when Ea becomes high, the value from the accumulator is pushed onto the bus. 
 
-![image](https://github.com/user-attachments/assets/2a9a5cdb-9983-420a-b74b-a8da1882a904)
-Figure 1: Accumulator Load onto bus and push onto bus
+![Accumulator Load onto bus and push onto bus](images/1.png)
 
 The waveform in Figure 2 demonstrates basic addition done by the adder. Note that at the red marker, Sub is low, thus addition is being performed. The addition is done asynchronously, and the value of Sum goes from 60 (60 + 0) to -10 (60 + -70). At the yellow marker, Ea is high, and thus the result of the addition is pushed onto the bus. Note that the Sum signal is internal.  
 
 Similarly, the waveform in Figure 3 demonstrates basic subtraction by the adder. Note that at the red marker, Sub is high, thus subtraction is being performed. In this case, the rest 9-11 is calculated asynchronously resulting in -2. At the yellow marker, when Eu is set high, the result is pushed onto the bus. 
 
-![image](https://github.com/user-attachments/assets/6113533a-abdf-4097-a0e8-0a8944511536)
-Figure 2: Addition and Output onto Bus
+![Addition and Output onto Bus](images/2.png)
 
-![image](https://github.com/user-attachments/assets/7b625232-5bf4-42b7-8739-e1016e3f3779)
-Figure 3: Subtraction and Output onto Bus
+![Subtraction and Output onto Bus](images/3.png)
 
 The waveform in Figure 4 demonstrates the functionality of ZF (zero flag). As described above, at the red marker, the subtraction 42-42 is performed, resulting in 0. The result is the pushed to the bus when Ea is set high. At the rising edge of the clock, when Ea remains high, ZF is also made high, indicating that the result of the operation (in this case, subtraction), was zero.  
 
-![image](https://github.com/user-attachments/assets/f97351b6-2f1e-4f5f-97c9-e145ba490d91)
-Figure 4: Zero Flag Functionality of Adder
+![Zero Flag Functionality of Adder](images/4.png)
 
 ## Description of Testbenches
 
