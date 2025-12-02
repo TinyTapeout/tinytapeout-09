@@ -11,6 +11,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 The various registers used for a basic 8-bit CPU design.
 Consists of a simple general purpose register, a memory address register, and an instruction register. The 3 registers are selected using the 6th and 7th uio pins.
+
 | uio[7]       | uio[6]       | Selected Register |
 |--------------|--------------|-------------------|
 | 0  | 0  | General Purpose Register      |
@@ -42,7 +43,7 @@ Consists of a simple general purpose register, a memory address register, and an
 | uio_out[3:0]    | Instruction register[7:4] |
 | uo_out[3:0]     | Instruction register[3:0] |
 
-![instruction_register](https://github.com/user-attachments/assets/c028bcd4-4222-472e-88fe-22e5e55d85c5)
+![Instruction register](images/1.png)
 
 - **Note**: All simulations pictured in this document were run using a 10 ns clock. The actual design will have a 100 ns clock.
 
@@ -74,7 +75,7 @@ Consists of a simple general purpose register, a memory address register, and an
 | uio_in [4]      | <sub>O</sub>  |
 | uo_out[7:0]     | Output register |
 
-![register](https://github.com/user-attachments/assets/5a68a43f-1b65-41bf-a61f-91ef55d1b58e)
+![Register](images/2.png)
 
 #### Test Input Connections (as seen in waveform)
 | Test Input Name | Description  |
@@ -101,7 +102,7 @@ Consists of a simple general purpose register, a memory address register, and an
 | uio_in [4]      | <sub>B</sub> |
 | uo_out[7:0]     | B register |
 
-![register](https://github.com/user-attachments/assets/a6f0c398-0f53-40a4-8b95-c0c5876fcb8d)
+![Register](images/3.png)
 
 #### Test Input Connections (as seen in waveform)
 | Test Input Name | Description  |
@@ -132,7 +133,7 @@ Consists of a simple general purpose register, a memory address register, and an
 | uo_out[7:0]     | Input register |
 | uio_out[3:0]    | MAR          |
 
-![input_mar_register](https://github.com/user-attachments/assets/478442b7-4425-4ea3-8df3-a2ce1816a44c)
+![Input mar register](images/4.png)
 
 #### Test Input Connections (as seen in waveform)
 | Test Input Name | Description  |
