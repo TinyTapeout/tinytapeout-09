@@ -27,6 +27,13 @@ jobs:
         with:
           submodules: recursive
 
+      - name: Free Disk Space (Ubuntu)
+        uses: jlumbroso/free-disk-space@main
+        with:
+          large-packages: false
+          docker-images: false
+          swap-storage: false
+
       - name: setup python
         uses: actions/setup-python@v5
         with:
