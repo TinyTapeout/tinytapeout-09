@@ -21,9 +21,7 @@ In the project.v file, there are 5 different modules: BigCircle, SmallCircle, Sq
 
 Shown in figure 1 below is the block diagram for the flow for the KoggeStone Adder
 
-![image](https://github.com/user-attachments/assets/04d402c8-4903-438c-b558-5fbaee71b3ab)
-                                                  
-                                              Figure 1: KoggeStone Adder Block Diagram
+![KoggeStone Adder Block Diagram](images/1.png)
 
 
 ### BigCirle Module
@@ -69,7 +67,3 @@ The two different inputs, ui_in[7:0] and uio_in[7:0] are iterated through each p
 numbers to test all corner cases. The outputs are set to the calculated values calculated by the KoggeStone 
 Adder. If the sum between the two values are greater than 255, the test is skipped as limitations on the hardware
 prevent us from having a carry-out value.
-
-## External hardware
-
-no external hardware
