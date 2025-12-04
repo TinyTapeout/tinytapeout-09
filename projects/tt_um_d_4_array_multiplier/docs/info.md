@@ -22,8 +22,4 @@ To test this 4x4 array multiplier, provide an 8-bit number, which then will be s
 design source. The circuit will calculate the product, displayed on output. It will compare this output to the expected result
 to verify the answer. Testing with different 8-bit values will ensure reliable functionality across various inputs.
 
-## External hardware
-N/A
-
-![4x4ArrayMultiplier](https://github.com/user-attachments/assets/330fd08e-401f-4584-9669-e65a4ceb8b18)
-                        Figure 1: Logic Diagram for 4X4 Array Multiplier.
+![Logic Diagram for 4X4 Array Multiplier](images/1.png){height=37%}
