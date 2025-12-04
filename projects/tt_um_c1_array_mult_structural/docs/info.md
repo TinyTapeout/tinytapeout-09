@@ -16,7 +16,7 @@ bit position. This systematic addition ultimately yielded an 8-bit result, repre
 two original 4-bit numbers. This experiment demonstrates the principles of binary multiplication and the role 
 of full adders in digital circuit design.
 
-![4x4 Array Multiplier](https://github.com/user-attachments/assets/c200e966-bb0c-4dd3-8b90-6e12149fa15d)
+![4x4 Array Multiplier](images/1.png)
 
 ## How to test
 To test a 4x4 multiplier, apply different combinations of 4 bit input signals while 
@@ -24,6 +24,3 @@ varying the select lines to ensure the correct input is routed to the output.The
 each combination should be recorded and compared against the expected output based on the select 
 line values.Any discrepancies will indicate a fault in the multiplier design or implementation,
 allowing for troubleshooting.
-
-## External hardware
-N/A 
