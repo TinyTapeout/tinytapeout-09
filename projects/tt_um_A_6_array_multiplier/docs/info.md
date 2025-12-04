@@ -7,9 +7,9 @@ You can also include images in this folder and reference them in the markdown. E
 512 kb in size, and the combined size of all images must be less than 1 MB.
 -->
 
-![alt text](https://github.com/jt4808/tt09-A-6-array-multiplier/blob/main/2204LAB4MULTIPLIER.pdf?raw=true)
+![](images/1.svg)
 
-How it works
+## How it works
 
 The Verilog code is for a 4x4 array multiplier that takes two 4-bit numbers, m and q, 
 and produces an 8-bit result. It starts by splitting an 8-bit input into two parts: the upper 4 
@@ -23,7 +23,7 @@ the sum and carry-out from two inputs and a carry-in. This method of breaking do
 into partial products and adding them up demonstrates a clear and structured approach to 
 implementing a basic multiplier in hardware.
 
-How to test it
+## How to test it
 
 To test the Verilog program for the 4x4 array multiplier, the user would create a testbench, 
 which is a separate module designed to evaluate how the multiplier functions. They would begin by 
@@ -36,6 +36,3 @@ or use a calculator for verification. To facilitate this process, the user would
 statements to display the outputs on the console. If any outputs do not match the expected values, 
 they would review the code to identify and correct any mistakes. By systematically testing various 
 inputs and confirming the results, the user can ensure that the multiplier operates as intended.
-
-## External hardware
-N/A
