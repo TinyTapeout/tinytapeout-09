@@ -97,11 +97,11 @@ The control block is implemented using a 6 stage sequential counter for sequenci
 | ena           | Unused                              | I       | 1         | Active High     |
 
 ### IO Table Notes
-- See [Control Signal Descriptions](#control-signal-descriptions) for the list of output control signals, and their correspondance in the control_signal vector
+- See the "Control Signal Descriptions" section for the list of output control signals, and their correspondance in the control_signal vector
 
 ## How to test
 The control block can be tested by:
 - Providing an opcode through the `ui_in[3:0]` input pins.
 - Monitoring the `uo_out[7:0]` and `uio_out[7:0]` output pins for the control signals and halt status
-- For a given opcode, follow its [Instruction Micro-Operation](#instruction-micro-operations) table to validate the control signal sequences
+- For a given opcode, follow its "Instruction Micro-Operation" table to validate the control signal sequences
 - Consider using a logic analyzer to generate a waveform and analyze the stages, or slow down the clock to manually observe the control signals at various times
