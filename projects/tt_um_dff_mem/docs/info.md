@@ -32,14 +32,9 @@ To test, set the address and corresponding inputs to desired values. Clear ```lr
 The CocoTB testbenches located in the _test.py_ file, test various scenarios for the module. First, it tests a write operation to each address in the module followed by a read operation at each address, to ensure correct behaviour. The script then sets ```ui_in```, ```lr_n``` high and clears ```ce_n``` to setup for a Read with RAM output enabled. It then iterates over and reads from each address, comparing the recevied value (```uo_out```), to the expected byte from that address. If there are any mismatches, an assertion error is raised, specifying the faulty address and value.  
 
 
-![image](https://raw.githubusercontent.com/Troops3/TinyRAM/main/.github/images/waveform1.png)
+![Gate level Test](images/1.png)
 
-_Figure 1: Gate level Test_
-
-
-![image](https://raw.githubusercontent.com/Troops3/TinyRAM/main/.github/images/waveform2.png)
-
-_Figure 2: Ideal Test_
+![Ideal Test](images/2.png)
 
 ## External hardware
 
