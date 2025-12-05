@@ -18,7 +18,7 @@ These partial products are accumulated row by row using full adders,
 with the carry propagated through successive rows. 
 The final product, `p`, is composed from the sum and carry values of the last rows and is assigned to the 8-bit output (`uo_out`).
 
-![Alt text](img.PNG)
+![](img.PNG)
 
 ## How to test
 
@@ -28,8 +28,3 @@ For example, inputting `ui_in = 8'b0011_0011` (3 * 3) should yield `uo_out = 8'b
 By applying various combinations of operands, 
 such as `ui_in = 8'b1111_1111` (15 * 15), and using a simulation tool to verify the waveforms, you can ensure that the design correctly 
 computes the products and functions as expected.
-
-
-## External hardware
-
-N/A
