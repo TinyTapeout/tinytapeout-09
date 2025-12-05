@@ -11,7 +11,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 tt09-led-serial is a nibble-serial implementation of the LED block cipher, proposed in 2012 and defined in [The LED Block Cipher](https://eprint.iacr.org/2012/600.pdf) by J. Guo et. al. The cipher encrypts a 64-bit block of plaintext with a 128-bit key into a 64-bit block of ciphertext. The nibble-serial implementation enables a very compact implementation as most of the datapath logic can be reused over each nibble. The downside is that such nibble-serial implementations have a much larger latency. The nibble-serial architecture shown below was presented and analyzed earlier in [Differential Fault Intensity Analysis on PRESENT and LED Block Ciphers](https://link.springer.com/chapter/10.1007/978-3-319-21476-4_12) by N. F. Galathy et. al.
 
-![image](lednibble.png)
+![Block diagram](lednibble.png)
 
 To further reduce the I/O pinout constraints, this design also serializes the data-input (64 bit plaintext and 128 bit key) as well as the data-output (64 bit ciphertext). 
 
@@ -59,13 +59,13 @@ The typical sequence of operation is as follows.
 5. Wait until done == 1.
 6. Assert getct and shift out ciphertext bits. Repeat 64 times. De-assert getct.
 
-Here are twotthree sample test vectors. Consult the testbench for additional test vectors.
+Here are three sample test vectors. Consult the testbench for additional test vectors.
 
 | Plaintext           |              Key                           | Ciphertext              |
 |---------------------|--------------------------------------------|-------------------------|
-|  0000000000000000   |  00000000000000000000000000000000          | 3decb2a0850cdba1        |
-|  0123456789abcdef   | 00000000000000000000000000000000           | da261393c73be9ce        |
-|  12153524c0895e81   | 00000000000000000000000000000000           | 29db5fe262572f4e        |
+|  00000000​00000000   |  00000000​00000000​00000000​00000000          | 3decb2a0​850cdba1        |
+|  01234567​89abcdef   | 00000000​00000000​00000000​00000000           | da261393​c73be9ce        |
+|  12153524​c0895e81   | 00000000​00000000​000000000​0000000           | 29db5fe2​62572f4e        |
 
 ## External hardware
 
