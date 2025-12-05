@@ -16,11 +16,4 @@ The structural 4 by 4 binary array multiplier generates four partial products by
 To test a 4x4 binary multiplier, apply a set of 4-bit input pairs, covering typical, edge, and corner cases. For each pair, verify that the output matches the expected 8-bit product. Automate tests to check all possible inputs (total of 256 combinations) if feasible, or focus on key cases to ensure accuracy and catch potential design errors.
 
 
-## External hardware
-
-N/A
-
-
-![4x4 Array Multiplier](4x4_array_multiplier.png)
-
-
+![4x4 Array Multiplier](4x4_array_multiplier.png){height=40%}
