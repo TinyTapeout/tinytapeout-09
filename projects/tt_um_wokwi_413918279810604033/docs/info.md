@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
+My project uses a multiplexor to light up an LED as well as the display module.
 
-**My project uses a mulitplexor to light up an LED as well as the display module.**
 ## How to test
 
+Check if the LED and display both light up by switching input 7 on/off and inputs 4 and 6, if in7 is on then in 6 should turn the lights on. If in 7 is off then in4 will turn on the lights
 
-**Check if the LED and display both light up by switching input 7 on/off and inputs 4 and 6, if in7 is on then in 6 should turn the lights on. If in 7 is off then in4 will turn on the lights**
 ## External hardware
-**LED display & LED diode**
+LED display & LED diode
 
