@@ -1,4 +1,4 @@
-is<!---
+<!---
 
 This file is used to generate your project datasheet. Please fill in the information below and delete any unused
 sections.
@@ -12,5 +12,6 @@ Input 0-1 are input A and B respectively, if A and B are one, the output should 
 
 ## How to test
 turn on A or B and cross check
+
 ## External hardware
 PMOD.LED display
