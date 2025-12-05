@@ -14,7 +14,3 @@ This project works by putting two numbers (x and y), and a carry in. This module
 ## How to test
 
 Check is x and y is equal to sum. 
-
-## External hardware
-
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
