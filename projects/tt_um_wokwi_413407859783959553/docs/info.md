@@ -35,8 +35,3 @@ Pin description
  5. s2(in3) - MSB of the binary input (DCO input or clock divider select )
  6. out0 - ring oscillator output
  7. out1 - clock divider and DCO
-
-
-## External hardware
-
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
