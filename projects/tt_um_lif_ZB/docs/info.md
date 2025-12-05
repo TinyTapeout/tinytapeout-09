@@ -10,9 +10,7 @@ You can also include images in this folder and reference them in the markdown. E
 ## How it works
 
 it takes input voltages and treats that as the input current injection to LIF neuron
+
 ## How to test
 
 do something
-## External hardware
-
-NA
