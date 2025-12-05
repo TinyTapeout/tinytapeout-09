@@ -13,7 +13,7 @@ This project is aim to test the OpenRAM macros(modified) in tt.
 
 ## Structure
 
-This project caontains 1 32x16 sram macrp, 1 sram controller, 1 UART port(RX & TX).
+This project contains 1 32x16 sram macrp, 1 sram controller, 1 UART port(RX & TX).
 
 
 ## How to test
