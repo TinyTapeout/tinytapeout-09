@@ -11,6 +11,7 @@ You can also include images in this folder and reference them in the markdown. E
 Using inverters to light up an 8 segment clock.
 Explain how your project works
 My chip uses a variety of 3 different inverters, which also involves a flip-flop inverter. 
+
 ## How to test
 Flipping the switches will light up its corresponding segment, however the flip flop inverter has its energy stored with switch 3 and 4, which would alternate.
 Explain how to use your project
