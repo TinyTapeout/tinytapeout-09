@@ -14,7 +14,3 @@ Simple 4 logic gates made with Wokwi
 ## How to test
 
 Use input pins 1-7 and see gates output on pins 1-4
-
-## External hardware
-
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
