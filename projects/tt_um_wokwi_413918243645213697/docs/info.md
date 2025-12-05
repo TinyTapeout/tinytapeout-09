@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-"This is a project in work. The gates makes signals do funky things."
+This is a project in work. The gates makes signals do funky things.
 
 ## How to test
 
-"That is to be determined once the functionality is figured out."
+That is to be determined once the functionality is figured out.
 
 ## External hardware
 
-"Seven segment display, input board, output board, switch panel"
+Seven segment display, input board, output board, switch panel
