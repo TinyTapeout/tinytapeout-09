@@ -15,7 +15,3 @@ Takes in one 8bit binary array and breaks it into two 4bit arrays. It then multi
 ## How to test
 
 Use various numbers to test the multiplicative values.
-
-## External hardware
-
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
