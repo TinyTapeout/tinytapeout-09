@@ -14,7 +14,3 @@ Just connect power. In theory, the two ring oscillators will start to oscillate.
 ## How to test
 
 Just connect power. In theory, the two ring oscillators will start to oscillate. The random output will be sampled at the D flip flop at every clock (10K Hz). Out1 and Out2 will be the complementary outputs of the random generator.
-
-## External hardware
-
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
