@@ -11,7 +11,7 @@ You can also include images in this folder and reference them in the markdown. E
 4 bit up/down binary counter with enable
 
 ### Pin Mapping
-```
+
 direction | pin name     | function  
 ----------+--------------+-------------------
 in        | clk          | clk
@@ -20,21 +20,18 @@ in        | ui_in[0]     | test      (test mode)
 in        | ui_in[1]     | ud        (up/down)
 in        | ui_in[2]     | en        (enable)
 out       | ui_out[3:0]  | cnt[3:0]  (count)
-```
+
 
 ### How to test
-```
-Connect input pin EN to VDD
-Connect input pin TEST to GND
-Connect input pin UD to VDD or GND through a switch
-Connect input pin RST_N to an R-C startup circuit
-Connect input pin CLK to a 50 MHz square waveform
-Connect the output pins CNT[3:0] to 4 LEDs
-```
+
+1. Connect input pin EN to VDD
+2. Connect input pin TEST to GND
+3. Connect input pin UD to VDD or GND through a switch
+4. Connect input pin RST_N to an R-C startup circuit
+5. Connect input pin CLK to a 50 MHz square waveform
+6. Connect the output pins CNT[3:0] to 4 LEDs
+
 ### External hardware
-switch <br>
-4 LEDs <br>
-R-C startup circuit 
-
-
-
+- switch
+- 4 LEDs
+- R-C startup circuit
