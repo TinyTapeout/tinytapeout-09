@@ -10,9 +10,11 @@ You can also include images in this folder and reference them in the markdown. E
 ## How it works
 
 A simple encryption core with a 4 bit input 4 bit key and a 4 bit output
+
 ## How to test
 
 you can send randomized inputs of 4 bit length for the input and key and get a 4 bit output
+
 ## External hardware
 
 no external harware but memory to send test data
