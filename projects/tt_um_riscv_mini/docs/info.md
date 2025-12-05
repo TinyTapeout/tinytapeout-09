@@ -34,60 +34,47 @@ The S-Type instruction will output the value of the register.
 The B-Type instruction will output 1 if the branch is taken and 0 if it is not taken.
 
 
-Instructions List
+### Instructions List
 
-R-Type
+#### R-Type
 
-Name   | funct3 [15:13] | funct2 [12:11] | rs2 [10:8] | rs1 [7:5] | rd [4:2] | Opcode(00)
-
-AND    |      000       |       00       |    XXX     |   XXX     |   XXX    | Opcode(00)
-
-OR     |      001       |       00       |    XXX     |   XXX     |   XXX    | Opcode(00)
-
-ADD    |      010       |       00       |    XXX     |   XXX     |   XXX    | Opcode(00)
-
-SUB    |      011       |       00       |    XXX     |   XXX     |   XXX    | Opcode(00)
-
-XOR    |      001       |       01       |    XXX     |   XXX     |   XXX    | Opcode(00)
-
-SLT    |      111       |       00       |    XXX     |   XXX     |   XXX    | Opcode(00)
+| Name   | funct3 [15:13] | funct2 [12:11] | rs2 [10:8] | rs1 [7:5] | rd [4:2] | Opcode(00) |
+| :----- | :------------- | :------------- | :--------- | :-------- | :------- | :--------- |
+| AND    |      000       |       00       |    XXX     |   XXX     |   XXX    | Opcode(00) |
+| OR     |      001       |       00       |    XXX     |   XXX     |   XXX    | Opcode(00) |
+| ADD    |      010       |       00       |    XXX     |   XXX     |   XXX    | Opcode(00) |
+| SUB    |      011       |       00       |    XXX     |   XXX     |   XXX    | Opcode(00) |
+| XOR    |      001       |       01       |    XXX     |   XXX     |   XXX    | Opcode(00) |
+| SLT    |      111       |       00       |    XXX     |   XXX     |   XXX    | Opcode(00) |
 
 
-I-Type
+#### I-Type
 
-Name   | funct3 [15:13] | Imm [12:8] (5-bit unsigned) | rs1 [7:5] | rd [4:2] | Opcode(01)
-
-SLL    |      100       |            XXXXX            |   XXX     |   XXX    | Opcode(01)
-
-SRL    |      101       |            XXXXX            |   XXX     |   XXX    | Opcode(01)
-
-SRA    |      110       |            XXXXX            |   XXX     |   XXX    | Opcode(01)
-
-ADDI   |      010       |            XXXXX            |   XXX     |   XXX    | Opcode(01)
-
-SUBI   |      011       |            XXXXX            |   XXX     |   XXX    | Opcode(01)
+| Name   | funct3 [15:13] | Imm [12:8] (5-bit unsigned) | rs1 [7:5] | rd [4:2] | Opcode(01) |
+| :----- | :------------- | :-------------------------- | :-------- | :------- | :--------- |
+| SLL    |      100       |            XXXXX            |   XXX     |   XXX    | Opcode(01) |
+| SRL    |      101       |            XXXXX            |   XXX     |   XXX    | Opcode(01) |
+| SRA    |      110       |            XXXXX            |   XXX     |   XXX    | Opcode(01) |
+| ADDI   |      010       |            XXXXX            |   XXX     |   XXX    | Opcode(01) |
+| SUBI   |      011       |            XXXXX            |   XXX     |   XXX    | Opcode(01) |
 
 
-L-Type
+#### L-Type
 
-Load   |           Imm [15:8]   (8-bit signed)        |   000     | rd [4:2] | Opcode(10)
+| | | | |
+| :- | :- | :- | :- |
+| Load   |           Imm [15:8]   (8-bit signed)        |   000     | rd [4:2] | Opcode(10) |
 
-S-Type
+#### S-Type
 
-Store  |              00000              |    000     | rs1 [7:5] |   000    | Opcode(11)
+| | | | |
+| :- | :- | :- | :- |
+| Store  |              00000              |    000     | rs1 [7:5] |   000    | Opcode(11) |
 
-B-Type
+#### B-Type
 
-Name   | funct3 [15:13] | funct2 [12:11] | rs2 [10:8] | rs1 [7:5] |   000    | Opcode(11)
-
-BEQ    |      011       |       00       |    XXX     |   XXX     |   000    | Opcode(11)
-
-BNE    |      011       |       10       |    XXX     |   XXX     |   000    | Opcode(11)
-
-BLT    |      111       |       00       |    XXX     |   XXX     |   000    | Opcode(11)
-
-
-
-## External hardware
-
-No External Hardware
+| Name   | funct3 [15:13] | funct2 [12:11] | rs2 [10:8] | rs1 [7:5] |   000    | Opcode(11) |
+| :----- | :------------- | :------------- | :--------- | :-------- | :------- | :--------- |
+| BEQ    |      011       |       00       |    XXX     |   XXX     |   000    | Opcode(11) |
+| BNE    |      011       |       10       |    XXX     |   XXX     |   000    | Opcode(11) |
+| BLT    |      111       |       00       |    XXX     |   XXX     |   000    | Opcode(11) |
