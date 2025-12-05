@@ -16,6 +16,7 @@ Additionally, there is a clock divider that divides 10kHz by 2^16 that turns DP 
 ## How to test
 
 Enabling the below inputs should result in the following ouput:
+
 | IN0 | IN1 | IN2 | IN3 | F | B | E |
 |-----|-----|-----|-----|---|---|---|
 | 0   | 0   | 0   | 0   | 0 | 0 | 0 |
