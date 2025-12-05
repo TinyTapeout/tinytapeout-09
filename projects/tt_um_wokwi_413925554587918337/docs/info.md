@@ -10,9 +10,11 @@ You can also include images in this folder and reference them in the markdown. E
 ## How it works
 
 NAND logic circuit for flipflop violates hold time and set time (theortically) with the resistor
+
 ## How to test
+
 flipping switches
+
 ## External hardware
-Switches
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
-LEDs(6)
+- Switches
+- LEDs(6)
