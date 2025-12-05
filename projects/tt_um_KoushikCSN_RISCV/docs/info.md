@@ -1,4 +1,3 @@
-# Project Datasheet: RISCV Processor Design
 ## Overview
 
 The tt_um_KoushikCSN_RISCV module is a simple, basic processor (or computational unit) designed in Verilog. It operates on a small subset of instructions similar to a RISC-V architecture, with the ability to decode instructions, perform arithmetic or logical operations, and interact with registers and external I/O. This module serves as a building block for a more complex processor design.
@@ -7,7 +6,7 @@ The tt_um_KoushikCSN_RISCV module is a simple, basic processor (or computational
 
 This simple processor module works by fetching instructions, decoding them into different fields, performing operations using the ALU and register file, and finally generating the result. The design is flexible enough to allow for expansion, such as adding memory operations, additional instructions, or more complex control logic, which would be necessary for a complete processor design.
 
-###Summary of How the Processor Works
+### Summary of How the Processor Works
 Fetch the instruction: The instruction is provided as two 8-bit inputs (ui_in and uio_in), forming a 16-bit instruction.
 Decode the instruction: The instruction is split into opcode, register addresses (rs1, rs2, rd), function codes (funct3, funct2), and an immediate value (imm).
 Register Read: The specified registers (rs1, rs2) are read from the register file.
