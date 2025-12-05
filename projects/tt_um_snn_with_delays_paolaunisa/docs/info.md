@@ -8,8 +8,7 @@ You can also include images in this folder and reference them in the markdown. E
 -->
 ## Overview
 
-<img src="https://github.com/user-attachments/assets/2a59dda5-e970-48e8-8068-39cb6dc95023" width="900" align="center">
-
+![](images/1.png)
 
 ## How it works
 
@@ -32,16 +31,9 @@ Each parameter (decay, refractory period, membrane potential threshold, weights,
 | Parameter           | Bit Range / Byte         | Address (Hex) | Address (Decimal) | Description                                         |
 |---------------------|--------------------------|---------------|-------------------|-----------------------------------------------------|
 | `decay`             | 5:0 bits in 2nd byte     | 0x00          | 0                 | Decay configuration parameter                       |
-| `refractory_period` | 5:0 bits in 3rd byte     | 0x01          | 1                 | Refractory period parameter                         |
+| `refractory_​period` | 5:0 bits in 3rd byte     | 0x01          | 1                 | Refractory period parameter                         |
 | `threshold`         | 5:0 bits in 4th byte     | 0x02          | 2                 | Membrane potential threshold                        |
 | `div_value`         | 5th byte                 | 0x03          | 3                 | Division value for clock divider                    |
 | `weights`           | 36 bytes (5th to 40th)   | 0x04 - 0x27   | 4 - 39            | Synaptic weights                                    |
 | `delays`            | 72 bytes (41st to 112th) | 0x28 - 0x6F   | 40 - 111          | Synaptic delay                                      |
 | `output_config`     | 8 bits in 113th byte     | 0x70          | 112               | Output select signal                                |
-
-###  Simulations
-
-
-## External hardware
-
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
