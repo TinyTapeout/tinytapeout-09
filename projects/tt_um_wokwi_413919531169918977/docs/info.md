@@ -14,6 +14,7 @@ Seven segment with switches
 ## How to test
 
 Turn on switches
+
 ## External hardware
 
 SSD, switches
