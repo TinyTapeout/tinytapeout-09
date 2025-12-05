@@ -10,6 +10,7 @@ You can also include images in this folder and reference them in the markdown. E
 ## How it works
 
 Uses nonlinear sampling to convert a input coming from a comparator to a digital signal
+
 ## How to test
 
 In put comparator values, check for desired digital outputs
