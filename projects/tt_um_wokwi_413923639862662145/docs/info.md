@@ -14,16 +14,15 @@ The FF has active high Set and Reset. The Set is unused (stuck at GND).
 
 ## How to test
 
-```
-IN0 IN1    OUT0 
---------------- 
- 0   0      0  
- 0   1      1 
- 1   0      1 
- 1   1      0 
-```
+| IN0 | IN1 | OUT0 |
+| :-- | :-- | :--- |
+|  0  |  0  |   0  |
+|  0  |  1  |   1  |
+|  1  |  0  |   1  |
+|  1  |  1  |   0  |
+
 ## External hardware
 
-push button (for Reset) <br>
-DIP switch 8 <br>
-LED <br>
+- push button (for Reset)
+- DIP switch 8
+- LED
