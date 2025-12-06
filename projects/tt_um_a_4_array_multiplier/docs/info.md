@@ -30,7 +30,7 @@ An array multiplier is a combinational circuit that performs binary multiplicati
 
 5. **Final Product**: The result is an 8-bit product that represents the multiplication of the two 4-bit inputs.
 
-![Visual representation of how an array multiplier works](images/1.svg){height=45%}
+![Visual representation of how an array multiplier works](images/2.png){height=45%}
 
 ## How to test
 
